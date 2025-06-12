@@ -1,0 +1,23 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 1; @symbol_classdef = [AttentionLevel,1,6,20]; ]
+class AttentionLevel {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 3; @position = 4; @symbol_enumdec = [Low,3,4,7]; ]
+        Low,
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 4; @position = 4; @symbol_enumdec = [Medium,4,4,10]; ]
+        Medium,
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 5; @position = 4; @symbol_enumdec = [High,5,4,8]; ]
+        High
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/AttentionLevel.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,366 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Attention,4,14,23]; ]
+import Toybox.Attention;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Timer,5,14,19]; ]
+import Toybox.Timer;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 8; @symbol_classdef = [NotificationManager,8,6,25]; ]
+class NotificationManager {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 8; ]
+    <init> {
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 9 14 ]
+        %tmp.1 = newd 3;
+        symbol [ AttentionLevel %tmp.3 11 6 20 ];
+        %tmp.3 = getv ? :AttentionLevel;
+        symbol [ Low %tmp.4 11 21 24 ];
+        %tmp.4 = getv %tmp.3 :Low;
+        %tmp.5 = 250;
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 %tmp.4 %tmp.5;
+        symbol [ AttentionLevel %tmp.9 12 6 20 ];
+        %tmp.9 = getv ? :AttentionLevel;
+        symbol [ Medium %tmp.10 12 21 27 ];
+        %tmp.10 = getv %tmp.9 :Medium;
+        %tmp.11 = 700;
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        symbol [ AttentionLevel %tmp.15 13 6 20 ];
+        %tmp.15 = getv ? :AttentionLevel;
+        symbol [ High %tmp.16 13 21 25 ];
+        %tmp.16 = getv %tmp.15 :High;
+        %tmp.17 = 1500;
+        %tmp.18 = dup %tmp.13;
+        %tmp.19 = aputv %tmp.18 %tmp.16 %tmp.17;
+        %tmp.20 = as %tmp.19 Dictionary<AttentionLevel, Number>;
+        symbol [ Dictionary %tmp.20 14 10 20 ];
+        symbol [ AttentionLevel %tmp.20 14 21 35 ];
+        symbol [ Number %tmp.20 14 37 43 ];
+        putv self :VIBE_DURATION %tmp.20;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 16 14 ]
+        symbol [ Timer %tmp.23 16 27 32 ];
+        %tmp.23 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.24 16 33 38 ];
+        %tmp.24 = getv function ? %tmp.23 :Timer;
+        %tmp.21 = newc %tmp.24 ();
+        putv self :_timer %tmp.21;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 18 14 ]
+        %tmp.25 = newa 0;
+        putv self :_callbacks %tmp.25;
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 9; @position = 14; @symbol_vardef = [VIBE_DURATION,9,14,27]; @symbol_type<0> = [Dictionary,9,31,41]; @symbol_type<1> = [AttentionLevel,9,42,56]; @symbol_type<2> = [Number,9,58,64]; ]
+    private
+    var VIBE_DURATION as Dictionary<AttentionLevel, Number>;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 16; @position = 14; @symbol_vardef = [_timer,16,14,20]; ]
+    private
+    var _timer;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 18; @position = 14; @symbol_vardef = [_callbacks,18,14,24]; @symbol_type<0> = [Array,18,28,33]; @symbol_type<1> = [Method,18,34,40]; ]
+    private
+    var _callbacks as Array<Method>;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 19; @position = 14; @symbol_vardef = [_turnOffBacklightAt,19,14,33]; ]
+    private
+    var _turnOffBacklightAt = null;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 22; @symbol_functiondef = [initialize,22,11,21]; ]
+    function initialize() as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_22_24_25_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 23 4 ]
+        symbol [ Timer %tmp.3 23 17 22 ];
+        %tmp.3 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.4 23 23 28 ];
+        %tmp.4 = getv function ? %tmp.3 :Timer;
+        %tmp.1 = newc %tmp.4 ();
+        symbol [ _timer ? 23 4 10 ];
+        putv self :_timer %tmp.1;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 24 4 ]
+        symbol [ _timer %tmp.6 24 4 10 ];
+        %tmp.6 = getv ? :_timer;
+        symbol [ start %tmp.7 24 11 16 ];
+        %tmp.7 = getv function %tmp.6 :start;
+        %tmp.8 = self;
+        symbol [ method %tmp.9 24 17 23 ];
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :triggerCallbacks;
+        symbol [ triggerCallbacks %tmp.11 24 25 41 const ];
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        %tmp.13 = 1000;
+        %tmp.14 = true;
+        invoke %tmp.6 %tmp.7(%tmp.12, %tmp.13, %tmp.14);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_22_24_25_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 28; @symbol_functiondef = [callEverySecond,28,11,26]; @symbol_param<0> = [callbackFn,28,27,37]; @symbol_return<0> = [Number,28,42,48]; ]
+    function callEverySecond(callbackFn) as Number {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_28_49_32_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 29 4 ]
+        symbol [ _callbacks %tmp.2 29 4 14 ];
+        %tmp.2 = getv ? :_callbacks;
+        symbol [ add %tmp.3 29 15 18 ];
+        %tmp.3 = getv function %tmp.2 :add;
+        %tmp.4 = lgetv %callbackFn;
+        symbol [ callbackFn %tmp.4 29 19 29 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 31 4 ]
+        symbol [ _callbacks %tmp.6 31 11 21 ];
+        %tmp.6 = getv ? :_callbacks;
+        symbol [ size %tmp.7 31 22 26 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 1;
+        %tmp.10 = sub %tmp.8 %tmp.9;
+        ret %tmp.10;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_28_49_32_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 35; @symbol_functiondef = [removeCallback,35,11,25]; @symbol_param<0> = [index,35,26,31]; ]
+    function removeCallback(index) as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_35_41_37_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 36 4 ]
+        symbol [ _callbacks %tmp.2 36 4 14 ];
+        %tmp.2 = getv ? :_callbacks;
+        symbol [ remove %tmp.3 36 15 21 ];
+        %tmp.3 = getv function %tmp.2 :remove;
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 36 22 27 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_35_41_37_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 40; @symbol_functiondef = [triggerCallbacks,40,11,27]; ]
+    function triggerCallbacks() as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_40_38_51_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 41 4 ]
+        for @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_test @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_incr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_init:
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_begin" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 41 13 14 ];
+        symbol [ _callbacks %tmp.2 41 17 27 ];
+        %tmp.2 = getv ? :_callbacks;
+        symbol [ size %tmp.3 41 28 32 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 1;
+        %tmp.6 = sub %tmp.4 %tmp.5;
+        lputv %i.1 %tmp.6;
+        symbol [ i %i.1 41 13 14 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_test:
+        %tmp.7 = lgetv %i.1;
+        symbol [ i %tmp.7 41 40 41 ];
+        %tmp.8 = 0;
+        %tmp.9 = gte %tmp.7 %tmp.8;
+        bf %tmp.9 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_begin:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_56_46_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 42 6 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_56_46_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_56_46_4_stop" ]
+        %cb.2 = local;
+        symbol [ cb %cb.2 42 10 12 ];
+        symbol [ _callbacks %tmp.11 42 15 25 ];
+        %tmp.11 = getv ? :_callbacks;
+        %tmp.12 = lgetv %i.1;
+        symbol [ i %tmp.12 42 26 27 ];
+        %tmp.13 = agetv %tmp.11 %tmp.12;
+        lputv %cb.2 %tmp.13;
+        symbol [ cb %cb.2 42 10 12 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 43 6 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_6_45_6_if_stmt:
+        %tmp.14 = lgetv %cb.2;
+        symbol [ cb %tmp.14 43 10 12 ];
+        %tmp.15 = null;
+        %tmp.16 = ne %tmp.14 %tmp.15;
+        bf %tmp.16 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_6_45_6_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_6_45_6_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_22_45_6_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 44 8 ]
+        %tmp.17 = lgetv %cb.2;
+        symbol [ cb %tmp.17 44 8 10 ];
+        %tmp.18 = as %tmp.17 { (!Null) };
+        symbol [ invoke %tmp.19 44 11 17 ];
+        %tmp.19 = getv function %tmp.18 :invoke;
+        invoke %tmp.18 %tmp.19();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_22_45_6_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_6_45_6_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_43_6_45_6_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_56_46_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_incr:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 41 ]
+        %tmp.20 = lgetv %i.1;
+        symbol [ i %tmp.20 41 48 49 ];
+        %tmp.21 = 1;
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        lputv %i.1 %tmp.22;
+        symbol [ i %i.1 41 48 49 ];
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_test;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_41_4_46_4_for_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 48 4 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_stmt:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_8_48_77_begin:
+        symbol [ _turnOffBacklightAt %tmp.24 48 8 27 ];
+        %tmp.24 = getv ? :_turnOffBacklightAt;
+        %tmp.25 = null;
+        %tmp.26 = ne %tmp.24 %tmp.25;
+        bf %tmp.26 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_39_48_77_true:
+        symbol [ _turnOffBacklightAt %tmp.28 48 39 58 ];
+        %tmp.28 = getv ? :_turnOffBacklightAt;
+        %tmp.29 = as %tmp.28 { (!Null) };
+        symbol [ System %tmp.30 48 61 67 ];
+        %tmp.30 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.31 48 68 76 ];
+        %tmp.31 = getv function %tmp.30 :getTimer;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        %tmp.33 = lt %tmp.29 %tmp.32;
+        push %tmp.33;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_39_48_77_end:
+        %tmp.34 = phi [%tmp.26 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_8_48_77_begin] [%tmp.33 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_39_48_77_true] [%tmp.34 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_39_48_77_end];
+        bf %tmp.34 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_80_50_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 49 6 ]
+        %tmp.35 = self;
+        symbol [ turnOffBacklight %tmp.36 49 6 22 ];
+        %tmp.36 = getv function %tmp.35 :turnOffBacklight;
+        invoke %tmp.35 %tmp.36();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_80_50_4_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_48_4_50_4_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_40_38_51_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 54; @symbol_functiondef = [callAttention,54,11,24]; @symbol_param<0> = [level,54,25,30]; @symbol_param<1> = [backlight,54,32,41]; ]
+    function callAttention(level, backlight) as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_54_51_65_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 55 4 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_4_58_4_if_stmt:
+        symbol [ Attention %tmp.1 55 8 17 ];
+        %tmp.1 = getm $.Toybox.Attention;
+        %tmp.3 = const :vibrate;
+        symbol [ vibrate %tmp.3 55 23 30 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_4_58_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_4_58_4_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_32_58_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 56 6 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_32_58_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_32_58_4_stop" ]
+        %vibeData.1 = local;
+        symbol [ vibeData %vibeData.1 56 10 18 ];
+        %tmp.5 = newa 1;
+        symbol [ Attention %tmp.8 56 26 35 ];
+        %tmp.8 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.9 56 36 47 ];
+        %tmp.9 = getv function ? %tmp.8 :VibeProfile;
+        %tmp.10 = 100;
+        symbol [ VIBE_DURATION %tmp.12 56 53 66 ];
+        %tmp.12 = getv ? :VIBE_DURATION;
+        %tmp.13 = lgetv %level;
+        symbol [ level %tmp.13 56 67 72 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        %tmp.6 = newc %tmp.9 (%tmp.10, %tmp.14);
+        %tmp.15 = dup %tmp.5;
+        %tmp.16 = aputv %tmp.15 0 %tmp.6;
+        lputv %vibeData.1 %tmp.16;
+        symbol [ vibeData %vibeData.1 56 10 18 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 57 6 ]
+        symbol [ Attention %tmp.17 57 6 15 ];
+        %tmp.17 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.18 57 16 23 ];
+        %tmp.18 = getv function %tmp.17 :vibrate;
+        %tmp.19 = lgetv %vibeData.1;
+        symbol [ vibeData %tmp.19 57 24 32 ];
+        invoke %tmp.17 %tmp.18(%tmp.19);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_32_58_4_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_4_58_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_55_4_58_4_if_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 60 4 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_4_64_4_if_stmt:
+        %tmp.20 = lgetv %backlight;
+        symbol [ backlight %tmp.20 60 8 17 ];
+        bf %tmp.20 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_4_64_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_4_64_4_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_19_64_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 61 6 ]
+        %tmp.21 = self;
+        symbol [ tryToggleBacklight %tmp.22 61 6 24 ];
+        %tmp.22 = getv function %tmp.21 :tryToggleBacklight;
+        %tmp.23 = true;
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 63 6 ]
+        symbol [ System %tmp.24 63 28 34 ];
+        %tmp.24 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.25 63 35 43 ];
+        %tmp.25 = getv function %tmp.24 :getTimer;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 3000;
+        %tmp.28 = add %tmp.26 %tmp.27;
+        symbol [ _turnOffBacklightAt ? 63 6 25 ];
+        putv self :_turnOffBacklightAt %tmp.28;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_19_64_4_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_4_64_4_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_60_4_64_4_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_54_51_65_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 68; @symbol_functiondef = [turnOffBacklight,68,11,27]; ]
+    function turnOffBacklight() as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_68_38_72_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 69 4 ]
+        %tmp.1 = self;
+        symbol [ tryToggleBacklight %tmp.2 69 4 22 ];
+        %tmp.2 = getv function %tmp.1 :tryToggleBacklight;
+        %tmp.3 = false;
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 71 4 ]
+        %tmp.4 = null;
+        symbol [ _turnOffBacklightAt ? 71 4 23 ];
+        putv self :_turnOffBacklightAt %tmp.4;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_68_38_72_2_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 74; @symbol_functiondef = [tryToggleBacklight,74,11,29]; @symbol_param<0> = [enable,74,30,36]; ]
+    function tryToggleBacklight(enable) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_74_38_78_2_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 75 4 ]
+        try @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_beginTry @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_endTry @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_catch @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_beginTry:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_8_77_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 76 6 ]
+        symbol [ Attention %tmp.1 76 6 15 ];
+        %tmp.1 = getm $.Toybox.Attention;
+        symbol [ backlight %tmp.2 76 16 25 ];
+        %tmp.2 = getv function %tmp.1 :backlight;
+        %tmp.3 = lgetv %enable;
+        symbol [ enable %tmp.3 76 26 32 ];
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_8_77_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_endTry:
+        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally;
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_catch:
+        %tmp.4 = exception;
+        push %tmp.4;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 77 6 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_catch" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_77_6_77_18_end" ]
+        %ex.1 = local;
+        symbol [ ex %ex.1 77 13 15 ];
+        %tmp.5 = dup %tmp.4;
+        lputv %ex.1 %tmp.5;
+        symbol [ ex %ex.1 77 13 15 ];
+        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally;
+        pop;
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_77_6_77_18_end:
+        try @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_catch @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_77_6_77_18_end @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_77_6_77_18_end @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally;
+        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally;
+        throw %tmp.4;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_finally:
+        jsrret;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_75_4_77_18_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_74_38_78_2_stop:
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 1; ]
+<init> {
+}
