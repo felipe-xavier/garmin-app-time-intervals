@@ -20,8 +20,4 @@ class TimeDurationsStorage {
     static function setIntervalTimeInMinDuration(value) {
         Application.Properties.setValue(intervalTimeKey, value);
     }
-
-    static function getIntervalsCount() {
-        
-    }
 }

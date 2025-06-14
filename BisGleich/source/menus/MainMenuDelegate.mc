@@ -3,9 +3,11 @@ import Toybox.WatchUi;
 
 class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
     private var _mainMenuView;
+    private var _progressManager as ProgressManager;
 
     // Constructor
     function initialize() {
+        _progressManager = ProgressManager.getInstance();
         _mainMenuView = new MainMenu();
         Menu2InputDelegate.initialize();
     }
@@ -25,11 +27,11 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
         if (id.equals("total_time")) {
             label = "GOAL TIME";
             initialValue = TimeDurationsStorage.getTotalTimeInMinDuration();
-            callback = method(:updateTotalTime);
+            callback = method(:updateTotalTimeInMin);
         } else if (id.equals("interval_time")) {
             label = "INTERVAL TIME";
             initialValue = TimeDurationsStorage.getIntervalTimeInMinDuration();
-            callback = method(:updateIntervalTime);
+            callback = method(:updateIntervalTimeInMin);
             upperLimitNumber = TimeDurationsStorage.getTotalTimeInMinDuration() - 1;
         }
 
@@ -40,13 +42,15 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
     }
 
 
-    function updateTotalTime(value as Number) as Void {
+    function updateTotalTimeInMin(value as Number) as Void {
         _mainMenuView.updateSubLabel("total_time", value);
+        _progressManager.reset();
         TimeDurationsStorage.setTotalTimeInMinDuration(value);
     }
 
-    function updateIntervalTime(value as Number) as Void {
+    function updateIntervalTimeInMin(value as Number) as Void {
         _mainMenuView.updateSubLabel("interval_time", value);
+        _progressManager.reset();
         TimeDurationsStorage.setIntervalTimeInMinDuration(value);
 
     }

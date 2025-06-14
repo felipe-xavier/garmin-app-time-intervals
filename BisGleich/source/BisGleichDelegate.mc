@@ -4,9 +4,6 @@ import Toybox.Timer;
 
 class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
-    private var alertIntervalInSec as Integer = 5; 
-    private var totalDurationInSec as Integer = 18; 
-
     private var _notificationManager;
     private var _view;
     private var _isInProgress as Boolean = false;
@@ -15,9 +12,12 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _currentNumberOfIntervals;
     private var _timer;
 
+    private var _progressManager as ProgressManager;
+
     function initialize(notificationManager, view) {
         _notificationManager = notificationManager;
         _view = view;
+        _progressManager = ProgressManager.getInstance();
         BehaviorDelegate.initialize();
     }
 
@@ -55,11 +55,10 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function startCountdown() {
-        _currentTotalDuration = totalDurationInSec;
-        _currentIntervalDuration = alertIntervalInSec;
-        var extraInterval = 18 % 5 > 0 ? 1 : 0;
-        _currentNumberOfIntervals = (totalDurationInSec / alertIntervalInSec) + extraInterval;
-        System.println("Starting countdown with total duration: " + _currentTotalDuration + " seconds, interval: " + _currentIntervalDuration + " seconds, intervals left: " + _currentNumberOfIntervals);
+       
+        _currentTotalDuration = _progressManager.getCurrentDurationInSec();
+        _currentIntervalDuration = _progressManager.getIntervalDurationInSec();
+        _currentNumberOfIntervals = _progressManager.getCurrentIntervalsCount();
 
         _view.updateIntervalsValue(_currentNumberOfIntervals);
         _view.updateCurrentTimerValue(_currentTotalDuration);
@@ -84,7 +83,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         if (_currentIntervalDuration <= 0) {
             _currentNumberOfIntervals--;
             System.println("Interval finished, intervals left: " + _currentNumberOfIntervals);
-            _currentIntervalDuration = alertIntervalInSec; // Reset interval duration for the next interval
+            _currentIntervalDuration = _progressManager.getIntervalDurationInSec(); // Reset interval duration for the next interval
             _notificationManager.callAttention(AttentionLevel.Low, true);
             _view.updateIntervalsValue(_currentNumberOfIntervals);
         }
@@ -93,6 +92,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         _currentTotalDuration--;
         _currentIntervalDuration--;
         _view.updateCurrentTimerValue(_currentTotalDuration);
+        _progressManager.setCurrentDurationInSec(_currentTotalDuration);
 
     }
 

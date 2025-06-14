@@ -1,8 +1,24 @@
 class ProgressManager {
     private static var _instance = null;
-    private var _activityStatus = ActivityStatus.stopped;
-    private var _currentTotalDuration;
-    private var _currentNumberOfIntervals;
+    private var _totalDurationInSec;
+    private var _currentDurationInSec;
+
+    private var _intervalDurationInSec;
+
+    private function initValues() {
+        _totalDurationInSec = TimeDurationsStorage.getTotalTimeInMinDuration() * 60;
+        _currentDurationInSec = _totalDurationInSec;
+
+        _intervalDurationInSec = TimeDurationsStorage.getIntervalTimeInMinDuration() * 60;
+    }
+
+    function initialize() {
+        initValues();
+    }
+
+    function reset() {
+        initValues();
+    }
 
     /* Get the singleton instance **/
     static function getInstance() {
@@ -12,19 +28,24 @@ class ProgressManager {
         return _instance;
     }
 
-    function startActivity() {
-        _activityStatus = ActivityStatus.playing;
+    function setCurrentDurationInSec(value) {
+        _currentDurationInSec = value;
     }
 
-    function pauseActivity() {
-        _activityStatus = ActivityStatus.paused;
+    function getCurrentDurationInSec() {
+        return _currentDurationInSec;
     }
 
-    function stopActivity() {
-        _activityStatus = ActivityStatus.stopped;
+    function getIntervalDurationInSec() {
+        return _intervalDurationInSec;
     }
 
-    function getActivityStatus() {
-        return _activityStatus;
+    function getCurrentIntervalsCount() {
+        var extraInterval = _totalDurationInSec % _intervalDurationInSec > 0 ? 1 : 0;
+        return (_totalDurationInSec / _intervalDurationInSec) + extraInterval;
+    }
+
+    function getFinishTime() {
+        
     }
 }

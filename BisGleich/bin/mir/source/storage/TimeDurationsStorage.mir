@@ -83,10 +83,6 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_sto
         invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_20_56_22_4_stop:
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 24; @symbol_functiondef = [getIntervalsCount,24,20,37]; ]
-    static
-    function getIntervalsCount() {
-    }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 1; ]
 <init> {

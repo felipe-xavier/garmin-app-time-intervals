@@ -3,7 +3,7 @@
         id="time_of_the_day"
         text="00:00"
         x="center"
-        y="20%"
+        y="10%"
         font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
@@ -21,6 +21,14 @@
         x="center"
         y="70%"
         font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="target_time"
+        text="00:00:00"
+        x="center"
+        y="80%"
+        font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
     

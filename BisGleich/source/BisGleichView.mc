@@ -9,14 +9,19 @@ class BisGleichView extends WatchUi.View {
     private var _todElement;
     private var _is24Hour;
 
+    private var _progressManager;
+
     function initialize(notificationManager) {
         _notificationManager = notificationManager;
+        _progressManager = ProgressManager.getInstance();
         View.initialize();
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
+        var deviceSettings = System.getDeviceSettings();
+        _is24Hour = deviceSettings.is24Hour;
 
         _currentTimerElement = findDrawableById("current_timer");
         _intervalsLeftElement = findDrawableById("intervals_left");
@@ -25,20 +30,20 @@ class BisGleichView extends WatchUi.View {
         updateDynamicData();
 
         _notificationManager.callEverySecond(method(:updateDynamicData));
-         
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        var deviceSettings = System.getDeviceSettings();
-        _is24Hour = deviceSettings.is24Hour;
 
-        var extraInterval = 18 % 5 > 0 ? 1 : 0;
-        var intervalsCount = (18 / 5) + extraInterval;
+        // Calculate number of intervals using ProgressManager
+        var intervalsCount = _progressManager.getCurrentIntervalsCount();
         updateIntervalsValue(intervalsCount);
-        updateCurrentTimerValue(18);
+
+        // Format and display the current timer value in MM:SS
+        var currentTimeInSec = _progressManager.getCurrentDurationInSec();
+        updateCurrentTimerValue(currentTimeInSec);
 
         updateDynamicData();
     }
@@ -48,7 +53,6 @@ class BisGleichView extends WatchUi.View {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
         drawDotsLeftMenu(dc);
-
     }
 
     // Called when this View is removed from the screen. Save the
@@ -64,7 +68,6 @@ class BisGleichView extends WatchUi.View {
         var dotRadius = 3;
         var glowRadius = 5;
         var angles = [185, 180, 175]; // degrees, adjust for your device
-
 
         for (var i = 0; i < angles.size(); i++) {
             var angle = angles[i];
@@ -83,7 +86,6 @@ class BisGleichView extends WatchUi.View {
     }
 
     function updateIntervalsValue(cycles) as Void {
-
         if (_intervalsLeftElement == null || cycles < 0) {
             return;
         }
@@ -96,16 +98,12 @@ class BisGleichView extends WatchUi.View {
     }
 
     function updateCurrentTimerValue(value) as Void {
-        if (_currentTimerElement == null || value < 0) {
+        if (_currentTimerElement == null) {
             return;
         }
-        var seconds = value % 60;
-        var minutes = value / 60;
 
-        var secondsFormatted = seconds > 9 ? seconds.toString() : "0" + seconds.toString();
-        var current = minutes.toString() + ":" + secondsFormatted;
-
-        _currentTimerElement.setText(current);
+        var formattedTime = formatTimeMMSS(value);
+        _currentTimerElement.setText(formattedTime);
 
         WatchUi.requestUpdate();
     }
@@ -127,6 +125,13 @@ class BisGleichView extends WatchUi.View {
 
         _todElement.setText(hour12 + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d") + " " + period);
         }
+    }
+
+    // Helper function to format time in MM:SS
+    private function formatTimeMMSS(totalSeconds) {
+        var minutes = totalSeconds / 60;
+        var seconds = totalSeconds % 60;
+        return minutes.toString() + ":" + (seconds < 10 ? "0" : "") + seconds.toString();
     }
 
 }

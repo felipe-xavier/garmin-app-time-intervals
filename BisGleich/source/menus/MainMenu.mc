@@ -14,21 +14,16 @@ class MainMenu {
         return _menu;
     }
 
-    function updateSubLabel(id, value) {
+    function updateSubLabel(id, valueInMin) {
         switch(id) {
             case "total_time":
-                var totalMinutes = value / 60;
-                var totalSeconds = value % 60;
-                var totalFormattedTime = totalMinutes.toString() + ":" + (totalSeconds < 10 ? "0" : "") + totalSeconds.toString();
+                var totalFormattedTime = valueInMin.toString() + " min";
                 _menu.getItem(0).setSubLabel(totalFormattedTime);
                 break;
             case "interval_time":
-                var intervalMinutes = value / 60;
-                var intervalSeconds = value % 60;
-                var intervalFormattedTime = intervalMinutes.toString() + ":" + (intervalSeconds < 10 ? "0" : "") + intervalSeconds.toString();
+                var intervalFormattedTime = valueInMin.toString() + " min";
                 _menu.getItem(1).setSubLabel(intervalFormattedTime);
                 break;
-            
         }
     }
 
