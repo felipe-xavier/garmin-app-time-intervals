@@ -8,14 +8,15 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _activityManager as ActivityManager;
     private var _notificationManager as NotificationManager;
     private var _view;
+    private var _selfDelegate;
     private var _currentTotalDuration;
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
 
 
-    function initialize(notificationManager, view) {
+    function initialize(view) {
         _activityManager = ActivityManager.getInstance();
-        _notificationManager = notificationManager;
+        _notificationManager = NotificationManager.getInstance();
         _view = view;
         _progressManager = ProgressManager.getInstance();
         BehaviorDelegate.initialize();
@@ -23,7 +24,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
     function openMenu() as Boolean {
         WatchUi.pushView((new MainMenu()).getView(), new MainMenuViewDelegate(), WatchUi.SLIDE_UP);
-        // WatchUi.pushView(new Rez.Menus.MainMenu(), new BisGleichMenuDelegate(), WatchUi.SLIDE_UP);
         System.println("BisGleichDelegate onMenu called");
         return true;
     }
@@ -41,10 +41,14 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
+        // WatchUi.pushView((new ActivityMenu()).getView(), new ActivityMenuViewDelegate(), WatchUi.SLIDE_UP);
+        // System.println("BisGleichDelegate onMenu called");
+        // return true;
+
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.playing) {
             _activityManager.pauseActivity();
-            _notificationManager.removeCallback("updateCountdownValue");
+            _notificationManager.removeCallback(NotificationManager.startActivityKey);
         } else if (activityStatus == ActivityStatus.stopped) {
             _activityManager.startActivity();
             startActivity();
@@ -69,18 +73,18 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function startTimer() {
-        _notificationManager.callEverySecond("updateCountdownValue", method(:updateCountdownValue));
+        _notificationManager.callEverySecond(NotificationManager.startActivityKey, method(:updateCountdownValue));
     }
 
     function updateCountdownValue() as Void {
         if (_currentTotalDuration <= 0) {
             System.println("Countdown finished");
-            _notificationManager.removeCallback("updateCountdownValue");
+            _notificationManager.removeCallback(NotificationManager.startActivityKey);
             _activityManager.overtimeActivity(); // Reset the flag when countdown is finished
             _notificationManager.callAttention(AttentionLevel.High, true);
             _view.updateIntervalsValue(0);
             
-            _notificationManager.callEverySecond("startPostActivity", method(:startPostActivity));
+            _notificationManager.callEverySecond(NotificationManager.startPostActivityKey, method(:startPostActivity));
 
             return;
         }

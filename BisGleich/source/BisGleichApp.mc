@@ -21,9 +21,8 @@ class BisGleichApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        var notificationManager = new NotificationManager();
-        _view = new BisGleichView(notificationManager);
-        return [ _view, new BisGleichDelegate(notificationManager, _view) ];
+        _view = new BisGleichView();
+        return [ _view, new BisGleichDelegate(_view) ];
     }
 
     // Returns main view instance

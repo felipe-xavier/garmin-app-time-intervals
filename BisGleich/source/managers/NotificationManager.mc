@@ -6,6 +6,13 @@ import Toybox.Timer;
 import Toybox.Time;
 
 class NotificationManager {
+
+  static var startActivityKey = "startActivityKey";
+  static var startPostActivityKey = "startPostActivityKey";
+  static var updateDynamicDataKey = "updateDynamicDataKey";
+
+  private static var _instance = null;
+
   private var VIBE_DURATION as Dictionary<AttentionLevel, Number> =
     ({
       AttentionLevel.Low => 250,
@@ -17,6 +24,14 @@ class NotificationManager {
 
   private var _callbacks as Dictionary<String, Method> = {};
   private var _turnOffBacklightAt = null;
+
+  /* Get the singleton instance **/
+    static function getInstance() {
+        if (_instance == null) {
+            _instance = new NotificationManager();
+        }
+        return _instance;
+    }
 
   /* Constructor **/
   function initialize() {

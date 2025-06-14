@@ -12,11 +12,11 @@ class BisGleichView extends WatchUi.View {
 
     private var _activityManager as ActivityManager;
     private var _progressManager as ProgressManager;
-    private var _notificationManager;
+    private var _notificationManager as NotificationManager;
 
-    function initialize(notificationManager) {
+    function initialize() {
         _activityManager = ActivityManager.getInstance();
-        _notificationManager = notificationManager;
+        _notificationManager = NotificationManager.getInstance();
         _progressManager = ProgressManager.getInstance();
         View.initialize();
     }
@@ -36,7 +36,7 @@ class BisGleichView extends WatchUi.View {
 
         updateDynamicData();
 
-        _notificationManager.callEverySecond("updateDynamicData", method(:updateDynamicData));
+        _notificationManager.callEverySecond(NotificationManager.updateDynamicDataKey, method(:updateDynamicData));
     }
 
     // Called when this View is brought to the foreground. Restore
