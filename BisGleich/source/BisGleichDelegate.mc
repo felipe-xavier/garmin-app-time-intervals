@@ -4,9 +4,9 @@ import Toybox.Timer;
 
 class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
+    private var _activityManager as ActivityManager;
     private var _notificationManager;
     private var _view;
-    private var _isInProgress as Boolean = false;
     private var _currentTotalDuration;
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
@@ -15,6 +15,8 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _progressManager as ProgressManager;
 
     function initialize(notificationManager, view) {
+        _timer = new Timer.Timer();
+        _activityManager = ActivityManager.getInstance();
         _notificationManager = notificationManager;
         _view = view;
         _progressManager = ProgressManager.getInstance();
@@ -42,19 +44,33 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
-        if (_isInProgress) {
-            System.println("BisGleichDelegate onSelect called but already in progress");
-            return false; // Prevent multiple selections if already in progress
+        var activityStatus = _activityManager.getActivityStatus();
+        if (activityStatus == ActivityStatus.playing) {
+            _activityManager.pauseActivity();
+            _timer.stop();
+            return true; 
         }
-        _isInProgress = true; // Set the flag to indicate that an action is in progress
-        System.println("BisGleichDelegate onSelect called");
+
+        if (activityStatus == ActivityStatus.stopped) {
+            _activityManager.startActivity();
+            startActivity();
+            return true; 
+        }
         
-        startCountdown(); 
+         if (activityStatus == ActivityStatus.paused) {
+            _activityManager.startActivity();
+            startTimer();
+            return true; 
+        }
         
         return true; // Indicate that the select action was handled
     }
 
-    function startCountdown() {
+    function startTimer() {
+        _timer.start(method(:updateCountdownValue), 1000, true);
+    }
+
+    function startActivity() {
        
         _currentTotalDuration = _progressManager.getCurrentDurationInSec();
         _currentIntervalDuration = _progressManager.getIntervalDurationInSec();
@@ -63,17 +79,14 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         _view.updateIntervalsValue(_currentNumberOfIntervals);
         _view.updateCurrentTimerValue(_currentTotalDuration);
 
-        _timer = new Timer.Timer();
-        _timer.start(method(:updateCountdownValue), 1000, true);
+        startTimer();
     }
 
     function updateCountdownValue() as Void {
-
-        
         if (_currentTotalDuration <= 0) {
             System.println("Countdown finished");
             _timer.stop();
-            _isInProgress = false; // Reset the flag when countdown is finished
+            _activityManager.stopActivity(); // Reset the flag when countdown is finished
             _notificationManager.callAttention(AttentionLevel.High, true);
             _view.updateIntervalsValue(0);
 

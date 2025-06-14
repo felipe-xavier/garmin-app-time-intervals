@@ -3,7 +3,7 @@
         id="time_of_the_day"
         text="00:00"
         x="center"
-        y="10%"
+        y="15%"
         font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
@@ -19,7 +19,7 @@
         id="intervals_left"
         text="5 intervals left"
         x="center"
-        y="70%"
+        y="67%"
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
@@ -27,7 +27,15 @@
         id="target_time"
         text="00:00:00"
         x="center"
-        y="80%"
+        y="85%"
+        font="Gfx.FONT_XTINY"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="target_time_label"
+        text="target"
+        x="center"
+        y="92%"
         font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />

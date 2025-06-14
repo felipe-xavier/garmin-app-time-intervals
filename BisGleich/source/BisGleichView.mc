@@ -2,16 +2,20 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 
 class BisGleichView extends WatchUi.View {
-    private var _notificationManager;
     private var _currentTimerElement;
     private var _intervalsLeftElement;
+    private var _timeOfTheDayElement;
+    private var _targetTimeElement;
+    private var _targetTimeLabelElement;
 
-    private var _todElement;
     private var _is24Hour;
 
-    private var _progressManager;
+    private var _activityManager as ActivityManager;
+    private var _progressManager as ProgressManager;
+    private var _notificationManager;
 
     function initialize(notificationManager) {
+        _activityManager = ActivityManager.getInstance();
         _notificationManager = notificationManager;
         _progressManager = ProgressManager.getInstance();
         View.initialize();
@@ -25,7 +29,10 @@ class BisGleichView extends WatchUi.View {
 
         _currentTimerElement = findDrawableById("current_timer");
         _intervalsLeftElement = findDrawableById("intervals_left");
-        _todElement = findDrawableById("time_of_the_day");
+        _timeOfTheDayElement = findDrawableById("time_of_the_day");
+        _targetTimeElement = findDrawableById("target_time");
+        _targetTimeLabelElement = findDrawableById("target_time_label");
+
 
         updateDynamicData();
 
@@ -36,6 +43,8 @@ class BisGleichView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        _targetTimeElement.setColor(Graphics.COLOR_RED);
+        _targetTimeLabelElement.setColor(Graphics.COLOR_RED);
 
         // Calculate number of intervals using ProgressManager
         var intervalsCount = _progressManager.getCurrentIntervalsCount();
@@ -109,21 +118,47 @@ class BisGleichView extends WatchUi.View {
     }
 
     function updateDynamicData() as Void {
-        updateDateTime();
+        updateTimeOfTheDayElement();
+
+        var activityStatus = _activityManager.getActivityStatus();
+        if (activityStatus != ActivityStatus.playing) {
+            updateTargetTimeElement();
+        }
 
         WatchUi.requestUpdate();
     }
 
-    function updateDateTime() {
+    function updateTimeOfTheDayElement() {
         var time = System.getClockTime();
 
         if (_is24Hour) {
-        _todElement.setText(time.hour + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d"));
+            _timeOfTheDayElement.setText(time.hour + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d"));
         } else {
-        var period = time.hour >= 12 ? "PM" : "AM";
-        var hour12 = time.hour % 12 == 0 ? 12 : time.hour % 12;
+            var period = time.hour >= 12 ? "PM" : "AM";
+            var hour12 = time.hour % 12 == 0 ? 12 : time.hour % 12;
 
-        _todElement.setText(hour12 + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d") + " " + period);
+            _timeOfTheDayElement.setText(hour12 + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d") + " " + period);
+        }
+    }
+
+    function updateTargetTimeElement() {
+        var time = System.getClockTime();
+
+        var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
+
+        // Calculate target time by adding extra duration to current time
+        var totalSeconds = time.hour * 3600 + time.min * 60 + time.sec + extraDurationTimeInSec;
+        var targetHour = (totalSeconds / 3600) % 24;
+        var targetMin = (totalSeconds % 3600) / 60;
+        var targetSec = totalSeconds % 60;
+
+        if (_is24Hour) {
+            _targetTimeElement.setText(targetHour.format("%02d") + ":" + targetMin.format("%02d") + ":" + targetSec.format("%02d"));
+        } else {
+            var period = targetHour >= 12 ? "PM" : "AM";
+            var hour12 = targetHour % 12 == 0 ? 12 : targetHour % 12;
+
+            _targetTimeElement.setText(hour12 + ":" + targetMin.format("%02d") + ":" + targetSec.format("%02d") + " " + period);
         }
     }
 
