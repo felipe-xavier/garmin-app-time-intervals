@@ -18,6 +18,9 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
         var initialValue = null;
         var callback = null;
         var color = Graphics.COLOR_WHITE;
+        var lowerLimitNumber = 1;
+        var upperLimitNumber = 59;
+        var increment = 1;
 
         if (id.equals("total_time")) {
             label = "GOAL TIME";
@@ -27,9 +30,10 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
             label = "INTERVAL TIME";
             initialValue = IntervalsManager.getIntervalTimeInMinDuration();
             callback = method(:updateIntervalTime);
+            upperLimitNumber = IntervalsManager.getTotalTimeInMinDuration() - 1;
         }
 
-        var picker = new NumberPicker(label, color, true, initialValue);
+        var picker = new NumberPicker(label, color, lowerLimitNumber, upperLimitNumber, increment, initialValue);
         var delegate = new NumberPickerDelegate(callback);
 
          WatchUi.pushView(picker, delegate, WatchUi.SLIDE_LEFT);

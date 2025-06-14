@@ -10,30 +10,25 @@ class NumberPicker extends WatchUi.Picker {
     public function initialize(
         titleText as String,
         titleColor as Number,
-        showSecondsLbl as Boolean,
+        lowerLimitNumber as Number,
+        upperLimitNumber as Number,
+        increment as Number,
         initialValue as Number
     ) {
         var title = new WatchUi.Text({
             :text=>titleText,
             :color=>titleColor,
-            :font=>Graphics.FONT_MEDIUM,
+            :font=>Graphics.FONT_SMALL,
             :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM
         });
         
-        var factories = [new NumberPickerFactory(0, 59, 1)];
+        var factories = [new NumberPickerFactory(lowerLimitNumber, upperLimitNumber, increment)];
     
-        var text = new WatchUi.Text({
-            :text=> showSecondsLbl ? "sec" : "",
-            :color=> Graphics.COLOR_WHITE,
-            :locY=> WatchUi.LAYOUT_VALIGN_CENTER
-        });
-
         Picker.initialize({
             :title=>title,
             :pattern=>factories,
-            :defaults=>[initialValue],
-            :confirm=>text
+            :defaults=>[NumberPickerFactory.getIndex(initialValue, increment, lowerLimitNumber)],
         });
     }
 
@@ -53,8 +48,6 @@ class NumberPickerDelegate extends WatchUi.PickerDelegate {
     // Constructor
     public function initialize(callback as Method) {
         _callback = callback;
-        // _callbackParams = callbackParams;
-
         PickerDelegate.initialize();
     }
 

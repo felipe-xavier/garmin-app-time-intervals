@@ -23,8 +23,10 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // Get the index of a number item
     // @param value The number to get the index of
     // @return The index of the number
-    public function getIndex(value as Number) as Number {
-        return (value / _increment) - _start;
+    static function getIndex(value as Number, increment as Number, start as Number) as Number {
+        var index = (value / increment) - start;
+        // System.println("getIndex - value: " + value.toString() + " index: " + index.toString());
+        return index;
     }
 
     // Generate a Drawable instance for an item
@@ -33,6 +35,8 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @return Drawable for the item
     public function getDrawable(index as Number, selected as Boolean) as Drawable? {
         var text = getValue(index).toString();
+
+        System.println("getDrawable - index: " + index.toString() + " text: " + text);
 
         return new WatchUi.Text({
             :text=>text,
@@ -47,7 +51,10 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @param index Index of the item to get the value of
     // @return Value of the item
     public function getValue(index as Number) as Object? {
-        return _start + (index * _increment);
+        var value = _start + (index * _increment);
+        System.println("getValue - index: " + index.toString() + " value: " + value.toString());
+
+        return value;
     }
 
     // Get the number of picker items
