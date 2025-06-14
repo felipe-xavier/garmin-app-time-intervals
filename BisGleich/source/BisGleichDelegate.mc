@@ -8,7 +8,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _activityManager as ActivityManager;
     private var _notificationManager as NotificationManager;
     private var _view;
-    private var _selfDelegate;
     private var _currentTotalDuration;
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
