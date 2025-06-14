@@ -25,7 +25,6 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @return The index of the number
     static function getIndex(value as Number, increment as Number, start as Number) as Number {
         var index = (value / increment) - start;
-        // System.println("getIndex - value: " + value.toString() + " index: " + index.toString());
         return index;
     }
 
@@ -35,8 +34,6 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @return Drawable for the item
     public function getDrawable(index as Number, selected as Boolean) as Drawable? {
         var text = getValue(index).toString();
-
-        System.println("getDrawable - index: " + index.toString() + " text: " + text);
 
         return new WatchUi.Text({
             :text=>text,
@@ -52,8 +49,6 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @return Value of the item
     public function getValue(index as Number) as Object? {
         var value = _start + (index * _increment);
-        System.println("getValue - index: " + index.toString() + " value: " + value.toString());
-
         return value;
     }
 

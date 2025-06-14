@@ -38,29 +38,8 @@ class MainMenu {
         var totalTimeLabel = IntervalsManager.getTotalTimeInMinDuration().toString() + " min";
         var intervalTimeLabel = IntervalsManager.getIntervalTimeInMinDuration().toString() + " min";
 
-        // var hotDurationLbl = CyclesManager.getCycleDuration(WaterType.Hot).toString() + "sec";
-        // var coldDurationLbl = CyclesManager.getCycleDuration(WaterType.Cold).toString() + "sec";
-        // var swtichDurationLbl = CyclesManager.getCycleDuration(WaterType.Switch).toString() + "sec";
-        // var cyclesCountLbl = CyclesManager.getCyclesCount().toString();
-   
-        _menu.addItem(new WatchUi.MenuItem("Total time (min)", totalTimeLabel, "total_time", null));
-        _menu.addItem(new WatchUi.MenuItem("Interval time (min)", intervalTimeLabel, "interval_time", null));
-        // _menu.addItem(new WatchUi.MenuItem("Cold duration", coldDurationLbl, "cold_duration", null));
-        // _menu.addItem(new WatchUi.MenuItem("Switch duration", swtichDurationLbl, "switch_duration", null));
-        // _menu.addItem(new WatchUi.MenuItem("Cycles", cyclesCountLbl, "cycles_count", null));
-        // _menu.addItem(new WatchUi.ToggleMenuItem(
-        //     "Record activity", 
-        //     {:enabled=>"Yes", :disabled=>"No"},
-        //     "record_activity",
-        //     ActivityManager.getRecordActivityFlag(),
-        //     null
-        // ));
-        // _menu.addItem(new WatchUi.ToggleMenuItem(
-        //     "Double click", 
-        //     {:enabled=>"Yes", :disabled=>"No"},
-        //     "use_double_click",
-        //     CyclesManager.getUseDoubleClickFlag(),
-        //     null
-        // ));
+        _menu.addItem(new WatchUi.MenuItem("Total time", totalTimeLabel, "total_time", null));
+        _menu.addItem(new WatchUi.MenuItem("Interval time", intervalTimeLabel, "interval_time", null));
+  
     }
 }
