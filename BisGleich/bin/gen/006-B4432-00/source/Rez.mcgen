@@ -49,11 +49,12 @@ module Rez {
 
         module system_size__menu_header {
             const width as Number = 390;
-            const height as Number = 130;
+            const height as Number = 121;
         } // system_size__menu_header
 
         module system_loc__hint_button_left_bottom {
-            const exclude as Boolean = true;
+            const x as Number = 12;
+            const y as Number = 252;
         } // system_loc__hint_button_left_bottom
 
         module prompt_font_enhanced_readability__body_no_title {
@@ -61,19 +62,19 @@ module Rez {
         } // prompt_font_enhanced_readability__body_no_title
 
         module prompt_loc__body_no_title {
-            const x as Number = 40;
-            const y as Number = 95;
+            const x as Number = 65;
+            const y as Number = 60;
         } // prompt_loc__body_no_title
 
         module system_icon_dark__about {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__about.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__about.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__about
 
         module system_icon_light__question {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__question.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__question.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -85,11 +86,11 @@ module Rez {
 
         module prompt_font__title {
             const justification = Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER;
-            const font = Graphics.FONT_XTINY;
+            const font = Graphics.FONT_TINY;
         } // prompt_font__title
 
         module system_icon_dark__discard {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__discard.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__discard.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -97,7 +98,7 @@ module Rez {
 
         module system_size__menu_item {
             const width as Number = 390;
-            const height as Number = 130;
+            const height as Number = 93;
         } // system_size__menu_item
 
         module system_color_dark__text {
@@ -106,18 +107,18 @@ module Rez {
         } // system_color_dark__text
 
         module system_icon_destructive__discard {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__discard.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__discard.svg";
             const dithering as String = "none";
         } // system_icon_destructive__discard
 
         module system_icon_dark__hint_action_menu {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_action_menu
 
         module prompt_size__title {
-            const width as Number = 272;
-            const height as Number = 70;
+            const width as Number = 248;
+            const height as Number = 83;
         } // prompt_size__title
 
         module confirmation_font__body {
@@ -135,30 +136,28 @@ module Rez {
         } // system_icon_destructive__hint_button_left_top
 
         module system_size__launch_icon {
-            const scaleX as Number = 56;
-            const scaleY as Number = 56;
+            const scaleX as Number = 54;
+            const scaleY as Number = 54;
             const scaleRelativeTo as String = "screen";
         } // system_size__launch_icon
 
         module confirmation_input__confirm {
-            const y1 as Number = 310;
-            const x1 as Number = 100;
-            const y2 as Number = 390;
-            const x2 as Number = 290;
+            const button = WatchUi.KEY_ENTER;
         } // confirmation_input__confirm
 
         module prompt_font__body_with_title {
             const justification = Graphics.TEXT_JUSTIFY_CENTER;
-            const font = Graphics.FONT_TINY;
+            const font = Graphics.FONT_XTINY;
         } // prompt_font__body_with_title
 
         module confirmation_loc__body {
-            const x as Number = 40;
-            const y as Number = 95;
+            const x as Number = 61;
+            const y as Number = 89;
         } // confirmation_loc__body
 
         module system_icon_destructive__hint_button_left_bottom {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__hint_button_left_bottom.svg";
+            const dithering as String = "none";
         } // system_icon_destructive__hint_button_left_bottom
 
         module prompt_color_dark__background {
@@ -167,27 +166,28 @@ module Rez {
         } // prompt_color_dark__background
 
         module system_icon_destructive__hint_action_menu {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__hint_action_menu.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_destructive__hint_action_menu
 
         module system_loc__hint_action_menu {
-            const x as Number = 336;
-            const y as Number = 74;
+            const x as Number = 323;
+            const y as Number = 73;
         } // system_loc__hint_action_menu
 
         module confirmation_icon__hint_confirm {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_completion.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_confirm
 
         module system_loc__hint_button_left_middle {
-            const exclude as Boolean = true;
+            const x as Number = 2;
+            const y as Number = 157;
         } // system_loc__hint_button_left_middle
 
         module prompt_size__body_no_title {
-            const width as Number = 310;
-            const height as Number = 211;
+            const width as Number = 260;
+            const height as Number = 270;
         } // prompt_size__body_no_title
 
         module system_icon_light__hint_button_left_top {
@@ -200,10 +200,7 @@ module Rez {
         } // prompt_color_light__background
 
         module confirmation_input__delete {
-            const y1 as Number = 0;
-            const x1 as Number = 100;
-            const y2 as Number = 90;
-            const x2 as Number = 290;
+            const button = WatchUi.KEY_DOWN;
         } // confirmation_input__delete
 
         module system_icon_dark__hint_button_left_top {
@@ -215,7 +212,7 @@ module Rez {
         } // system_input__action_menu
 
         module system_icon_light__save {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__save.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__save.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -231,7 +228,7 @@ module Rez {
         } // system_loc__subwindow
 
         module system_icon_light__warning {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__warning.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__warning.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -243,7 +240,7 @@ module Rez {
         } // confirmation_color_light__body
 
         module confirmation_icon_light__hint_keep {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_keep.svg";
             const dithering as String = "none";
         } // confirmation_icon_light__hint_keep
 
@@ -253,7 +250,7 @@ module Rez {
         } // activity_color_light__background
 
         module system_icon_positive__hint_button_right_top {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_positive__hint_button_right_top
 
@@ -263,7 +260,7 @@ module Rez {
         } // system_size__screen
 
         module system_icon_destructive__hint_button_right_bottom {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_destructive__hint_button_right_bottom
 
@@ -273,14 +270,13 @@ module Rez {
         } // system_color_light__background
 
         module system_icon_destructive__hint_button_right_top {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_destructive__hint_button_right_top
 
         module confirmation_loc__hint_confirm {
-            const x as Number = 195;
-            const horizontalJustification as String = "center";
-            const y as Number = 310;
+            const x as Number = 323;
+            const y as Number = 75;
         } // confirmation_loc__hint_confirm
 
         module activity_color_dark__text {
@@ -289,19 +285,16 @@ module Rez {
         } // activity_color_dark__text
 
         module confirmation_input__keep {
-            const y1 as Number = 310;
-            const x1 as Number = 100;
-            const y2 as Number = 390;
-            const x2 as Number = 290;
+            const button = WatchUi.KEY_ESC;
         } // confirmation_input__keep
 
         module prompt_loc__body_with_title {
-            const x as Number = 40;
-            const y as Number = 139;
+            const x as Number = 65;
+            const y as Number = 133;
         } // prompt_loc__body_with_title
 
         module system_icon_dark__search {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__search.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__search.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -313,30 +306,32 @@ module Rez {
         } // activity_color_light__text
 
         module confirmation_icon__hint_keep {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_keep.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_keep
 
         module system_icon_dark__save {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__save.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__save.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__save
 
         module system_icon_destructive__hint_button_left_middle {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__hint_button_left_middle.svg";
+            const dithering as String = "none";
         } // system_icon_destructive__hint_button_left_middle
 
         module system_icon_light__search {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__search.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__search.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_light__search
 
         module system_icon_dark__hint_button_left_bottom {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__hint_button_left_bottom.svg";
+            const dithering as String = "none";
         } // system_icon_dark__hint_button_left_bottom
 
         module system_icon_positive__hint_button_left_top {
@@ -344,12 +339,12 @@ module Rez {
         } // system_icon_positive__hint_button_left_top
 
         module system_loc__hint_button_right_bottom {
-            const x as Number = 337;
-            const y as Number = 259;
+            const x as Number = 318;
+            const y as Number = 241;
         } // system_loc__hint_button_right_bottom
 
         module confirmation_icon_dark__hint_reject {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_reject.svg";
             const dithering as String = "none";
         } // confirmation_icon_dark__hint_reject
 
@@ -359,7 +354,7 @@ module Rez {
         } // confirmation_color_dark__body
 
         module confirmation_icon_light__hint_confirm {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_completion.svg";
             const dithering as String = "none";
         } // confirmation_icon_light__hint_confirm
 
@@ -369,18 +364,18 @@ module Rez {
         } // prompt_color_dark__title
 
         module system_icon_destructive__cancel {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__cancel.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__cancel.svg";
             const dithering as String = "none";
         } // system_icon_destructive__cancel
 
         module system_icon_light__hint_button_right_bottom {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_right_bottom
 
         module prompt_loc__title {
-            const x as Number = 59;
-            const y as Number = 78;
+            const x as Number = 71;
+            const y as Number = 33;
         } // prompt_loc__title
 
         module confirmation_font_enhanced_readability__body {
@@ -393,41 +388,42 @@ module Rez {
         } // prompt_color_light__title
 
         module system_icon_dark__hint_button_right_top {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_right_top
 
         module system_icon_dark__hint_button_left_middle {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__hint_button_left_middle.svg";
+            const dithering as String = "none";
         } // system_icon_dark__hint_button_left_middle
 
         module confirmation_icon_dark__hint_keep {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_keep.svg";
             const dithering as String = "none";
         } // confirmation_icon_dark__hint_keep
 
         module system_icon_light__cancel {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__cancel.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__cancel.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_light__cancel
 
         module confirmation_icon_light__hint_reject {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_reject.svg";
             const dithering as String = "none";
         } // confirmation_icon_light__hint_reject
 
         module system_icon_light__about {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__about.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__about.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_light__about
 
         module system_size__toast_icon {
-            const scaleX as Number = 40;
-            const scaleY as Number = 40;
+            const scaleX as Number = 49;
+            const scaleY as Number = 49;
             const scaleRelativeTo as String = "screen";
         } // system_size__toast_icon
 
@@ -436,12 +432,12 @@ module Rez {
         } // system_icon_dark__hint_button_right_middle
 
         module confirmation_icon__hint_reject {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_reject.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_reject
 
         module system_icon_light__hint_action_menu {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_action_menu
 
@@ -454,13 +450,12 @@ module Rez {
         } // system_icon_destructive__hint_button_right_middle
 
         module confirmation_loc__hint_reject {
-            const x as Number = 195;
-            const horizontalJustification as String = "center";
-            const y as Number = 0;
+            const x as Number = 13;
+            const y as Number = 246;
         } // confirmation_loc__hint_reject
 
         module confirmation_icon_dark__hint_delete {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_delete.svg";
             const dithering as String = "none";
         } // confirmation_icon_dark__hint_delete
 
@@ -470,21 +465,23 @@ module Rez {
         } // activity_color_dark__background
 
         module system_icon_light__hint_button_left_bottom {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__hint_button_left_bottom.svg";
+            const dithering as String = "none";
         } // system_icon_light__hint_button_left_bottom
 
         module system_icon_positive__hint_button_left_middle {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__hint_button_left_middle.svg";
+            const dithering as String = "none";
         } // system_icon_positive__hint_button_left_middle
 
         module system_size__menu_icon {
-            const scaleX as Number = 60;
-            const scaleY as Number = 60;
+            const scaleX as Number = 65;
+            const scaleY as Number = 91;
             const scaleRelativeTo as String = "screen";
         } // system_size__menu_icon
 
         module system_icon_destructive__warning {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__warning.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_destructive__warning.svg";
             const dithering as String = "none";
         } // system_icon_destructive__warning
 
@@ -493,19 +490,19 @@ module Rez {
         } // system_loc__hint_button_right_middle
 
         module system_icon_dark__cancel {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__cancel.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__cancel.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__cancel
 
         module prompt_size__body_with_title {
-            const width as Number = 310;
-            const height as Number = 167;
+            const width as Number = 260;
+            const height as Number = 214;
         } // prompt_size__body_with_title
 
         module system_loc__hint_button_right_top {
-            const x as Number = 338;
+            const x as Number = 323;
             const y as Number = 73;
         } // system_loc__hint_button_right_top
 
@@ -515,21 +512,18 @@ module Rez {
         } // system_color_light__text
 
         module system_icon_light__check {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__check.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__check.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_light__check
 
         module confirmation_input__reject {
-            const y1 as Number = 0;
-            const x1 as Number = 100;
-            const y2 as Number = 80;
-            const x2 as Number = 290;
+            const button = WatchUi.KEY_DOWN;
         } // confirmation_input__reject
 
         module system_icon_light__revert {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__revert.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__revert.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -540,30 +534,29 @@ module Rez {
         } // system_size__subwindow
 
         module system_icon_positive__hint_button_left_bottom {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__hint_button_left_bottom.svg";
+            const dithering as String = "none";
         } // system_icon_positive__hint_button_left_bottom
 
         module system_icon_dark__check {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__check.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__check.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__check
 
         module confirmation_loc__hint_keep {
-            const x as Number = 195;
-            const horizontalJustification as String = "center";
-            const y as Number = 310;
+            const x as Number = 13;
+            const y as Number = 246;
         } // confirmation_loc__hint_keep
 
         module confirmation_loc__hint_delete {
-            const x as Number = 195;
-            const horizontalJustification as String = "center";
-            const y as Number = 0;
+            const x as Number = 323;
+            const y as Number = 75;
         } // confirmation_loc__hint_delete
 
         module system_icon_positive__hint_action_menu {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_positive__hint_action_menu
 
@@ -572,40 +565,41 @@ module Rez {
         } // system_icon_positive__hint_button_right_middle
 
         module system_icon_light__hint_button_left_middle {
-            const exclude as Boolean = true;
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__hint_button_left_middle.svg";
+            const dithering as String = "none";
         } // system_icon_light__hint_button_left_middle
 
         module system_icon_dark__hint_button_right_bottom {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_right_bottom
 
         module system_icon_positive__hint_button_right_bottom {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_bottom.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_positive__hint_button_right_bottom
 
         module system_icon_dark__revert {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__revert.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__revert.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__revert
 
         module confirmation_icon_light__hint_delete {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_delete.svg";
             const dithering as String = "none";
         } // confirmation_icon_light__hint_delete
 
         module system_icon_dark__question {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__question.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__question.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__question
 
         module system_icon_light__discard {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__discard.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__discard.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -622,22 +616,22 @@ module Rez {
         } // device_info
 
         module confirmation_icon_dark__hint_confirm {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_completion.svg";
             const dithering as String = "none";
         } // confirmation_icon_dark__hint_confirm
 
         module prompt_font__body_no_title {
             const justification = Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER;
-            const font = Graphics.FONT_TINY;
+            const font = Graphics.FONT_XTINY;
         } // prompt_font__body_no_title
 
         module prompt_size__title_icon {
-            const scaleX as Float = 0.14;
+            const scaleX as Float = 0.13;
             const scaleRelativeTo as String = "screen";
         } // prompt_size__title_icon
 
         module system_icon_dark__warning {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__warning.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_dark__warning.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -645,7 +639,7 @@ module Rez {
 
         module prompt_loc__title_icon {
             const x as Number = 195;
-            const y as Number = 45;
+            const y as Number = 32;
             const horizontalJustification as String = "center";
             const verticalJustification as String = "center";
         } // prompt_loc__title_icon
@@ -660,22 +654,22 @@ module Rez {
         } // prompt_color_dark__body
 
         module confirmation_icon__hint_delete {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/confirmation_icon__hint_delete.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_delete
 
         module system_icon_light__hint_button_right_top {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_light__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_right_top
 
         module confirmation_size__body {
-            const width as Number = 310;
-            const height as Number = 211;
+            const width as Number = 268;
+            const height as Number = 212;
         } // confirmation_size__body
 
         module system_icon_positive__check {
-            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__check.svg";
+            const filename as String = "/Users/felipe/Library/Application Support/Garmin/ConnectIQ/Devices/fr165/system_icon_positive__check.svg";
             const dithering as String = "none";
         } // system_icon_positive__check
     } // Styles

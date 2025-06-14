@@ -4,18 +4,16 @@ import Toybox.Timer;
 
 class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
+    private var _progressManager as ProgressManager;
     private var _activityManager as ActivityManager;
-    private var _notificationManager;
+    private var _notificationManager as NotificationManager;
     private var _view;
     private var _currentTotalDuration;
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
-    private var _timer;
 
-    private var _progressManager as ProgressManager;
 
     function initialize(notificationManager, view) {
-        _timer = new Timer.Timer();
         _activityManager = ActivityManager.getInstance();
         _notificationManager = notificationManager;
         _view = view;
@@ -39,7 +37,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             return openMenu();
         }
 
-
         return false; // Indicate that the key event was not handled
     }
 
@@ -47,27 +44,16 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.playing) {
             _activityManager.pauseActivity();
-            _timer.stop();
-            return true; 
-        }
-
-        if (activityStatus == ActivityStatus.stopped) {
+            _notificationManager.removeCallback("updateCountdownValue");
+        } else if (activityStatus == ActivityStatus.stopped) {
             _activityManager.startActivity();
             startActivity();
-            return true; 
-        }
-        
-         if (activityStatus == ActivityStatus.paused) {
+        } else if (activityStatus == ActivityStatus.paused) {
             _activityManager.startActivity();
             startTimer();
-            return true; 
         }
         
         return true; // Indicate that the select action was handled
-    }
-
-    function startTimer() {
-        _timer.start(method(:updateCountdownValue), 1000, true);
     }
 
     function startActivity() {
@@ -82,13 +68,19 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         startTimer();
     }
 
+    function startTimer() {
+        _notificationManager.callEverySecond("updateCountdownValue", method(:updateCountdownValue));
+    }
+
     function updateCountdownValue() as Void {
         if (_currentTotalDuration <= 0) {
             System.println("Countdown finished");
-            _timer.stop();
-            _activityManager.stopActivity(); // Reset the flag when countdown is finished
+            _notificationManager.removeCallback("updateCountdownValue");
+            _activityManager.overtimeActivity(); // Reset the flag when countdown is finished
             _notificationManager.callAttention(AttentionLevel.High, true);
             _view.updateIntervalsValue(0);
+            
+            _notificationManager.callEverySecond("startPostActivity", method(:startPostActivity));
 
             return;
         }
@@ -107,6 +99,11 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         _view.updateCurrentTimerValue(_currentTotalDuration);
         _progressManager.setCurrentDurationInSec(_currentTotalDuration);
 
+    }
+
+    function startPostActivity() {
+        _currentTotalDuration++;
+        _view.updateCurrentTimerValue(_currentTotalDuration);
     }
 
     function onBack() as Boolean {

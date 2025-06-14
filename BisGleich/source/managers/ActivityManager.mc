@@ -22,6 +22,10 @@ class ActivityManager {
         _activityStatus = ActivityStatus.stopped;
     }
 
+    function overtimeActivity() {
+        _activityStatus = ActivityStatus.overtime;
+    }
+
     function getActivityStatus() {
         return _activityStatus;
     }

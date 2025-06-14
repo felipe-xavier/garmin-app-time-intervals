@@ -8,7 +8,6 @@ class ProgressManager {
     private function initValues() {
         _totalDurationInSec = TimeDurationsStorage.getTotalTimeInMinDuration() * 60;
         _currentDurationInSec = _totalDurationInSec;
-
         _intervalDurationInSec = TimeDurationsStorage.getIntervalTimeInMinDuration() * 60;
     }
 
@@ -18,8 +17,6 @@ class ProgressManager {
 
     function reset() {
         initValues();
-        System.println("Progress Manager - reset - _totalDurationInSec: " + _totalDurationInSec.toString() + " _intervalDurationInSec: " + _intervalDurationInSec.toString());
-
     }
 
     /* Get the singleton instance **/
@@ -31,7 +28,6 @@ class ProgressManager {
     }
 
     function setCurrentDurationInSec(value) {
-        System.println("Progress Manager - setCurrentDurationInSec: " + value.toString());
         _currentDurationInSec = value;
     }
 
@@ -44,13 +40,7 @@ class ProgressManager {
     }
 
     function getCurrentIntervalsCount() {
-        System.println("Progress Manager - getCurrentIntervalsCount - _intervalDurationInSec: " + _intervalDurationInSec.toString());
-
-        var extraInterval = _totalDurationInSec % _intervalDurationInSec > 0 ? 1 : 0;
-        return (_totalDurationInSec / _intervalDurationInSec) + extraInterval;
-    }
-
-    function getFinishTime() {
-
+        var extraInterval = _currentDurationInSec % _intervalDurationInSec > 0 ? 1 : 0;
+        return (_currentDurationInSec / _intervalDurationInSec) + extraInterval;
     }
 }

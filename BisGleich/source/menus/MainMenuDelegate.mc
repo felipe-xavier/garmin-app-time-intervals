@@ -44,14 +44,13 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
 
     function updateTotalTimeInMin(value as Number) as Void {
         _mainMenuView.updateSubLabel("total_time", value);
-        _progressManager.reset();
         TimeDurationsStorage.setTotalTimeInMinDuration(value);
+        _progressManager.reset();
     }
 
     function updateIntervalTimeInMin(value as Number) as Void {
         _mainMenuView.updateSubLabel("interval_time", value);
-        _progressManager.reset();
         TimeDurationsStorage.setIntervalTimeInMinDuration(value);
-
+        _progressManager.reset();
     }
 }

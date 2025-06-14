@@ -36,7 +36,7 @@ class BisGleichView extends WatchUi.View {
 
         updateDynamicData();
 
-        _notificationManager.callEverySecond(method(:updateDynamicData));
+        _notificationManager.callEverySecond("updateDynamicData", method(:updateDynamicData));
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -62,6 +62,12 @@ class BisGleichView extends WatchUi.View {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
         drawDotsLeftMenu(dc);
+
+        var activityStatus = _activityManager.getActivityStatus();
+        if (activityStatus == ActivityStatus.overtime) {
+            _currentTimerElement.setColor(Graphics.COLOR_RED);
+            _intervalsLeftElement.setText("overtime");
+        }
     }
 
     // Called when this View is removed from the screen. Save the
@@ -75,7 +81,7 @@ class BisGleichView extends WatchUi.View {
         var centerY = dc.getHeight() / 2;
         var radius = dc.getWidth() / 2 - 8; // 8px margin from edge
         var dotRadius = 3;
-        var glowRadius = 5;
+        // var glowRadius = 5;
         var angles = [185, 180, 175]; // degrees, adjust for your device
 
         for (var i = 0; i < angles.size(); i++) {
@@ -85,8 +91,8 @@ class BisGleichView extends WatchUi.View {
             var y = centerY + radius * Math.sin(rad);
 
             // Draw glow (simulate with a larger, semi-transparent circle)
-            dc.setFill(0x40FFFFFF);
-            dc.fillCircle(x, y, glowRadius);
+            // dc.setFill(0x40FFFFFF);
+            // dc.fillCircle(x, y, glowRadius);
 
             // Draw the dot
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -136,7 +142,6 @@ class BisGleichView extends WatchUi.View {
         } else {
             var period = time.hour >= 12 ? "PM" : "AM";
             var hour12 = time.hour % 12 == 0 ? 12 : time.hour % 12;
-
             _timeOfTheDayElement.setText(hour12 + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d") + " " + period);
         }
     }

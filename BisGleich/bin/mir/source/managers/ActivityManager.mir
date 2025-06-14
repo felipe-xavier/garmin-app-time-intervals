@@ -83,14 +83,26 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_man
         putv self :_activityStatus %tmp.3;
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_21_28_23_4_stop:
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 25; @symbol_functiondef = [getActivityStatus,25,13,30]; ]
-    function getActivityStatus() {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_25_33_27_4_start:
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 25; @symbol_functiondef = [overtimeActivity,25,13,29]; ]
+    function overtimeActivity() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_25_32_27_4_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" 26 8 ]
-        symbol [ _activityStatus %tmp.2 26 15 30 ];
+        symbol [ ActivityStatus %tmp.2 26 26 40 ];
+        %tmp.2 = getv ? :ActivityStatus;
+        symbol [ overtime %tmp.3 26 41 49 ];
+        %tmp.3 = getv %tmp.2 :overtime;
+        symbol [ _activityStatus ? 26 8 23 ];
+        putv self :_activityStatus %tmp.3;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_25_32_27_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 29; @symbol_functiondef = [getActivityStatus,29,13,30]; ]
+    function getActivityStatus() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_29_33_31_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" 30 8 ]
+        symbol [ _activityStatus %tmp.2 30 15 30 ];
         %tmp.2 = getv ? :_activityStatus;
         ret %tmp.2;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_25_33_27_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_29_33_31_4_stop:
     }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 1; ]

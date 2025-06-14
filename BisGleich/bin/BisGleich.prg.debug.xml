@@ -10,7 +10,7 @@
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="5" lineNum="9" parent="globals/NotificationManager" pc="268435517" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="5" lineNum="16" parent="globals/NotificationManager" pc="268435529" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="5" lineNum="18" parent="globals/NotificationManager" pc="268435558" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="6" lineNum="7" parent="globals/Rez" pc="268435568" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="6" lineNum="7" parent="globals/Rez" pc="268435568" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="7" lineNum="4" parent="globals/BisGleichView" pc="268435588" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="8" lineNum="41" parent="globals" pc="268435600" symbol="getMainView"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="8" lineNum="42" parent="globals" pc="268435610" symbol="getMainView"/>
@@ -20,11 +20,11 @@
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="13" lineNum="45" parent="globals/MainMenuViewDelegate" pc="268435663" symbol="updateTotalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="13" lineNum="46" parent="globals/MainMenuViewDelegate" pc="268435665" symbol="updateTotalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="13" lineNum="47" parent="globals/MainMenuViewDelegate" pc="268435686" symbol="updateTotalTimeInMin"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="13" lineNum="48" parent="globals/MainMenuViewDelegate" pc="268435698" symbol="updateTotalTimeInMin"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="13" lineNum="48" parent="globals/MainMenuViewDelegate" pc="268435706" symbol="updateTotalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="14" lineNum="51" parent="globals/MainMenuViewDelegate" pc="268435719" symbol="updateIntervalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="14" lineNum="52" parent="globals/MainMenuViewDelegate" pc="268435721" symbol="updateIntervalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="14" lineNum="53" parent="globals/MainMenuViewDelegate" pc="268435742" symbol="updateIntervalTimeInMin"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="14" lineNum="54" parent="globals/MainMenuViewDelegate" pc="268435754" symbol="updateIntervalTimeInMin"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="14" lineNum="54" parent="globals/MainMenuViewDelegate" pc="268435762" symbol="updateIntervalTimeInMin"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="15" lineNum="9" parent="globals/MainMenuViewDelegate" pc="268435775" symbol="initialize"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="15" lineNum="10" parent="globals/MainMenuViewDelegate" pc="268435777" symbol="initialize"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" id="15" lineNum="11" parent="globals/MainMenuViewDelegate" pc="268435799" symbol="initialize"/>
@@ -84,314 +84,320 @@
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc" id="28" lineNum="9" parent="globals/TimeDurationsStorage" pc="268436602" symbol="getTotalTimeInMinDuration"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="29" lineNum="28" parent="globals/NotificationManager" pc="268436620" symbol="callEverySecond"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="29" lineNum="29" parent="globals/NotificationManager" pc="268436622" symbol="callEverySecond"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="29" lineNum="31" parent="globals/NotificationManager" pc="268436638" symbol="callEverySecond"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="68" parent="globals/NotificationManager" pc="268436653" symbol="turnOffBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="69" parent="globals/NotificationManager" pc="268436655" symbol="turnOffBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="71" parent="globals/NotificationManager" pc="268436665" symbol="turnOffBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="40" parent="globals/NotificationManager" pc="268436674" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="41" parent="globals/NotificationManager" pc="268436677" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="42" parent="globals/NotificationManager" pc="268436700" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="43" parent="globals/NotificationManager" pc="268436710" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="44" parent="globals/NotificationManager" pc="268436716" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="48" parent="globals/NotificationManager" pc="268436738" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="49" parent="globals/NotificationManager" pc="268436766" symbol="triggerCallbacks"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="74" parent="globals/NotificationManager" pc="268436777" symbol="tryToggleBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="76" parent="globals/NotificationManager" pc="268436780" symbol="tryToggleBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="77" parent="globals/NotificationManager" pc="268436801" symbol="tryToggleBacklight"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="22" parent="globals/NotificationManager" pc="268436818" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="23" parent="globals/NotificationManager" pc="268436820" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="24" parent="globals/NotificationManager" pc="268436849" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="34" lineNum="35" parent="globals/NotificationManager" pc="268436881" symbol="removeCallback"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="34" lineNum="36" parent="globals/NotificationManager" pc="268436883" symbol="removeCallback"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="54" parent="globals/NotificationManager" pc="268436900" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="55" parent="globals/NotificationManager" pc="268436903" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="56" parent="globals/NotificationManager" pc="268436918" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="57" parent="globals/NotificationManager" pc="268436959" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="60" parent="globals/NotificationManager" pc="268436977" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="61" parent="globals/NotificationManager" pc="268436982" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="63" parent="globals/NotificationManager" pc="268436992" symbol="callAttention"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="166" parent="globals/BisGleichView" pc="268437017" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="167" parent="globals/BisGleichView" pc="268437020" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="168" parent="globals/BisGleichView" pc="268437027" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="169" parent="globals/BisGleichView" pc="268437034" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="131" parent="globals/BisGleichView" pc="268437078" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="132" parent="globals/BisGleichView" pc="268437081" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="134" parent="globals/BisGleichView" pc="268437093" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="135" parent="globals/BisGleichView" pc="268437101" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="137" parent="globals/BisGleichView" pc="268437176" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="138" parent="globals/BisGleichView" pc="268437203" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="140" parent="globals/BisGleichView" pc="268437233" symbol="updateTimeOfTheDayElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="45" parent="globals/BisGleichView" pc="268437311" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="46" parent="globals/BisGleichView" pc="268437314" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="47" parent="globals/BisGleichView" pc="268437333" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="50" parent="globals/BisGleichView" pc="268437352" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="51" parent="globals/BisGleichView" pc="268437365" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="54" parent="globals/BisGleichView" pc="268437376" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="55" parent="globals/BisGleichView" pc="268437389" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="57" parent="globals/BisGleichView" pc="268437400" symbol="onShow"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="25" parent="globals/BisGleichView" pc="268437408" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="26" parent="globals/BisGleichView" pc="268437411" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="27" parent="globals/BisGleichView" pc="268437444" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="28" parent="globals/BisGleichView" pc="268437456" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="30" parent="globals/BisGleichView" pc="268437469" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="31" parent="globals/BisGleichView" pc="268437489" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="32" parent="globals/BisGleichView" pc="268437509" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="33" parent="globals/BisGleichView" pc="268437529" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="34" parent="globals/BisGleichView" pc="268437549" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="37" parent="globals/BisGleichView" pc="268437569" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="39" parent="globals/BisGleichView" pc="268437576" symbol="onLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="97" parent="globals/BisGleichView" pc="268437604" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="98" parent="globals/BisGleichView" pc="268437607" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="99" parent="globals/BisGleichView" pc="268437623" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="102" parent="globals/BisGleichView" pc="268437627" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="103" parent="globals/BisGleichView" pc="268437650" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="104" parent="globals/BisGleichView" pc="268437674" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="106" parent="globals/BisGleichView" pc="268437690" symbol="updateIntervalsValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="109" parent="globals/BisGleichView" pc="268437702" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="110" parent="globals/BisGleichView" pc="268437705" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="111" parent="globals/BisGleichView" pc="268437714" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="114" parent="globals/BisGleichView" pc="268437718" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="115" parent="globals/BisGleichView" pc="268437730" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="117" parent="globals/BisGleichView" pc="268437746" symbol="updateCurrentTimerValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="73" parent="globals/BisGleichView" pc="268437758" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="74" parent="globals/BisGleichView" pc="268437761" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="75" parent="globals/BisGleichView" pc="268437773" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="76" parent="globals/BisGleichView" pc="268437785" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="77" parent="globals/BisGleichView" pc="268437800" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="78" parent="globals/BisGleichView" pc="268437804" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="79" parent="globals/BisGleichView" pc="268437808" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="81" parent="globals/BisGleichView" pc="268437815" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="82" parent="globals/BisGleichView" pc="268437831" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="83" parent="globals/BisGleichView" pc="268437838" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="84" parent="globals/BisGleichView" pc="268437854" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="85" parent="globals/BisGleichView" pc="268437876" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="88" parent="globals/BisGleichView" pc="268437898" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="89" parent="globals/BisGleichView" pc="268437913" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="92" parent="globals/BisGleichView" pc="268437929" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="93" parent="globals/BisGleichView" pc="268437946" symbol="drawDotsLeftMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="144" parent="globals/BisGleichView" pc="268437973" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="145" parent="globals/BisGleichView" pc="268437976" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="147" parent="globals/BisGleichView" pc="268437988" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="150" parent="globals/BisGleichView" pc="268438001" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="151" parent="globals/BisGleichView" pc="268438033" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="152" parent="globals/BisGleichView" pc="268438044" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="153" parent="globals/BisGleichView" pc="268438055" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="155" parent="globals/BisGleichView" pc="268438062" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="156" parent="globals/BisGleichView" pc="268438070" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="158" parent="globals/BisGleichView" pc="268438143" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="159" parent="globals/BisGleichView" pc="268438166" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="161" parent="globals/BisGleichView" pc="268438188" symbol="updateTargetTimeElement"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="17" parent="globals/BisGleichView" pc="268438256" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="18" parent="globals/BisGleichView" pc="268438258" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="19" parent="globals/BisGleichView" pc="268438280" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="20" parent="globals/BisGleichView" pc="268438289" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="21" parent="globals/BisGleichView" pc="268438311" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="61" parent="globals/BisGleichView" pc="268438324" symbol="onUpdate"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="63" parent="globals/BisGleichView" pc="268438326" symbol="onUpdate"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="64" parent="globals/BisGleichView" pc="268438342" symbol="onUpdate"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="120" parent="globals/BisGleichView" pc="268438354" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="121" parent="globals/BisGleichView" pc="268438357" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="123" parent="globals/BisGleichView" pc="268438364" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="124" parent="globals/BisGleichView" pc="268438377" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="125" parent="globals/BisGleichView" pc="268438384" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="128" parent="globals/BisGleichView" pc="268438394" symbol="updateDynamicData"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="48" lineNum="25" parent="globals/ActivityManager" pc="268438406" symbol="getActivityStatus"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="48" lineNum="26" parent="globals/ActivityManager" pc="268438408" symbol="getActivityStatus"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="49" lineNum="17" parent="globals/ActivityManager" pc="268438414" symbol="pauseActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="49" lineNum="18" parent="globals/ActivityManager" pc="268438416" symbol="pauseActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="51" lineNum="6" parent="globals/ActivityManager" pc="268438426" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="51" lineNum="7" parent="globals/ActivityManager" pc="268438428" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="51" lineNum="8" parent="globals/ActivityManager" pc="268438437" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="51" lineNum="10" parent="globals/ActivityManager" pc="268438465" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="21" parent="globals/ActivityManager" pc="268438471" symbol="stopActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="22" parent="globals/ActivityManager" pc="268438473" symbol="stopActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="53" lineNum="13" parent="globals/ActivityManager" pc="268438483" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="53" lineNum="14" parent="globals/ActivityManager" pc="268438485" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="17" parent="globals/MainMenu" pc="268438494" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="18" parent="globals/MainMenu" pc="268438497" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="19" parent="globals/MainMenu" pc="268438499" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="23" parent="globals/MainMenu" pc="268438518" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="20" parent="globals/MainMenu" pc="268438540" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="21" parent="globals/MainMenu" pc="268438555" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="22" parent="globals/MainMenu" pc="268438580" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="24" parent="globals/MainMenu" pc="268438583" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="25" parent="globals/MainMenu" pc="268438598" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="54" lineNum="26" parent="globals/MainMenu" pc="268438624" symbol="updateSubLabel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="7" parent="globals/MainMenu" pc="268438629" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="8" parent="globals/MainMenu" pc="268438631" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="9" parent="globals/MainMenu" pc="268438640" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="30" parent="globals/MainMenu" pc="268438651" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="31" parent="globals/MainMenu" pc="268438654" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="33" parent="globals/MainMenu" pc="268438684" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="34" parent="globals/MainMenu" pc="268438713" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="36" parent="globals/MainMenu" pc="268438742" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="37" parent="globals/MainMenu" pc="268438791" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="13" parent="globals/MainMenu" pc="268438841" symbol="getView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="14" parent="globals/MainMenu" pc="268438843" symbol="getView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="58" lineNum="14" parent="globals/BisGleichApp" pc="268438849" symbol="onStart"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="58" lineNum="15" parent="globals/BisGleichApp" pc="268438851" symbol="onStart"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="23" parent="globals/BisGleichApp" pc="268438870" symbol="getInitialView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="24" parent="globals/BisGleichApp" pc="268438873" symbol="getInitialView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="25" parent="globals/BisGleichApp" pc="268438897" symbol="getInitialView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="26" parent="globals/BisGleichApp" pc="268438928" symbol="getInitialView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="9" parent="globals/BisGleichApp" pc="268438973" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="10" parent="globals/BisGleichApp" pc="268438975" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="61" lineNum="30" parent="globals/BisGleichApp" pc="268438988" symbol="getView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="61" lineNum="31" parent="globals/BisGleichApp" pc="268438990" symbol="getView"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="62" lineNum="19" parent="globals/BisGleichApp" pc="268438996" symbol="onStop"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="63" lineNum="56" parent="globals/NumberPickerDelegate" pc="268438999" symbol="onCancel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="63" lineNum="57" parent="globals/NumberPickerDelegate" pc="268439001" symbol="onCancel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="63" lineNum="58" parent="globals/NumberPickerDelegate" pc="268439015" symbol="onCancel"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="49" parent="globals/NumberPickerDelegate" pc="268439017" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="50" parent="globals/NumberPickerDelegate" pc="268439019" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="51" parent="globals/NumberPickerDelegate" pc="268439028" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="64" parent="globals/NumberPickerDelegate" pc="268439041" symbol="onAccept"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="65" parent="globals/NumberPickerDelegate" pc="268439043" symbol="onAccept"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="66" parent="globals/NumberPickerDelegate" pc="268439061" symbol="onAccept"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="67" parent="globals/NumberPickerDelegate" pc="268439075" symbol="onAccept"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="66" lineNum="38" parent="globals/ProgressManager" pc="268439077" symbol="getCurrentDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="66" lineNum="39" parent="globals/ProgressManager" pc="268439079" symbol="getCurrentDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="67" lineNum="33" parent="globals/ProgressManager" pc="268439085" symbol="setCurrentDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="67" lineNum="34" parent="globals/ProgressManager" pc="268439087" symbol="setCurrentDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="67" lineNum="35" parent="globals/ProgressManager" pc="268439113" symbol="setCurrentDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="8" parent="globals/ProgressManager" pc="268439123" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="9" parent="globals/ProgressManager" pc="268439125" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="10" parent="globals/ProgressManager" pc="268439150" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="12" parent="globals/ProgressManager" pc="268439162" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="42" parent="globals/ProgressManager" pc="268439188" symbol="getIntervalDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="43" parent="globals/ProgressManager" pc="268439190" symbol="getIntervalDurationInSec"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="46" parent="globals/ProgressManager" pc="268439196" symbol="getCurrentIntervalsCount"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="47" parent="globals/ProgressManager" pc="268439199" symbol="getCurrentIntervalsCount"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="49" parent="globals/ProgressManager" pc="268439229" symbol="getCurrentIntervalsCount"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="50" parent="globals/ProgressManager" pc="268439253" symbol="getCurrentIntervalsCount"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="72" lineNum="19" parent="globals/ProgressManager" pc="268439268" symbol="reset"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="72" lineNum="20" parent="globals/ProgressManager" pc="268439270" symbol="reset"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="72" lineNum="21" parent="globals/ProgressManager" pc="268439277" symbol="reset"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="73" lineNum="15" parent="globals/ProgressManager" pc="268439326" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="73" lineNum="16" parent="globals/ProgressManager" pc="268439328" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="26" parent="globals/ProgressManager" pc="268439336" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="27" parent="globals/ProgressManager" pc="268439338" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="28" parent="globals/ProgressManager" pc="268439347" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="30" parent="globals/ProgressManager" pc="268439375" symbol="getInstance"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="76" lineNum="26" parent="globals/BisGleichDelegate" pc="268439381" symbol="openMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="76" lineNum="27" parent="globals/BisGleichDelegate" pc="268439383" symbol="openMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="76" lineNum="29" parent="globals/BisGleichDelegate" pc="268439448" symbol="openMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="76" lineNum="30" parent="globals/BisGleichDelegate" pc="268439466" symbol="openMenu"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="73" parent="globals/BisGleichDelegate" pc="268439468" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="75" parent="globals/BisGleichDelegate" pc="268439470" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="76" parent="globals/BisGleichDelegate" pc="268439488" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="77" parent="globals/BisGleichDelegate" pc="268439506" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="79" parent="globals/BisGleichDelegate" pc="268439524" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="80" parent="globals/BisGleichDelegate" pc="268439543" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="82" parent="globals/BisGleichDelegate" pc="268439562" symbol="startActivity"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="46" parent="globals/BisGleichDelegate" pc="268439570" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="47" parent="globals/BisGleichDelegate" pc="268439573" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="48" parent="globals/BisGleichDelegate" pc="268439586" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="49" parent="globals/BisGleichDelegate" pc="268439593" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="50" parent="globals/BisGleichDelegate" pc="268439605" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="51" parent="globals/BisGleichDelegate" pc="268439617" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="54" parent="globals/BisGleichDelegate" pc="268439622" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="55" parent="globals/BisGleichDelegate" pc="268439630" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="56" parent="globals/BisGleichDelegate" pc="268439642" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="57" parent="globals/BisGleichDelegate" pc="268439649" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="60" parent="globals/BisGleichDelegate" pc="268439654" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="61" parent="globals/BisGleichDelegate" pc="268439662" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="62" parent="globals/BisGleichDelegate" pc="268439674" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="63" parent="globals/BisGleichDelegate" pc="268439681" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="66" parent="globals/BisGleichDelegate" pc="268439686" symbol="onSelect"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="112" parent="globals/BisGleichDelegate" pc="268439688" symbol="onBack"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="113" parent="globals/BisGleichDelegate" pc="268439690" symbol="onBack"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="116" parent="globals/BisGleichDelegate" pc="268439708" symbol="onBack"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="117" parent="globals/BisGleichDelegate" pc="268439723" symbol="onBack"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="85" parent="globals/BisGleichDelegate" pc="268439725" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="86" parent="globals/BisGleichDelegate" pc="268439727" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="87" parent="globals/BisGleichDelegate" pc="268439737" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="88" parent="globals/BisGleichDelegate" pc="268439755" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="89" parent="globals/BisGleichDelegate" pc="268439767" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="90" parent="globals/BisGleichDelegate" pc="268439779" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="91" parent="globals/BisGleichDelegate" pc="268439796" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="93" parent="globals/BisGleichDelegate" pc="268439811" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="96" parent="globals/BisGleichDelegate" pc="268439815" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="97" parent="globals/BisGleichDelegate" pc="268439825" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="98" parent="globals/BisGleichDelegate" pc="268439840" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="99" parent="globals/BisGleichDelegate" pc="268439864" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="100" parent="globals/BisGleichDelegate" pc="268439882" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="101" parent="globals/BisGleichDelegate" pc="268439898" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="105" parent="globals/BisGleichDelegate" pc="268439920" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="106" parent="globals/BisGleichDelegate" pc="268439935" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="107" parent="globals/BisGleichDelegate" pc="268439950" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="108" parent="globals/BisGleichDelegate" pc="268439969" symbol="updateCountdownValue"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="69" parent="globals/BisGleichDelegate" pc="268439989" symbol="startTimer"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="70" parent="globals/BisGleichDelegate" pc="268439991" symbol="startTimer"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="17" parent="globals/BisGleichDelegate" pc="268440023" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="18" parent="globals/BisGleichDelegate" pc="268440025" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="19" parent="globals/BisGleichDelegate" pc="268440054" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="20" parent="globals/BisGleichDelegate" pc="268440076" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="21" parent="globals/BisGleichDelegate" pc="268440085" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="22" parent="globals/BisGleichDelegate" pc="268440094" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="23" parent="globals/BisGleichDelegate" pc="268440116" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="35" parent="globals/BisGleichDelegate" pc="268440129" symbol="onKeyPressed"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="36" parent="globals/BisGleichDelegate" pc="268440131" symbol="onKeyPressed"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="38" parent="globals/BisGleichDelegate" pc="268440185" symbol="onKeyPressed"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="39" parent="globals/BisGleichDelegate" pc="268440198" symbol="onKeyPressed"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="43" parent="globals/BisGleichDelegate" pc="268440208" symbol="onKeyPressed"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="13" parent="globals/Rez/Layouts" pc="268440210" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="14" parent="globals/Rez/Layouts" pc="268440221" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="16" parent="globals/Rez/Layouts" pc="268440309" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="18" parent="globals/Rez/Layouts" pc="268440414" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="20" parent="globals/Rez/Layouts" pc="268440503" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="22" parent="globals/Rez/Layouts" pc="268440591" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="84" lineNum="24" parent="globals/Rez/Layouts" pc="268440679" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="85" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268440709" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="86" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268440721" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="86" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268440723" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="86" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268440735" symbol="initialize"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="86" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268440780" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="68" parent="globals/NotificationManager" pc="268436641" symbol="turnOffBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="69" parent="globals/NotificationManager" pc="268436643" symbol="turnOffBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="30" lineNum="71" parent="globals/NotificationManager" pc="268436653" symbol="turnOffBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="38" parent="globals/NotificationManager" pc="268436662" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="39" parent="globals/NotificationManager" pc="268436665" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="40" parent="globals/NotificationManager" pc="268436678" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="41" parent="globals/NotificationManager" pc="268436694" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="42" parent="globals/NotificationManager" pc="268436701" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="43" parent="globals/NotificationManager" pc="268436718" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="44" parent="globals/NotificationManager" pc="268436724" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="48" parent="globals/NotificationManager" pc="268436746" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="31" lineNum="49" parent="globals/NotificationManager" pc="268436774" symbol="triggerCallbacks"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="74" parent="globals/NotificationManager" pc="268436785" symbol="tryToggleBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="76" parent="globals/NotificationManager" pc="268436788" symbol="tryToggleBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="32" lineNum="77" parent="globals/NotificationManager" pc="268436809" symbol="tryToggleBacklight"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="22" parent="globals/NotificationManager" pc="268436826" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="23" parent="globals/NotificationManager" pc="268436828" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="33" lineNum="24" parent="globals/NotificationManager" pc="268436857" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="34" lineNum="33" parent="globals/NotificationManager" pc="268436889" symbol="removeCallback"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="34" lineNum="34" parent="globals/NotificationManager" pc="268436891" symbol="removeCallback"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="54" parent="globals/NotificationManager" pc="268436908" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="55" parent="globals/NotificationManager" pc="268436911" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="56" parent="globals/NotificationManager" pc="268436926" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="57" parent="globals/NotificationManager" pc="268436967" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="60" parent="globals/NotificationManager" pc="268436985" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="61" parent="globals/NotificationManager" pc="268436990" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" id="35" lineNum="63" parent="globals/NotificationManager" pc="268437000" symbol="callAttention"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="171" parent="globals/BisGleichView" pc="268437025" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="172" parent="globals/BisGleichView" pc="268437028" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="173" parent="globals/BisGleichView" pc="268437035" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="36" lineNum="174" parent="globals/BisGleichView" pc="268437042" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="137" parent="globals/BisGleichView" pc="268437086" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="138" parent="globals/BisGleichView" pc="268437089" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="140" parent="globals/BisGleichView" pc="268437101" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="141" parent="globals/BisGleichView" pc="268437109" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="143" parent="globals/BisGleichView" pc="268437184" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="144" parent="globals/BisGleichView" pc="268437211" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="37" lineNum="145" parent="globals/BisGleichView" pc="268437241" symbol="updateTimeOfTheDayElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="45" parent="globals/BisGleichView" pc="268437319" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="46" parent="globals/BisGleichView" pc="268437322" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="47" parent="globals/BisGleichView" pc="268437341" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="50" parent="globals/BisGleichView" pc="268437360" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="51" parent="globals/BisGleichView" pc="268437373" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="54" parent="globals/BisGleichView" pc="268437384" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="55" parent="globals/BisGleichView" pc="268437397" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="38" lineNum="57" parent="globals/BisGleichView" pc="268437408" symbol="onShow"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="25" parent="globals/BisGleichView" pc="268437416" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="26" parent="globals/BisGleichView" pc="268437419" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="27" parent="globals/BisGleichView" pc="268437452" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="28" parent="globals/BisGleichView" pc="268437464" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="30" parent="globals/BisGleichView" pc="268437477" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="31" parent="globals/BisGleichView" pc="268437497" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="32" parent="globals/BisGleichView" pc="268437517" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="33" parent="globals/BisGleichView" pc="268437537" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="34" parent="globals/BisGleichView" pc="268437557" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="37" parent="globals/BisGleichView" pc="268437577" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="39" lineNum="39" parent="globals/BisGleichView" pc="268437584" symbol="onLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="103" parent="globals/BisGleichView" pc="268437617" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="104" parent="globals/BisGleichView" pc="268437620" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="105" parent="globals/BisGleichView" pc="268437636" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="108" parent="globals/BisGleichView" pc="268437640" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="109" parent="globals/BisGleichView" pc="268437663" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="110" parent="globals/BisGleichView" pc="268437687" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="40" lineNum="112" parent="globals/BisGleichView" pc="268437703" symbol="updateIntervalsValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="115" parent="globals/BisGleichView" pc="268437715" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="116" parent="globals/BisGleichView" pc="268437718" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="117" parent="globals/BisGleichView" pc="268437727" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="120" parent="globals/BisGleichView" pc="268437731" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="121" parent="globals/BisGleichView" pc="268437743" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="41" lineNum="123" parent="globals/BisGleichView" pc="268437759" symbol="updateCurrentTimerValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="79" parent="globals/BisGleichView" pc="268437771" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="80" parent="globals/BisGleichView" pc="268437774" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="81" parent="globals/BisGleichView" pc="268437786" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="82" parent="globals/BisGleichView" pc="268437798" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="83" parent="globals/BisGleichView" pc="268437813" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="85" parent="globals/BisGleichView" pc="268437817" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="87" parent="globals/BisGleichView" pc="268437824" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="88" parent="globals/BisGleichView" pc="268437840" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="89" parent="globals/BisGleichView" pc="268437847" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="90" parent="globals/BisGleichView" pc="268437863" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="91" parent="globals/BisGleichView" pc="268437885" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="98" parent="globals/BisGleichView" pc="268437907" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="42" lineNum="99" parent="globals/BisGleichView" pc="268437924" symbol="drawDotsLeftMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="149" parent="globals/BisGleichView" pc="268437951" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="150" parent="globals/BisGleichView" pc="268437954" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="152" parent="globals/BisGleichView" pc="268437966" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="155" parent="globals/BisGleichView" pc="268437979" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="156" parent="globals/BisGleichView" pc="268438011" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="157" parent="globals/BisGleichView" pc="268438022" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="158" parent="globals/BisGleichView" pc="268438033" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="160" parent="globals/BisGleichView" pc="268438040" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="161" parent="globals/BisGleichView" pc="268438048" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="163" parent="globals/BisGleichView" pc="268438121" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="164" parent="globals/BisGleichView" pc="268438144" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="43" lineNum="166" parent="globals/BisGleichView" pc="268438166" symbol="updateTargetTimeElement"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="17" parent="globals/BisGleichView" pc="268438234" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="18" parent="globals/BisGleichView" pc="268438236" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="19" parent="globals/BisGleichView" pc="268438258" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="20" parent="globals/BisGleichView" pc="268438267" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="44" lineNum="21" parent="globals/BisGleichView" pc="268438289" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="61" parent="globals/BisGleichView" pc="268438302" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="63" parent="globals/BisGleichView" pc="268438305" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="64" parent="globals/BisGleichView" pc="268438321" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="66" parent="globals/BisGleichView" pc="268438332" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="67" parent="globals/BisGleichView" pc="268438345" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="68" parent="globals/BisGleichView" pc="268438353" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="46" lineNum="69" parent="globals/BisGleichView" pc="268438372" symbol="onUpdate"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="126" parent="globals/BisGleichView" pc="268438395" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="127" parent="globals/BisGleichView" pc="268438398" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="129" parent="globals/BisGleichView" pc="268438405" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="130" parent="globals/BisGleichView" pc="268438418" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="131" parent="globals/BisGleichView" pc="268438425" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="47" lineNum="134" parent="globals/BisGleichView" pc="268438435" symbol="updateDynamicData"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="48" lineNum="25" parent="globals/ActivityManager" pc="268438447" symbol="overtimeActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="48" lineNum="26" parent="globals/ActivityManager" pc="268438449" symbol="overtimeActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="49" lineNum="29" parent="globals/ActivityManager" pc="268438459" symbol="getActivityStatus"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="49" lineNum="30" parent="globals/ActivityManager" pc="268438461" symbol="getActivityStatus"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="50" lineNum="17" parent="globals/ActivityManager" pc="268438467" symbol="pauseActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="50" lineNum="18" parent="globals/ActivityManager" pc="268438469" symbol="pauseActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="6" parent="globals/ActivityManager" pc="268438479" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="7" parent="globals/ActivityManager" pc="268438481" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="8" parent="globals/ActivityManager" pc="268438490" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="52" lineNum="10" parent="globals/ActivityManager" pc="268438518" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="53" lineNum="21" parent="globals/ActivityManager" pc="268438524" symbol="stopActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="53" lineNum="22" parent="globals/ActivityManager" pc="268438526" symbol="stopActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="54" lineNum="13" parent="globals/ActivityManager" pc="268438536" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" id="54" lineNum="14" parent="globals/ActivityManager" pc="268438538" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="17" parent="globals/MainMenu" pc="268438547" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="18" parent="globals/MainMenu" pc="268438550" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="19" parent="globals/MainMenu" pc="268438552" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="23" parent="globals/MainMenu" pc="268438571" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="20" parent="globals/MainMenu" pc="268438593" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="21" parent="globals/MainMenu" pc="268438608" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="22" parent="globals/MainMenu" pc="268438633" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="24" parent="globals/MainMenu" pc="268438636" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="25" parent="globals/MainMenu" pc="268438651" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="55" lineNum="26" parent="globals/MainMenu" pc="268438677" symbol="updateSubLabel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="7" parent="globals/MainMenu" pc="268438682" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="8" parent="globals/MainMenu" pc="268438684" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="56" lineNum="9" parent="globals/MainMenu" pc="268438693" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="30" parent="globals/MainMenu" pc="268438704" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="31" parent="globals/MainMenu" pc="268438707" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="33" parent="globals/MainMenu" pc="268438737" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="34" parent="globals/MainMenu" pc="268438766" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="36" parent="globals/MainMenu" pc="268438795" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="57" lineNum="37" parent="globals/MainMenu" pc="268438844" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="58" lineNum="13" parent="globals/MainMenu" pc="268438894" symbol="getView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" id="58" lineNum="14" parent="globals/MainMenu" pc="268438896" symbol="getView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="14" parent="globals/BisGleichApp" pc="268438902" symbol="onStart"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="59" lineNum="15" parent="globals/BisGleichApp" pc="268438904" symbol="onStart"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="23" parent="globals/BisGleichApp" pc="268438923" symbol="getInitialView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="24" parent="globals/BisGleichApp" pc="268438926" symbol="getInitialView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="25" parent="globals/BisGleichApp" pc="268438950" symbol="getInitialView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="60" lineNum="26" parent="globals/BisGleichApp" pc="268438981" symbol="getInitialView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="61" lineNum="9" parent="globals/BisGleichApp" pc="268439026" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="61" lineNum="10" parent="globals/BisGleichApp" pc="268439028" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="62" lineNum="30" parent="globals/BisGleichApp" pc="268439041" symbol="getView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="62" lineNum="31" parent="globals/BisGleichApp" pc="268439043" symbol="getView"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichApp.mc" id="63" lineNum="19" parent="globals/BisGleichApp" pc="268439049" symbol="onStop"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="56" parent="globals/NumberPickerDelegate" pc="268439052" symbol="onCancel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="57" parent="globals/NumberPickerDelegate" pc="268439054" symbol="onCancel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="64" lineNum="58" parent="globals/NumberPickerDelegate" pc="268439068" symbol="onCancel"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="49" parent="globals/NumberPickerDelegate" pc="268439070" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="50" parent="globals/NumberPickerDelegate" pc="268439072" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="65" lineNum="51" parent="globals/NumberPickerDelegate" pc="268439081" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="66" lineNum="64" parent="globals/NumberPickerDelegate" pc="268439094" symbol="onAccept"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="66" lineNum="65" parent="globals/NumberPickerDelegate" pc="268439096" symbol="onAccept"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="66" lineNum="66" parent="globals/NumberPickerDelegate" pc="268439114" symbol="onAccept"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" id="66" lineNum="67" parent="globals/NumberPickerDelegate" pc="268439128" symbol="onAccept"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="67" lineNum="38" parent="globals/ProgressManager" pc="268439130" symbol="getCurrentDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="67" lineNum="39" parent="globals/ProgressManager" pc="268439132" symbol="getCurrentDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="33" parent="globals/ProgressManager" pc="268439138" symbol="setCurrentDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="34" parent="globals/ProgressManager" pc="268439140" symbol="setCurrentDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="68" lineNum="35" parent="globals/ProgressManager" pc="268439166" symbol="setCurrentDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="8" parent="globals/ProgressManager" pc="268439176" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="9" parent="globals/ProgressManager" pc="268439178" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="10" parent="globals/ProgressManager" pc="268439203" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="69" lineNum="12" parent="globals/ProgressManager" pc="268439215" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="42" parent="globals/ProgressManager" pc="268439241" symbol="getIntervalDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="70" lineNum="43" parent="globals/ProgressManager" pc="268439243" symbol="getIntervalDurationInSec"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="71" lineNum="46" parent="globals/ProgressManager" pc="268439249" symbol="getCurrentIntervalsCount"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="71" lineNum="47" parent="globals/ProgressManager" pc="268439252" symbol="getCurrentIntervalsCount"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="71" lineNum="49" parent="globals/ProgressManager" pc="268439282" symbol="getCurrentIntervalsCount"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="71" lineNum="50" parent="globals/ProgressManager" pc="268439306" symbol="getCurrentIntervalsCount"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="73" lineNum="19" parent="globals/ProgressManager" pc="268439321" symbol="reset"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="73" lineNum="20" parent="globals/ProgressManager" pc="268439323" symbol="reset"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="73" lineNum="21" parent="globals/ProgressManager" pc="268439330" symbol="reset"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="15" parent="globals/ProgressManager" pc="268439379" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="74" lineNum="16" parent="globals/ProgressManager" pc="268439381" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="75" lineNum="26" parent="globals/ProgressManager" pc="268439389" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="75" lineNum="27" parent="globals/ProgressManager" pc="268439391" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="75" lineNum="28" parent="globals/ProgressManager" pc="268439400" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ProgressManager.mc" id="75" lineNum="30" parent="globals/ProgressManager" pc="268439428" symbol="getInstance"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="26" parent="globals/BisGleichDelegate" pc="268439434" symbol="openMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="27" parent="globals/BisGleichDelegate" pc="268439436" symbol="openMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="29" parent="globals/BisGleichDelegate" pc="268439501" symbol="openMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="77" lineNum="30" parent="globals/BisGleichDelegate" pc="268439519" symbol="openMenu"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="64" parent="globals/BisGleichDelegate" pc="268439521" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="66" parent="globals/BisGleichDelegate" pc="268439523" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="67" parent="globals/BisGleichDelegate" pc="268439541" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="68" parent="globals/BisGleichDelegate" pc="268439559" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="70" parent="globals/BisGleichDelegate" pc="268439577" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="71" parent="globals/BisGleichDelegate" pc="268439596" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="78" lineNum="73" parent="globals/BisGleichDelegate" pc="268439615" symbol="startActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="46" parent="globals/BisGleichDelegate" pc="268439623" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="47" parent="globals/BisGleichDelegate" pc="268439626" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="48" parent="globals/BisGleichDelegate" pc="268439639" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="49" parent="globals/BisGleichDelegate" pc="268439646" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="50" parent="globals/BisGleichDelegate" pc="268439658" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="53" parent="globals/BisGleichDelegate" pc="268439680" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="54" parent="globals/BisGleichDelegate" pc="268439688" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="55" parent="globals/BisGleichDelegate" pc="268439700" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="56" parent="globals/BisGleichDelegate" pc="268439710" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="57" parent="globals/BisGleichDelegate" pc="268439718" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="58" parent="globals/BisGleichDelegate" pc="268439730" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="79" lineNum="61" parent="globals/BisGleichDelegate" pc="268439740" symbol="onSelect"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="114" parent="globals/BisGleichDelegate" pc="268439742" symbol="startPostActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="115" parent="globals/BisGleichDelegate" pc="268439744" symbol="startPostActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="80" lineNum="116" parent="globals/BisGleichDelegate" pc="268439759" symbol="startPostActivity"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="119" parent="globals/BisGleichDelegate" pc="268439779" symbol="onBack"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="120" parent="globals/BisGleichDelegate" pc="268439781" symbol="onBack"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="123" parent="globals/BisGleichDelegate" pc="268439799" symbol="onBack"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="81" lineNum="124" parent="globals/BisGleichDelegate" pc="268439814" symbol="onBack"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="82" parent="globals/BisGleichDelegate" pc="268439816" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="83" parent="globals/BisGleichDelegate" pc="268439818" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="84" parent="globals/BisGleichDelegate" pc="268439828" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="85" parent="globals/BisGleichDelegate" pc="268439846" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="87" parent="globals/BisGleichDelegate" pc="268439865" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="88" parent="globals/BisGleichDelegate" pc="268439877" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="89" parent="globals/BisGleichDelegate" pc="268439894" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="91" parent="globals/BisGleichDelegate" pc="268439909" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="95" parent="globals/BisGleichDelegate" pc="268439941" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="98" parent="globals/BisGleichDelegate" pc="268439945" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="99" parent="globals/BisGleichDelegate" pc="268439955" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="100" parent="globals/BisGleichDelegate" pc="268439970" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="101" parent="globals/BisGleichDelegate" pc="268439994" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="102" parent="globals/BisGleichDelegate" pc="268440012" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="103" parent="globals/BisGleichDelegate" pc="268440028" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="107" parent="globals/BisGleichDelegate" pc="268440050" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="108" parent="globals/BisGleichDelegate" pc="268440065" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="109" parent="globals/BisGleichDelegate" pc="268440080" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="82" lineNum="110" parent="globals/BisGleichDelegate" pc="268440099" symbol="updateCountdownValue"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="76" parent="globals/BisGleichDelegate" pc="268440119" symbol="startTimer"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="83" lineNum="77" parent="globals/BisGleichDelegate" pc="268440121" symbol="startTimer"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="17" parent="globals/BisGleichDelegate" pc="268440154" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="18" parent="globals/BisGleichDelegate" pc="268440156" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="19" parent="globals/BisGleichDelegate" pc="268440185" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="20" parent="globals/BisGleichDelegate" pc="268440207" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="21" parent="globals/BisGleichDelegate" pc="268440216" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="22" parent="globals/BisGleichDelegate" pc="268440225" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="84" lineNum="23" parent="globals/BisGleichDelegate" pc="268440247" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="85" lineNum="35" parent="globals/BisGleichDelegate" pc="268440260" symbol="onKeyPressed"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="85" lineNum="36" parent="globals/BisGleichDelegate" pc="268440262" symbol="onKeyPressed"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="85" lineNum="38" parent="globals/BisGleichDelegate" pc="268440316" symbol="onKeyPressed"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="85" lineNum="39" parent="globals/BisGleichDelegate" pc="268440329" symbol="onKeyPressed"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" id="85" lineNum="43" parent="globals/BisGleichDelegate" pc="268440339" symbol="onKeyPressed"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="13" parent="globals/Rez/Layouts" pc="268440341" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="14" parent="globals/Rez/Layouts" pc="268440352" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="16" parent="globals/Rez/Layouts" pc="268440440" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="18" parent="globals/Rez/Layouts" pc="268440545" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="20" parent="globals/Rez/Layouts" pc="268440634" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="22" parent="globals/Rez/Layouts" pc="268440722" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="86" lineNum="24" parent="globals/Rez/Layouts" pc="268440810" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="87" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268440840" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="88" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268440852" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="88" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268440854" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="88" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268440866" symbol="initialize"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4432-00/source/Rez.mcgen" id="88" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268440911" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389626" method="true" symbol="onAccept"/>
         <entry id="15" object="true" symbol="BisGleichApp"/>
         <entry id="8389346" symbol="text"/>
-        <entry id="95" method="true" symbol="openMenu"/>
+        <entry id="96" method="true" symbol="openMenu"/>
         <entry id="23" object="true" symbol="TimeDurationsStorage"/>
         <entry id="46" method="true" symbol="tryToggleBacklight"/>
-        <entry field="true" id="88" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentIntervalDuration&gt;"/>
+        <entry field="true" id="89" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentIntervalDuration&gt;"/>
         <entry id="29" method="true" symbol="updateIntervalTimeInMin"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="79" symbol="&lt;globals/ProgressManager/&lt;&gt;_totalDurationInSec&gt;"/>
+        <entry field="true" id="80" symbol="&lt;globals/ProgressManager/&lt;&gt;_totalDurationInSec&gt;"/>
         <entry id="9" module="true" symbol="globals/Rez/Menus"/>
         <entry id="35" method="true" symbol="getTotalTimeInMinDuration"/>
         <entry id="65" method="true" symbol="updateTimeOfTheDayElement"/>
         <entry id="60" method="true" symbol="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;"/>
-        <entry field="true" id="78" symbol="&lt;globals/ProgressManager/&lt;&gt;_intervalDurationInSec&gt;"/>
-        <entry id="99" method="true" symbol="MainLayout"/>
-        <entry field="true" id="93" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_timer&gt;"/>
+        <entry field="true" id="79" symbol="&lt;globals/ProgressManager/&lt;&gt;_intervalDurationInSec&gt;"/>
+        <entry id="101" method="true" symbol="MainLayout"/>
+        <entry field="true" id="94" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_timer&gt;"/>
         <entry field="true" id="55" symbol="&lt;globals/BisGleichView/&lt;&gt;_progressManager&gt;"/>
         <entry field="true" id="33" symbol="&lt;globals/NumberPickerFactory/&lt;&gt;_stop&gt;"/>
         <entry id="21" object="true" symbol="NumberPickerFactory"/>
         <entry field="true" id="66" symbol="&lt;globals/ActivityManager/&lt;&gt;_activityStatus&gt;"/>
         <entry id="8390424" module="true" symbol="Storage"/>
         <entry id="8389041" object="true" symbol="NumberPicker"/>
-        <entry id="83" method="true" symbol="getIntervalDurationInSec"/>
+        <entry id="84" method="true" symbol="getIntervalDurationInSec"/>
         <entry id="8389629" method="true" symbol="getValue"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="89" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentNumberOfIntervals&gt;"/>
+        <entry id="97" method="true" symbol="startPostActivity"/>
+        <entry field="true" id="90" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentNumberOfIntervals&gt;"/>
         <entry id="37" method="true" symbol="setTotalTimeInMinDuration"/>
-        <entry id="81" method="true" symbol="getCurrentIntervalsCount"/>
+        <entry id="82" method="true" symbol="getCurrentIntervalsCount"/>
         <entry id="8392382" method="true" symbol="reset"/>
-        <entry field="true" id="75" symbol="&lt;globals/BisGleichApp/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="76" symbol="&lt;globals/BisGleichApp/&lt;&gt;_view&gt;"/>
         <entry id="8389042" object="true" symbol="NumberPickerDelegate"/>
-        <entry field="true" id="100" symbol="AppName"/>
-        <entry id="97" method="true" symbol="updateCountdownValue"/>
-        <entry field="true" id="94" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="102" symbol="AppName"/>
+        <entry id="99" method="true" symbol="updateCountdownValue"/>
+        <entry field="true" id="95" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_view&gt;"/>
         <entry id="10" module="true" symbol="globals/Rez/Strings"/>
         <entry id="17" object="true" symbol="BisGleichView"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
         <entry id="43" method="true" symbol="callEverySecond"/>
         <entry id="6" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="103" symbol="prompt"/>
+        <entry field="true" id="105" symbol="prompt"/>
         <entry field="true" id="26" symbol="totalTimeKey"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
@@ -403,17 +409,17 @@
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry id="8389630" method="true" symbol="getSize"/>
-        <entry id="105" symbol="item_2"/>
-        <entry id="104" symbol="item_1"/>
+        <entry id="107" symbol="item_2"/>
+        <entry id="106" symbol="item_1"/>
         <entry id="49" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="8" module="true" symbol="globals/Rez/Layouts"/>
         <entry field="true" id="56" symbol="&lt;globals/BisGleichView/&lt;&gt;_targetTimeElement&gt;"/>
         <entry field="true" id="52" symbol="&lt;globals/BisGleichView/&lt;&gt;_intervalsLeftElement&gt;"/>
         <entry field="true" id="58" symbol="&lt;globals/BisGleichView/&lt;&gt;_timeOfTheDayElement&gt;"/>
-        <entry id="73" method="true" symbol="updateSubLabel"/>
+        <entry id="74" method="true" symbol="updateSubLabel"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="92" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_progressManager&gt;"/>
+        <entry field="true" id="93" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_progressManager&gt;"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="12" object="true" symbol="ActivityManager"/>
         <entry id="8389349" symbol="justification"/>
@@ -422,38 +428,38 @@
         <entry field="true" id="28" symbol="&lt;globals/MainMenuViewDelegate/&lt;&gt;_progressManager&gt;"/>
         <entry id="8389644" symbol="defaults"/>
         <entry id="45" method="true" symbol="triggerCallbacks"/>
-        <entry id="69" method="true" symbol="startActivity"/>
+        <entry id="70" method="true" symbol="startActivity"/>
         <entry id="5" module="true" symbol="globals/ProgressManager/&lt;statics&gt;"/>
         <entry id="7" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="18" object="true" symbol="MainMenu"/>
-        <entry id="68" method="true" symbol="pauseActivity"/>
-        <entry field="true" id="71" symbol="&lt;globals/ActivityManager/&lt;statics&gt;/&lt;&gt;_instance&gt;"/>
+        <entry id="69" method="true" symbol="pauseActivity"/>
+        <entry field="true" id="72" symbol="&lt;globals/ActivityManager/&lt;statics&gt;/&lt;&gt;_instance&gt;"/>
         <entry field="true" id="38" symbol="&lt;globals/NotificationManager/&lt;&gt;VIBE_DURATION&gt;"/>
         <entry field="true" id="57" symbol="&lt;globals/BisGleichView/&lt;&gt;_targetTimeLabelElement&gt;"/>
         <entry id="8389628" method="true" symbol="getDrawable"/>
         <entry id="24" method="true" symbol="getMainView"/>
-        <entry id="70" method="true" symbol="stopActivity"/>
+        <entry id="71" method="true" symbol="stopActivity"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry field="true" id="41" symbol="&lt;globals/NotificationManager/&lt;&gt;_turnOffBacklightAt&gt;"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
-        <entry field="true" id="86" symbol="&lt;globals/ProgressManager/&lt;statics&gt;/&lt;&gt;_instance&gt;"/>
+        <entry field="true" id="87" symbol="&lt;globals/ProgressManager/&lt;statics&gt;/&lt;&gt;_instance&gt;"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry field="true" id="50" symbol="&lt;globals/BisGleichView/&lt;&gt;_activityManager&gt;"/>
         <entry id="63" method="true" symbol="updateIntervalsValue"/>
-        <entry id="80" method="true" symbol="getCurrentDurationInSec"/>
+        <entry id="81" method="true" symbol="getCurrentDurationInSec"/>
         <entry id="59" method="true" symbol="drawDotsLeftMenu"/>
         <entry field="true" id="25" symbol="intervalTimeKey"/>
         <entry id="62" method="true" symbol="updateDynamicData"/>
         <entry id="47" method="true" symbol="turnOffBacklight"/>
         <entry id="3" module="true" symbol="globals/MainMenu/&lt;statics&gt;"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="98" symbol="LauncherIcon"/>
+        <entry field="true" id="100" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389889" method="true" symbol="getInstance"/>
         <entry field="true" id="27" symbol="&lt;globals/MainMenuViewDelegate/&lt;&gt;_mainMenuView&gt;"/>
-        <entry id="96" method="true" symbol="startTimer"/>
+        <entry id="98" method="true" symbol="startTimer"/>
         <entry id="42" method="true" symbol="callAttention"/>
         <entry id="64" method="true" symbol="updateTargetTimeElement"/>
         <entry id="8389350" module="true" symbol="globals"/>
@@ -463,11 +469,11 @@
         <entry id="19" object="true" symbol="MainMenuViewDelegate"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="36" method="true" symbol="setIntervalTimeInMinDuration"/>
-        <entry field="true" id="77" symbol="&lt;globals/ProgressManager/&lt;&gt;_currentDurationInSec&gt;"/>
-        <entry field="true" id="91" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_notificationManager&gt;"/>
+        <entry field="true" id="78" symbol="&lt;globals/ProgressManager/&lt;&gt;_currentDurationInSec&gt;"/>
+        <entry field="true" id="92" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_notificationManager&gt;"/>
         <entry id="8389541" method="true" symbol="onCancel"/>
-        <entry id="72" method="true" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
-        <entry field="true" id="90" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentTotalDuration&gt;"/>
+        <entry id="73" method="true" symbol="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;"/>
+        <entry field="true" id="91" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_currentTotalDuration&gt;"/>
         <entry id="13" object="true" symbol="ActivityStatus"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
@@ -478,8 +484,8 @@
         <entry field="true" id="54" symbol="&lt;globals/BisGleichView/&lt;&gt;_notificationManager&gt;"/>
         <entry id="44" method="true" symbol="removeCallback"/>
         <entry id="8392011" method="true" symbol="getIndex"/>
-        <entry id="85" method="true" symbol="setCurrentDurationInSec"/>
-        <entry id="84" method="true" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
+        <entry id="86" method="true" symbol="setCurrentDurationInSec"/>
+        <entry id="85" method="true" symbol="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
         <entry id="48" module="true" symbol="Layouts"/>
         <entry id="16" object="true" symbol="BisGleichDelegate"/>
@@ -489,20 +495,21 @@
         <entry id="22" object="true" symbol="ProgressManager"/>
         <entry field="true" id="40" symbol="&lt;globals/NotificationManager/&lt;&gt;_timer&gt;"/>
         <entry id="34" method="true" symbol="getIntervalTimeInMinDuration"/>
-        <entry field="true" id="74" symbol="&lt;globals/MainMenu/&lt;statics&gt;/&lt;&gt;_menu&gt;"/>
-        <entry field="true" id="87" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_activityManager&gt;"/>
+        <entry field="true" id="75" symbol="&lt;globals/MainMenu/&lt;statics&gt;/&lt;&gt;_menu&gt;"/>
+        <entry field="true" id="88" symbol="&lt;globals/BisGleichDelegate/&lt;&gt;_activityManager&gt;"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8391945" method="true" symbol="getView"/>
-        <entry id="82" method="true" symbol="getFinishTime"/>
+        <entry id="83" method="true" symbol="getFinishTime"/>
         <entry field="true" id="32" symbol="&lt;globals/NumberPickerFactory/&lt;&gt;_start&gt;"/>
+        <entry id="68" method="true" symbol="overtimeActivity"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
         <entry id="2" module="true" symbol="globals/ActivityManager/&lt;statics&gt;"/>
         <entry id="20" object="true" symbol="NotificationManager"/>
         <entry id="67" method="true" symbol="getActivityStatus"/>
-        <entry field="true" id="76" symbol="&lt;globals/NumberPickerDelegate/&lt;&gt;_callback&gt;"/>
-        <entry field="true" id="102" symbol="menu_label_2"/>
-        <entry field="true" id="101" symbol="menu_label_1"/>
+        <entry field="true" id="77" symbol="&lt;globals/NumberPickerDelegate/&lt;&gt;_callback&gt;"/>
+        <entry field="true" id="104" symbol="menu_label_2"/>
+        <entry field="true" id="103" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435718" name="value" stackId="1" startPc="268435663"/>
@@ -541,77 +548,80 @@
         <entry arg="true" endPc="268436533" name="dc" stackId="1" startPc="268436495"/>
         <entry arg="true" endPc="268436576" name="value" stackId="1" startPc="268436554"/>
         <entry arg="true" endPc="268436599" name="value" stackId="1" startPc="268436577"/>
-        <entry arg="true" endPc="268436652" name="callbackFn" stackId="1" startPc="268436620"/>
-        <entry endPc="268436737" name="i" stackId="1" startPc="268436700"/>
-        <entry endPc="268436727" name="cb" stackId="2" startPc="268436700"/>
-        <entry arg="true" endPc="268436817" name="enable" stackId="1" startPc="268436777"/>
-        <entry endPc="268436811" name="ex" stackId="2" startPc="268436801"/>
-        <entry arg="true" endPc="268436899" name="index" stackId="1" startPc="268436881"/>
-        <entry arg="true" endPc="268437016" name="level" stackId="1" startPc="268436900"/>
-        <entry arg="true" endPc="268437016" name="backlight" stackId="2" startPc="268436900"/>
-        <entry endPc="268436973" name="vibeData" stackId="3" startPc="268436918"/>
-        <entry arg="true" endPc="268437077" name="totalSeconds" stackId="1" startPc="268437017"/>
-        <entry endPc="268437077" name="minutes" stackId="2" startPc="268437020"/>
-        <entry endPc="268437077" name="seconds" stackId="3" startPc="268437020"/>
-        <entry endPc="268437309" name="time" stackId="1" startPc="268437081"/>
-        <entry endPc="268437309" name="period" stackId="2" startPc="268437176"/>
-        <entry endPc="268437309" name="hour12" stackId="3" startPc="268437176"/>
-        <entry endPc="268437406" name="intervalsCount" stackId="1" startPc="268437314"/>
-        <entry endPc="268437406" name="currentTimeInSec" stackId="2" startPc="268437314"/>
-        <entry arg="true" endPc="268437603" name="dc" stackId="1" startPc="268437408"/>
-        <entry endPc="268437602" name="deviceSettings" stackId="2" startPc="268437411"/>
-        <entry arg="true" endPc="268437701" name="cycles" stackId="1" startPc="268437604"/>
-        <entry endPc="268437700" name="multipleSign" stackId="2" startPc="268437607"/>
-        <entry endPc="268437700" name="formattedValue" stackId="3" startPc="268437607"/>
-        <entry arg="true" endPc="268437757" name="value" stackId="1" startPc="268437702"/>
-        <entry endPc="268437756" name="formattedTime" stackId="2" startPc="268437705"/>
-        <entry arg="true" endPc="268437972" name="dc" stackId="1" startPc="268437758"/>
-        <entry endPc="268437971" name="centerX" stackId="2" startPc="268437761"/>
-        <entry endPc="268437971" name="centerY" stackId="3" startPc="268437761"/>
-        <entry endPc="268437971" name="radius" stackId="4" startPc="268437761"/>
-        <entry endPc="268437971" name="dotRadius" stackId="5" startPc="268437761"/>
-        <entry endPc="268437971" name="glowRadius" stackId="6" startPc="268437761"/>
-        <entry endPc="268437971" name="angles" stackId="7" startPc="268437761"/>
-        <entry endPc="268437971" name="i" stackId="8" startPc="268437831"/>
-        <entry endPc="268437961" name="angle" stackId="9" startPc="268437831"/>
-        <entry endPc="268437961" name="rad" stackId="10" startPc="268437831"/>
-        <entry endPc="268437961" name="x" stackId="11" startPc="268437831"/>
-        <entry endPc="268437961" name="y" stackId="12" startPc="268437831"/>
-        <entry endPc="268438254" name="time" stackId="1" startPc="268437976"/>
-        <entry endPc="268438254" name="extraDurationTimeInSec" stackId="2" startPc="268437976"/>
-        <entry endPc="268438254" name="totalSeconds" stackId="3" startPc="268437976"/>
-        <entry endPc="268438254" name="targetHour" stackId="4" startPc="268437976"/>
-        <entry endPc="268438254" name="targetMin" stackId="5" startPc="268437976"/>
-        <entry endPc="268438254" name="targetSec" stackId="6" startPc="268437976"/>
-        <entry endPc="268438254" name="period" stackId="7" startPc="268438143"/>
-        <entry endPc="268438254" name="hour12" stackId="8" startPc="268438143"/>
-        <entry arg="true" endPc="268438323" name="notificationManager" stackId="1" startPc="268438256"/>
-        <entry arg="true" endPc="268438353" name="dc" stackId="1" startPc="268438324"/>
-        <entry endPc="268438404" name="activityStatus" stackId="1" startPc="268438357"/>
-        <entry arg="true" endPc="268438628" name="id" stackId="1" startPc="268438494"/>
-        <entry arg="true" endPc="268438628" name="valueInMin" stackId="2" startPc="268438494"/>
-        <entry endPc="268438626" name="totalFormattedTime" stackId="3" startPc="268438499"/>
-        <entry endPc="268438626" name="intervalFormattedTime" stackId="4" startPc="268438499"/>
-        <entry endPc="268438839" name="totalTimeLabel" stackId="1" startPc="268438654"/>
-        <entry endPc="268438839" name="intervalTimeLabel" stackId="2" startPc="268438654"/>
-        <entry arg="true" endPc="268438869" name="state" stackId="1" startPc="268438849"/>
-        <entry endPc="268438972" name="notificationManager" stackId="1" startPc="268438873"/>
-        <entry arg="true" endPc="268439040" name="callback" stackId="1" startPc="268439017"/>
-        <entry arg="true" endPc="268439076" name="values" stackId="1" startPc="268439041"/>
-        <entry arg="true" endPc="268439122" name="value" stackId="1" startPc="268439085"/>
-        <entry endPc="268439267" name="extraInterval" stackId="1" startPc="268439199"/>
-        <entry endPc="268439687" name="activityStatus" stackId="1" startPc="268439573"/>
-        <entry arg="true" endPc="268440128" name="notificationManager" stackId="1" startPc="268440023"/>
-        <entry arg="true" endPc="268440128" name="view" stackId="2" startPc="268440023"/>
-        <entry arg="true" endPc="268440209" name="keyEvent" stackId="1" startPc="268440129"/>
-        <entry arg="true" endPc="268440708" name="dc" stackId="1" startPc="268440210"/>
-        <entry endPc="268440708" name="rez_cmp_local_text_time_of_the_day" stackId="2" startPc="268440221"/>
-        <entry endPc="268440708" name="rez_cmp_local_text_current_timer" stackId="3" startPc="268440221"/>
-        <entry endPc="268440708" name="rez_cmp_local_text_intervals_left" stackId="4" startPc="268440221"/>
-        <entry endPc="268440708" name="rez_cmp_local_text_target_time" stackId="5" startPc="268440221"/>
-        <entry endPc="268440708" name="rez_cmp_local_text_target_time_label" stackId="6" startPc="268440221"/>
+        <entry arg="true" endPc="268436640" name="key" stackId="1" startPc="268436620"/>
+        <entry arg="true" endPc="268436640" name="callbackFn" stackId="2" startPc="268436620"/>
+        <entry endPc="268436783" name="keys" stackId="1" startPc="268436665"/>
+        <entry endPc="268436745" name="i" stackId="2" startPc="268436694"/>
+        <entry endPc="268436735" name="key" stackId="3" startPc="268436694"/>
+        <entry endPc="268436735" name="cb" stackId="4" startPc="268436694"/>
+        <entry arg="true" endPc="268436825" name="enable" stackId="1" startPc="268436785"/>
+        <entry endPc="268436819" name="ex" stackId="2" startPc="268436809"/>
+        <entry arg="true" endPc="268436907" name="key" stackId="1" startPc="268436889"/>
+        <entry arg="true" endPc="268437024" name="level" stackId="1" startPc="268436908"/>
+        <entry arg="true" endPc="268437024" name="backlight" stackId="2" startPc="268436908"/>
+        <entry endPc="268436981" name="vibeData" stackId="3" startPc="268436926"/>
+        <entry arg="true" endPc="268437085" name="totalSeconds" stackId="1" startPc="268437025"/>
+        <entry endPc="268437085" name="minutes" stackId="2" startPc="268437028"/>
+        <entry endPc="268437085" name="seconds" stackId="3" startPc="268437028"/>
+        <entry endPc="268437317" name="time" stackId="1" startPc="268437089"/>
+        <entry endPc="268437317" name="period" stackId="2" startPc="268437184"/>
+        <entry endPc="268437317" name="hour12" stackId="3" startPc="268437184"/>
+        <entry endPc="268437414" name="intervalsCount" stackId="1" startPc="268437322"/>
+        <entry endPc="268437414" name="currentTimeInSec" stackId="2" startPc="268437322"/>
+        <entry arg="true" endPc="268437616" name="dc" stackId="1" startPc="268437416"/>
+        <entry endPc="268437615" name="deviceSettings" stackId="2" startPc="268437419"/>
+        <entry arg="true" endPc="268437714" name="cycles" stackId="1" startPc="268437617"/>
+        <entry endPc="268437713" name="multipleSign" stackId="2" startPc="268437620"/>
+        <entry endPc="268437713" name="formattedValue" stackId="3" startPc="268437620"/>
+        <entry arg="true" endPc="268437770" name="value" stackId="1" startPc="268437715"/>
+        <entry endPc="268437769" name="formattedTime" stackId="2" startPc="268437718"/>
+        <entry arg="true" endPc="268437950" name="dc" stackId="1" startPc="268437771"/>
+        <entry endPc="268437949" name="centerX" stackId="2" startPc="268437774"/>
+        <entry endPc="268437949" name="centerY" stackId="3" startPc="268437774"/>
+        <entry endPc="268437949" name="radius" stackId="4" startPc="268437774"/>
+        <entry endPc="268437949" name="dotRadius" stackId="5" startPc="268437774"/>
+        <entry endPc="268437949" name="angles" stackId="6" startPc="268437774"/>
+        <entry endPc="268437949" name="i" stackId="7" startPc="268437840"/>
+        <entry endPc="268437939" name="angle" stackId="8" startPc="268437840"/>
+        <entry endPc="268437939" name="rad" stackId="9" startPc="268437840"/>
+        <entry endPc="268437939" name="x" stackId="10" startPc="268437840"/>
+        <entry endPc="268437939" name="y" stackId="11" startPc="268437840"/>
+        <entry endPc="268438232" name="time" stackId="1" startPc="268437954"/>
+        <entry endPc="268438232" name="extraDurationTimeInSec" stackId="2" startPc="268437954"/>
+        <entry endPc="268438232" name="totalSeconds" stackId="3" startPc="268437954"/>
+        <entry endPc="268438232" name="targetHour" stackId="4" startPc="268437954"/>
+        <entry endPc="268438232" name="targetMin" stackId="5" startPc="268437954"/>
+        <entry endPc="268438232" name="targetSec" stackId="6" startPc="268437954"/>
+        <entry endPc="268438232" name="period" stackId="7" startPc="268438121"/>
+        <entry endPc="268438232" name="hour12" stackId="8" startPc="268438121"/>
+        <entry arg="true" endPc="268438301" name="notificationManager" stackId="1" startPc="268438234"/>
+        <entry arg="true" endPc="268438394" name="dc" stackId="1" startPc="268438302"/>
+        <entry endPc="268438393" name="activityStatus" stackId="2" startPc="268438305"/>
+        <entry endPc="268438445" name="activityStatus" stackId="1" startPc="268438398"/>
+        <entry arg="true" endPc="268438681" name="id" stackId="1" startPc="268438547"/>
+        <entry arg="true" endPc="268438681" name="valueInMin" stackId="2" startPc="268438547"/>
+        <entry endPc="268438679" name="totalFormattedTime" stackId="3" startPc="268438552"/>
+        <entry endPc="268438679" name="intervalFormattedTime" stackId="4" startPc="268438552"/>
+        <entry endPc="268438892" name="totalTimeLabel" stackId="1" startPc="268438707"/>
+        <entry endPc="268438892" name="intervalTimeLabel" stackId="2" startPc="268438707"/>
+        <entry arg="true" endPc="268438922" name="state" stackId="1" startPc="268438902"/>
+        <entry endPc="268439025" name="notificationManager" stackId="1" startPc="268438926"/>
+        <entry arg="true" endPc="268439093" name="callback" stackId="1" startPc="268439070"/>
+        <entry arg="true" endPc="268439129" name="values" stackId="1" startPc="268439094"/>
+        <entry arg="true" endPc="268439175" name="value" stackId="1" startPc="268439138"/>
+        <entry endPc="268439320" name="extraInterval" stackId="1" startPc="268439252"/>
+        <entry endPc="268439741" name="activityStatus" stackId="1" startPc="268439626"/>
+        <entry arg="true" endPc="268440259" name="notificationManager" stackId="1" startPc="268440154"/>
+        <entry arg="true" endPc="268440259" name="view" stackId="2" startPc="268440154"/>
+        <entry arg="true" endPc="268440340" name="keyEvent" stackId="1" startPc="268440260"/>
+        <entry arg="true" endPc="268440839" name="dc" stackId="1" startPc="268440341"/>
+        <entry endPc="268440839" name="rez_cmp_local_text_time_of_the_day" stackId="2" startPc="268440352"/>
+        <entry endPc="268440839" name="rez_cmp_local_text_current_timer" stackId="3" startPc="268440352"/>
+        <entry endPc="268440839" name="rez_cmp_local_text_intervals_left" stackId="4" startPc="268440352"/>
+        <entry endPc="268440839" name="rez_cmp_local_text_target_time" stackId="5" startPc="268440352"/>
+        <entry endPc="268440839" name="rez_cmp_local_text_target_time_label" stackId="6" startPc="268440352"/>
     </localVars>
-    <deviceInfo deviceVersion="0ed082a335bbf00c12e5da810e92d4f89288090c" partNumber="006-B4315-00"/>
+    <deviceInfo deviceVersion="810ede84fd9ce09eefda5d76cb08298db48e456c" partNumber="006-B4432-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
@@ -632,20 +642,20 @@
         <dataEntry label="globals/Rez" offset="918" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/BisGleichView" offset="980" parentId="globals" symbolId="BisGleichView" type="class"/>
         <dataEntry label="globals/ActivityManager" offset="1204" parentId="globals" symbolId="ActivityManager" type="class"/>
-        <dataEntry label="globals/ActivityManager/&lt;statics&gt;" offset="1297" parentId="ActivityManager" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/MainMenu" offset="1337" parentId="globals" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/MainMenu/&lt;statics&gt;" offset="1412" parentId="MainMenu" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/BisGleichApp" offset="1443" parentId="globals" symbolId="BisGleichApp" type="class"/>
-        <dataEntry label="globals/NumberPickerDelegate" offset="1532" parentId="globals" symbolId="NumberPickerDelegate" type="class"/>
-        <dataEntry label="globals/ProgressManager" offset="1603" parentId="globals" symbolId="ProgressManager" type="class"/>
-        <dataEntry label="globals/ProgressManager/&lt;statics&gt;" offset="1741" parentId="ProgressManager" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/AttentionLevel" offset="1781" parentId="globals" symbolId="AttentionLevel" type="class"/>
-        <dataEntry label="globals/BisGleichDelegate" offset="1825" parentId="globals" symbolId="BisGleichDelegate" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="2004" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="2039" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="2074" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="2109" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="2171" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/ActivityManager/&lt;statics&gt;" offset="1306" parentId="ActivityManager" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/MainMenu" offset="1346" parentId="globals" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/MainMenu/&lt;statics&gt;" offset="1421" parentId="MainMenu" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/BisGleichApp" offset="1452" parentId="globals" symbolId="BisGleichApp" type="class"/>
+        <dataEntry label="globals/NumberPickerDelegate" offset="1541" parentId="globals" symbolId="NumberPickerDelegate" type="class"/>
+        <dataEntry label="globals/ProgressManager" offset="1612" parentId="globals" symbolId="ProgressManager" type="class"/>
+        <dataEntry label="globals/ProgressManager/&lt;statics&gt;" offset="1750" parentId="ProgressManager" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/AttentionLevel" offset="1790" parentId="globals" symbolId="AttentionLevel" type="class"/>
+        <dataEntry label="globals/BisGleichDelegate" offset="1834" parentId="globals" symbolId="BisGleichDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="2022" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="2057" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="2092" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2127" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="2189" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="ActivityStatus">
@@ -786,28 +796,29 @@
         <functionEntry accessMode="public" endPc="268436619" name="getTotalTimeInMinDuration" parent="TimeDurationsStorage" startPc="268436600">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436652" name="callEverySecond" parent="NotificationManager" startPc="268436620">
+        <functionEntry accessMode="public" endPc="268436640" name="callEverySecond" parent="NotificationManager" startPc="268436620">
+            <param id="key"/>
             <param id="callbackFn"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436673" name="turnOffBacklight" parent="NotificationManager" startPc="268436653">
+        <functionEntry accessMode="public" endPc="268436661" name="turnOffBacklight" parent="NotificationManager" startPc="268436641">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436776" name="triggerCallbacks" parent="NotificationManager" startPc="268436674">
+        <functionEntry accessMode="public" endPc="268436784" name="triggerCallbacks" parent="NotificationManager" startPc="268436662">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436817" name="tryToggleBacklight" parent="NotificationManager" startPc="268436777">
+        <functionEntry accessMode="public" endPc="268436825" name="tryToggleBacklight" parent="NotificationManager" startPc="268436785">
             <param id="enable"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436880" name="initialize" parent="NotificationManager" startPc="268436818">
+        <functionEntry accessMode="public" endPc="268436888" name="initialize" parent="NotificationManager" startPc="268436826">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436899" name="removeCallback" parent="NotificationManager" startPc="268436881">
-            <param id="index"/>
+        <functionEntry accessMode="public" endPc="268436907" name="removeCallback" parent="NotificationManager" startPc="268436889">
+            <param id="key"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437016" name="callAttention" parent="NotificationManager" startPc="268436900">
+        <functionEntry accessMode="public" endPc="268437024" name="callAttention" parent="NotificationManager" startPc="268436908">
             <param id="level"/>
             <param id="backlight"/>
             <documentation/>
@@ -824,175 +835,181 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437077" name="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;" parent="BisGleichView" startPc="268437017">
+        <functionEntry accessMode="private" endPc="268437085" name="&lt;globals/BisGleichView/&lt;&gt;formatTimeMMSS&gt;" parent="BisGleichView" startPc="268437025">
             <param id="totalSeconds"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437310" name="updateTimeOfTheDayElement" parent="BisGleichView" startPc="268437078">
+        <functionEntry accessMode="public" endPc="268437318" name="updateTimeOfTheDayElement" parent="BisGleichView" startPc="268437086">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437407" name="onShow" parent="BisGleichView" startPc="268437311">
+        <functionEntry accessMode="public" endPc="268437415" name="onShow" parent="BisGleichView" startPc="268437319">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437603" name="onLayout" parent="BisGleichView" startPc="268437408">
+        <functionEntry accessMode="public" endPc="268437616" name="onLayout" parent="BisGleichView" startPc="268437416">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437701" name="updateIntervalsValue" parent="BisGleichView" startPc="268437604">
+        <functionEntry accessMode="public" endPc="268437714" name="updateIntervalsValue" parent="BisGleichView" startPc="268437617">
             <param id="cycles"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437757" name="updateCurrentTimerValue" parent="BisGleichView" startPc="268437702">
+        <functionEntry accessMode="public" endPc="268437770" name="updateCurrentTimerValue" parent="BisGleichView" startPc="268437715">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437972" name="drawDotsLeftMenu" parent="BisGleichView" startPc="268437758">
+        <functionEntry accessMode="public" endPc="268437950" name="drawDotsLeftMenu" parent="BisGleichView" startPc="268437771">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438255" name="updateTargetTimeElement" parent="BisGleichView" startPc="268437973">
+        <functionEntry accessMode="public" endPc="268438233" name="updateTargetTimeElement" parent="BisGleichView" startPc="268437951">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438323" name="initialize" parent="BisGleichView" startPc="268438256">
+        <functionEntry accessMode="public" endPc="268438301" name="initialize" parent="BisGleichView" startPc="268438234">
             <param id="notificationManager"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="BisGleichView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438353" name="onUpdate" parent="BisGleichView" startPc="268438324">
+        <functionEntry accessMode="public" endPc="268438394" name="onUpdate" parent="BisGleichView" startPc="268438302">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438405" name="updateDynamicData" parent="BisGleichView" startPc="268438354">
+        <functionEntry accessMode="public" endPc="268438446" name="updateDynamicData" parent="BisGleichView" startPc="268438395">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438413" name="getActivityStatus" parent="ActivityManager" startPc="268438406">
+        <functionEntry accessMode="public" endPc="268438458" name="overtimeActivity" parent="ActivityManager" startPc="268438447">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438425" name="pauseActivity" parent="ActivityManager" startPc="268438414">
+        <functionEntry accessMode="public" endPc="268438466" name="getActivityStatus" parent="ActivityManager" startPc="268438459">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438478" name="pauseActivity" parent="ActivityManager" startPc="268438467">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="ActivityManager">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438470" name="getInstance" parent="ActivityManager" startPc="268438426">
+        <functionEntry accessMode="public" endPc="268438523" name="getInstance" parent="ActivityManager" startPc="268438479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438482" name="stopActivity" parent="ActivityManager" startPc="268438471">
+        <functionEntry accessMode="public" endPc="268438535" name="stopActivity" parent="ActivityManager" startPc="268438524">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438493" name="startActivity" parent="ActivityManager" startPc="268438483">
+        <functionEntry accessMode="public" endPc="268438546" name="startActivity" parent="ActivityManager" startPc="268438536">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438628" name="updateSubLabel" parent="MainMenu" startPc="268438494">
+        <functionEntry accessMode="public" endPc="268438681" name="updateSubLabel" parent="MainMenu" startPc="268438547">
             <param id="id"/>
             <param id="valueInMin"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438650" name="initialize" parent="MainMenu" startPc="268438629">
+        <functionEntry accessMode="public" endPc="268438703" name="initialize" parent="MainMenu" startPc="268438682">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438840" name="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;" parent="MainMenu" startPc="268438651">
+        <functionEntry accessMode="private" endPc="268438893" name="&lt;globals/MainMenu/&lt;&gt;setMenu&gt;" parent="MainMenu" startPc="268438704">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438848" name="getView" parent="MainMenu" startPc="268438841">
+        <functionEntry accessMode="public" endPc="268438901" name="getView" parent="MainMenu" startPc="268438894">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438869" name="onStart" parent="BisGleichApp" startPc="268438849">
+        <functionEntry accessMode="public" endPc="268438922" name="onStart" parent="BisGleichApp" startPc="268438902">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438972" name="getInitialView" parent="BisGleichApp" startPc="268438870">
+        <functionEntry accessMode="public" endPc="268439025" name="getInitialView" parent="BisGleichApp" startPc="268438923">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438987" name="initialize" parent="BisGleichApp" startPc="268438973">
+        <functionEntry accessMode="public" endPc="268439040" name="initialize" parent="BisGleichApp" startPc="268439026">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438995" name="getView" parent="BisGleichApp" startPc="268438988">
+        <functionEntry accessMode="public" endPc="268439048" name="getView" parent="BisGleichApp" startPc="268439041">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438998" name="onStop" parent="BisGleichApp" startPc="268438996">
+        <functionEntry accessMode="public" endPc="268439051" name="onStop" parent="BisGleichApp" startPc="268439049">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439016" name="onCancel" parent="NumberPickerDelegate" startPc="268438999">
+        <functionEntry accessMode="public" endPc="268439069" name="onCancel" parent="NumberPickerDelegate" startPc="268439052">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439040" name="initialize" parent="NumberPickerDelegate" startPc="268439017">
+        <functionEntry accessMode="public" endPc="268439093" name="initialize" parent="NumberPickerDelegate" startPc="268439070">
             <param id="callback"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439076" name="onAccept" parent="NumberPickerDelegate" startPc="268439041">
+        <functionEntry accessMode="public" endPc="268439129" name="onAccept" parent="NumberPickerDelegate" startPc="268439094">
             <param id="values"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439084" name="getCurrentDurationInSec" parent="ProgressManager" startPc="268439077">
+        <functionEntry accessMode="public" endPc="268439137" name="getCurrentDurationInSec" parent="ProgressManager" startPc="268439130">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439122" name="setCurrentDurationInSec" parent="ProgressManager" startPc="268439085">
+        <functionEntry accessMode="public" endPc="268439175" name="setCurrentDurationInSec" parent="ProgressManager" startPc="268439138">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268439187" name="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;" parent="ProgressManager" startPc="268439123">
+        <functionEntry accessMode="private" endPc="268439240" name="&lt;globals/ProgressManager/&lt;&gt;initValues&gt;" parent="ProgressManager" startPc="268439176">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439195" name="getIntervalDurationInSec" parent="ProgressManager" startPc="268439188">
+        <functionEntry accessMode="public" endPc="268439248" name="getIntervalDurationInSec" parent="ProgressManager" startPc="268439241">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439267" name="getCurrentIntervalsCount" parent="ProgressManager" startPc="268439196">
+        <functionEntry accessMode="public" endPc="268439320" name="getCurrentIntervalsCount" parent="ProgressManager" startPc="268439249">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="getFinishTime" parent="ProgressManager">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439325" name="reset" parent="ProgressManager" startPc="268439268">
+        <functionEntry accessMode="public" endPc="268439378" name="reset" parent="ProgressManager" startPc="268439321">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439335" name="initialize" parent="ProgressManager" startPc="268439326">
+        <functionEntry accessMode="public" endPc="268439388" name="initialize" parent="ProgressManager" startPc="268439379">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439380" name="getInstance" parent="ProgressManager" startPc="268439336">
+        <functionEntry accessMode="public" endPc="268439433" name="getInstance" parent="ProgressManager" startPc="268439389">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="AttentionLevel">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439467" name="openMenu" parent="BisGleichDelegate" startPc="268439381">
+        <functionEntry accessMode="public" endPc="268439520" name="openMenu" parent="BisGleichDelegate" startPc="268439434">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439569" name="startActivity" parent="BisGleichDelegate" startPc="268439468">
+        <functionEntry accessMode="public" endPc="268439622" name="startActivity" parent="BisGleichDelegate" startPc="268439521">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439687" name="onSelect" parent="BisGleichDelegate" startPc="268439570">
+        <functionEntry accessMode="public" endPc="268439741" name="onSelect" parent="BisGleichDelegate" startPc="268439623">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439724" name="onBack" parent="BisGleichDelegate" startPc="268439688">
+        <functionEntry accessMode="public" endPc="268439778" name="startPostActivity" parent="BisGleichDelegate" startPc="268439742">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439988" name="updateCountdownValue" parent="BisGleichDelegate" startPc="268439725">
+        <functionEntry accessMode="public" endPc="268439815" name="onBack" parent="BisGleichDelegate" startPc="268439779">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440022" name="startTimer" parent="BisGleichDelegate" startPc="268439989">
+        <functionEntry accessMode="public" endPc="268440118" name="updateCountdownValue" parent="BisGleichDelegate" startPc="268439816">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440128" name="initialize" parent="BisGleichDelegate" startPc="268440023">
+        <functionEntry accessMode="public" endPc="268440153" name="startTimer" parent="BisGleichDelegate" startPc="268440119">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440259" name="initialize" parent="BisGleichDelegate" startPc="268440154">
             <param id="notificationManager"/>
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440209" name="onKeyPressed" parent="BisGleichDelegate" startPc="268440129">
+        <functionEntry accessMode="public" endPc="268440340" name="onKeyPressed" parent="BisGleichDelegate" startPc="268440260">
             <param id="keyEvent"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440708" name="MainLayout" parent="Layouts" startPc="268440210">
+        <functionEntry accessMode="public" endPc="268440839" name="MainLayout" parent="Layouts" startPc="268440341">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440720" name="&lt;init&gt;" parent="MainMenu" startPc="268440709">
+        <functionEntry accessMode="public" endPc="268440851" name="&lt;init&gt;" parent="MainMenu" startPc="268440840">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440825" name="initialize" parent="MainMenu" startPc="268440721">
+        <functionEntry accessMode="public" endPc="268440956" name="initialize" parent="MainMenu" startPc="268440852">
             <documentation/>
         </functionEntry>
     </functions>

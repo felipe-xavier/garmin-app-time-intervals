@@ -15,7 +15,7 @@ class NotificationManager {
 
   private var _timer = new Timer.Timer();
 
-  private var _callbacks as Array<Method> = [];
+  private var _callbacks as Dictionary<String, Method> = {};
   private var _turnOffBacklightAt = null;
 
   /* Constructor **/
@@ -25,21 +25,21 @@ class NotificationManager {
   }
 
   /* Subscribe a callback to be called every second **/
-  function callEverySecond(callbackFn) as Number {
-    _callbacks.add(callbackFn);
-
-    return _callbacks.size() - 1;
+  function callEverySecond(key, callbackFn) as Void {
+    _callbacks.put(key, callbackFn);
   }
 
-  /* Unsubscribe a callback by specified index **/
-  function removeCallback(index) as Void {
-    _callbacks.remove(index);
+  /* Unsubscribe a callback by specified key **/
+  function removeCallback(key) as Void {
+    _callbacks.remove(key);
   }
 
   /* Calls all existing timer callbacks **/
   function triggerCallbacks() as Void {
-    for (var i = _callbacks.size() - 1; i >= 0; i -= 1) {
-      var cb = _callbacks[i];
+    var keys = _callbacks.keys();
+    for (var i = 0; i < keys.size(); i++) {
+      var key = keys[i];
+      var cb = _callbacks.get(key);
       if (cb != null) {
         cb.invoke();
       }

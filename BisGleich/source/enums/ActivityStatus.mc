@@ -12,5 +12,7 @@ class ActivityStatus {
     paused,
     //! Activity is completely stopped and needs to be restarted
     stopped,
+    //! Activity is past target time
+    overtime,
   }
 }

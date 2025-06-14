@@ -24,7 +24,10 @@ class ActivityStatus {
         paused,
         //! Activity is completely stopped and needs to be restarted
         [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 14; @position = 4; @symbol_enumdec = [stopped,14,4,11]; ]
-        stopped
+        stopped,
+        //! Activity is past target time
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 16; @position = 4; @symbol_enumdec = [overtime,16,4,12]; ]
+        overtime
     }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 7; ]
