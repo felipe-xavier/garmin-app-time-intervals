@@ -35,8 +35,8 @@ class MainMenu {
     private function setMenu() {
         _menu = new WatchUi.Menu2(null);
 
-        var totalTimeLabel = IntervalsManager.getTotalTimeInMinDuration().toString() + " min";
-        var intervalTimeLabel = IntervalsManager.getIntervalTimeInMinDuration().toString() + " min";
+        var totalTimeLabel = TimeDurationsStorage.getTotalTimeInMinDuration().toString() + " min";
+        var intervalTimeLabel = TimeDurationsStorage.getIntervalTimeInMinDuration().toString() + " min";
 
         _menu.addItem(new WatchUi.MenuItem("Total time", totalTimeLabel, "total_time", null));
         _menu.addItem(new WatchUi.MenuItem("Interval time", intervalTimeLabel, "interval_time", null));

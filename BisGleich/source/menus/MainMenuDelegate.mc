@@ -24,13 +24,13 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
 
         if (id.equals("total_time")) {
             label = "GOAL TIME";
-            initialValue = IntervalsManager.getTotalTimeInMinDuration();
+            initialValue = TimeDurationsStorage.getTotalTimeInMinDuration();
             callback = method(:updateTotalTime);
         } else if (id.equals("interval_time")) {
             label = "INTERVAL TIME";
-            initialValue = IntervalsManager.getIntervalTimeInMinDuration();
+            initialValue = TimeDurationsStorage.getIntervalTimeInMinDuration();
             callback = method(:updateIntervalTime);
-            upperLimitNumber = IntervalsManager.getTotalTimeInMinDuration() - 1;
+            upperLimitNumber = TimeDurationsStorage.getTotalTimeInMinDuration() - 1;
         }
 
         var picker = new NumberPicker(label, color, lowerLimitNumber, upperLimitNumber, increment, initialValue);
@@ -42,12 +42,12 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
 
     function updateTotalTime(value as Number) as Void {
         _mainMenuView.updateSubLabel("total_time", value);
-        IntervalsManager.setTotalTimeInMinDuration(value);
+        TimeDurationsStorage.setTotalTimeInMinDuration(value);
     }
 
     function updateIntervalTime(value as Number) as Void {
         _mainMenuView.updateSubLabel("interval_time", value);
-        IntervalsManager.setIntervalTimeInMinDuration(value);
+        TimeDurationsStorage.setIntervalTimeInMinDuration(value);
 
     }
 }
