@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"name": "BisGleich",
+		"path": "."
+	}
+],
+  "settings": {
+    "cSpell.words": ["Gleich"]
+  }
+}

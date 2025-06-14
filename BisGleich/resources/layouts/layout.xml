@@ -7,14 +7,6 @@
         font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
-    <!-- <label
-        id="type_title"
-        text="COLD"
-        x="center"
-        y="20%"
-        font="Gfx.FONT_MEDIUM"
-        justification="Gfx.TEXT_JUSTIFY_CENTER"
-    /> -->
     <label
         id="current_timer"
         text="0:30"
@@ -31,15 +23,5 @@
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
-    <!-- <bitmap id="heart_rate_icon" x="7%" y="53%" filename="../drawables/heart-rate.png"></bitmap> -->
-
-    <!-- <label
-        id="heart_rate"
-        text="("
-        x="3%"
-        y="center"
-        font="Gfx.FONT_SMALL"
-        justification="Gfx.TEXT_JUSTIFY_CENTER"
-    /> -->
     
 </layout>

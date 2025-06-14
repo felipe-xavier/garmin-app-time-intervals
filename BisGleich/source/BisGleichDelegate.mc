@@ -22,7 +22,8 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function openMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new BisGleichMenuDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.pushView((new MainMenu()).getView(), new MainMenuViewDelegate(), WatchUi.SLIDE_UP);
+        // WatchUi.pushView(new Rez.Menus.MainMenu(), new BisGleichMenuDelegate(), WatchUi.SLIDE_UP);
         System.println("BisGleichDelegate onMenu called");
         return true;
     }
