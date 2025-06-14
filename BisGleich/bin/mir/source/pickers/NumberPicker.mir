@@ -1,0 +1,244 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; @symbol_importdef<2> = [Storage,1,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [WatchUi,5,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 8; @symbol_classdef = [NumberPicker,8,6,18]; @symbol_extends<0> = [WatchUi,8,27,34]; @symbol_extends<1> = [Picker,8,35,41]; ]
+class NumberPicker extends WatchUi.Picker {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 10; @symbol_functiondef = [initialize,10,20,30]; @symbol_param<0> = [titleText,11,8,17]; @symbol_param<0>_type<0> = [String,11,21,27]; @symbol_param<1> = [titleColor,12,8,18]; @symbol_param<1>_type<0> = [Number,12,22,28]; @symbol_param<2> = [lowerLimitNumber,13,8,24]; @symbol_param<2>_type<0> = [Number,13,28,34]; @symbol_param<3> = [upperLimitNumber,14,8,24]; @symbol_param<3>_type<0> = [Number,14,28,34]; @symbol_param<4> = [increment,15,8,17]; @symbol_param<4>_type<0> = [Number,15,21,27]; @symbol_param<5> = [initialValue,16,8,20]; @symbol_param<5>_type<0> = [Number,16,24,30]; ]
+    public
+    function initialize(titleText as String, titleColor as Number, lowerLimitNumber as Number, upperLimitNumber as Number, increment as Number, initialValue as Number) as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 18 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_stop" ]
+        %title.1 = local;
+        symbol [ title %title.1 18 12 17 ];
+        symbol [ WatchUi %tmp.3 18 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.4 18 32 36 ];
+        %tmp.4 = getv function ? %tmp.3 :Text;
+        %tmp.5 = newd 5;
+        %tmp.7 = const :text;
+        symbol [ text %tmp.7 19 13 17 const ];
+        %tmp.8 = lgetv %titleText;
+        symbol [ titleText %tmp.8 19 19 28 ];
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.12 = const :color;
+        symbol [ color %tmp.12 20 13 18 const ];
+        %tmp.13 = lgetv %titleColor;
+        symbol [ titleColor %tmp.13 20 20 30 ];
+        %tmp.14 = dup %tmp.10;
+        %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
+        %tmp.17 = const :font;
+        symbol [ font %tmp.17 21 13 17 const ];
+        symbol [ Graphics %tmp.18 21 19 27 ];
+        %tmp.18 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.19 21 28 38 ];
+        %tmp.19 = getv %tmp.18 :FONT_SMALL;
+        %tmp.20 = dup %tmp.15;
+        %tmp.21 = aputv %tmp.20 %tmp.17 %tmp.19;
+        %tmp.23 = const :locX;
+        symbol [ locX %tmp.23 22 13 17 const ];
+        symbol [ WatchUi %tmp.24 22 19 26 ];
+        %tmp.24 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.25 22 27 47 ];
+        %tmp.25 = getv %tmp.24 :LAYOUT_HALIGN_CENTER;
+        %tmp.26 = dup %tmp.21;
+        %tmp.27 = aputv %tmp.26 %tmp.23 %tmp.25;
+        %tmp.29 = const :locY;
+        symbol [ locY %tmp.29 23 13 17 const ];
+        symbol [ WatchUi %tmp.30 23 19 26 ];
+        %tmp.30 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_BOTTOM %tmp.31 23 27 47 ];
+        %tmp.31 = getv %tmp.30 :LAYOUT_VALIGN_BOTTOM;
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 %tmp.29 %tmp.31;
+        %tmp.1 = newc %tmp.4 (%tmp.33);
+        lputv %title.1 %tmp.1;
+        symbol [ title %title.1 18 12 17 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 26 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_stop" ]
+        %factories.2 = local;
+        symbol [ factories %factories.2 26 12 21 ];
+        %tmp.34 = newa 1;
+        symbol [ NumberPickerFactory %tmp.38 26 29 48 ];
+        %tmp.38 = getv ? :NumberPickerFactory;
+        %tmp.39 = lgetv %lowerLimitNumber;
+        symbol [ lowerLimitNumber %tmp.39 26 49 65 ];
+        %tmp.40 = lgetv %upperLimitNumber;
+        symbol [ upperLimitNumber %tmp.40 26 67 83 ];
+        %tmp.41 = lgetv %increment;
+        symbol [ increment %tmp.41 26 85 94 ];
+        %tmp.35 = newc %tmp.38 (%tmp.39, %tmp.40, %tmp.41);
+        %tmp.42 = dup %tmp.34;
+        %tmp.43 = aputv %tmp.42 0 %tmp.35;
+        lputv %factories.2 %tmp.43;
+        symbol [ factories %factories.2 26 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 28 8 ]
+        symbol [ Picker %tmp.45 28 8 14 ];
+        %tmp.45 = getv ? :Picker;
+        symbol [ initialize %tmp.46 28 15 25 ];
+        %tmp.46 = getv function %tmp.45 :initialize;
+        %tmp.47 = newd 3;
+        %tmp.49 = const :title;
+        symbol [ title %tmp.49 29 13 18 const ];
+        %tmp.50 = lgetv %title.1;
+        symbol [ title %tmp.50 29 20 25 ];
+        %tmp.51 = dup %tmp.47;
+        %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+        %tmp.54 = const :pattern;
+        symbol [ pattern %tmp.54 30 13 20 const ];
+        %tmp.55 = lgetv %factories.2;
+        symbol [ factories %tmp.55 30 22 31 ];
+        %tmp.56 = dup %tmp.52;
+        %tmp.57 = aputv %tmp.56 %tmp.54 %tmp.55;
+        %tmp.59 = const :defaults;
+        symbol [ defaults %tmp.59 31 13 21 const ];
+        %tmp.60 = newa 1;
+        symbol [ NumberPickerFactory %tmp.62 31 24 43 ];
+        %tmp.62 = getv ? :NumberPickerFactory;
+        symbol [ getIndex %tmp.63 31 44 52 ];
+        %tmp.63 = getv function %tmp.62 :getIndex;
+        %tmp.64 = lgetv %initialValue;
+        symbol [ initialValue %tmp.64 31 53 65 ];
+        %tmp.65 = lgetv %increment;
+        symbol [ increment %tmp.65 31 67 76 ];
+        %tmp.66 = lgetv %lowerLimitNumber;
+        symbol [ lowerLimitNumber %tmp.66 31 78 94 ];
+        %tmp.67 = invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.66);
+        %tmp.68 = dup %tmp.60;
+        %tmp.69 = aputv %tmp.68 0 %tmp.67;
+        %tmp.70 = dup %tmp.57;
+        %tmp.71 = aputv %tmp.70 %tmp.59 %tmp.69;
+        invoke %tmp.45 %tmp.46(%tmp.71);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_17_6_33_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 37; @symbol_functiondef = [onUpdate,37,20,28]; @symbol_param<0> = [dc,37,29,31]; @symbol_param<0>_type<0> = [Dc,37,35,37]; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_37_47_41_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 38 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 38 8 10 ];
+        symbol [ setColor %tmp.2 38 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 38 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 38 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 38 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 38 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 39 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 39 8 10 ];
+        symbol [ clear %tmp.8 39 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 40 8 ]
+        symbol [ Picker %tmp.10 40 8 14 ];
+        %tmp.10 = getv ? :Picker;
+        symbol [ onUpdate %tmp.11 40 15 23 ];
+        %tmp.11 = getv function %tmp.10 :onUpdate;
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 40 24 26 ];
+        invoke %tmp.10 %tmp.11(%tmp.12);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_37_47_41_4_stop:
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 45; @symbol_classdef = [NumberPickerDelegate,45,6,26]; @symbol_extends<0> = [WatchUi,45,35,42]; @symbol_extends<1> = [PickerDelegate,45,43,57]; ]
+class NumberPickerDelegate extends WatchUi.PickerDelegate {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 45; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 45; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 46; @position = 16; @symbol_vardef = [_callback,46,16,25]; ]
+    private
+    var _callback;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 49; @symbol_functiondef = [initialize,49,20,30]; @symbol_param<0> = [callback,49,31,39]; @symbol_param<0>_type<0> = [Method,49,43,49]; ]
+    public
+    function initialize(callback as Method) as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_49_51_52_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 50 8 ]
+        %tmp.1 = lgetv %callback;
+        symbol [ callback %tmp.1 50 20 28 ];
+        symbol [ _callback ? 50 8 17 ];
+        putv self :_callback %tmp.1;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 51 8 ]
+        symbol [ PickerDelegate %tmp.3 51 8 22 ];
+        %tmp.3 = getv ? :PickerDelegate;
+        symbol [ initialize %tmp.4 51 23 33 ];
+        %tmp.4 = getv function %tmp.3 :initialize;
+        invoke %tmp.3 %tmp.4();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_49_51_52_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 56; @symbol_functiondef = [onCancel,56,20,28]; @symbol_return<0> = [Boolean,56,34,41]; ]
+    public
+    function onCancel() as Boolean {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_56_42_59_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 57 8 ]
+        symbol [ WatchUi %tmp.1 57 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 57 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 57 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.4 57 32 47 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 58 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_56_42_59_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 64; @symbol_functiondef = [onAccept,64,20,28]; @symbol_param<0> = [values,64,29,35]; @symbol_param<0>_type<0> = [Array,64,39,44]; @symbol_return<0> = [Boolean,64,49,56]; ]
+    public
+    function onAccept(values as Array) as Boolean {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_64_57_68_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 65 8 ]
+        symbol [ _callback %tmp.2 65 8 17 ];
+        %tmp.2 = getv ? :_callback;
+        symbol [ invoke %tmp.3 65 18 24 ];
+        %tmp.3 = getv function %tmp.2 :invoke;
+        %tmp.4 = lgetv %values;
+        symbol [ values %tmp.4 65 25 31 ];
+        %tmp.5 = 0;
+        %tmp.6 = agetv %tmp.4 %tmp.5;
+        invoke %tmp.2 %tmp.3(%tmp.6);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 66 8 ]
+        symbol [ WatchUi %tmp.7 66 8 15 ];
+        %tmp.7 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.8 66 16 23 ];
+        %tmp.8 = getv function %tmp.7 :popView;
+        symbol [ WatchUi %tmp.9 66 24 31 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.10 66 32 47 ];
+        %tmp.10 = getv %tmp.9 :SLIDE_IMMEDIATE;
+        invoke %tmp.7 %tmp.8(%tmp.10);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc" 67 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_pickers_NumberPicker_mc_64_57_68_4_stop:
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPicker.mc"; @line = 1; ]
+<init> {
+}

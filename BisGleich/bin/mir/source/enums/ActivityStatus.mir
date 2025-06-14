@@ -1,0 +1,32 @@
+//! Represents the possible states of an activity in the application.
+//!
+//! The activity can be in one of three states:
+//! - playing: The activity is currently running and active
+//! - paused: The activity is temporarily stopped but can be resumed
+//! - stopped: The activity is completely stopped and needs to be started from the beginning
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 7; @symbol_classdef = [ActivityStatus,7,6,20]; ]
+class ActivityStatus {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 8; ]
+    static
+    enum {
+        //! Activity is currently running and active
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 10; @position = 4; @symbol_enumdec = [playing,10,4,11]; ]
+        playing,
+        //! Activity is temporarily stopped and can be resumed
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 12; @position = 4; @symbol_enumdec = [paused,12,4,10]; ]
+        paused,
+        //! Activity is completely stopped and needs to be restarted
+        [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 14; @position = 4; @symbol_enumdec = [stopped,14,4,11]; ]
+        stopped
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/enums/ActivityStatus.mc"; @line = 7; ]
+<init> {
+}
