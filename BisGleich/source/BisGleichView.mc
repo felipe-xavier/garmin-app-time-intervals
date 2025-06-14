@@ -57,17 +57,32 @@ class BisGleichView extends WatchUi.View {
         updateDynamicData();
     }
 
+    function onReset() as Void {
+        _currentTimerElement.setColor(Graphics.COLOR_WHITE);
+        updateIntervalsValue(_progressManager.getCurrentIntervalsCount());
+        updateCurrentTimerValue(_progressManager.getCurrentDurationInSec());
+    }
+
     // Update the view
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
-        drawDotsLeftMenu(dc);
+        
 
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.overtime) {
             _currentTimerElement.setColor(Graphics.COLOR_RED);
             _intervalsLeftElement.setText("overtime");
         }
+
+        if (activityStatus == ActivityStatus.playing) {
+            _targetTimeElement.setColor(Graphics.COLOR_GREEN);
+        } else if (activityStatus == ActivityStatus.stopped || activityStatus == ActivityStatus.paused) {
+            _targetTimeElement.setColor(Graphics.COLOR_BLUE);
+        } else if (activityStatus == ActivityStatus.overtime) {
+            _targetTimeElement.setColor(Graphics.COLOR_RED);
+        }
+        View.onUpdate(dc);
+        drawDotsLeftMenu(dc);
     }
 
     // Called when this View is removed from the screen. Save the
@@ -133,7 +148,7 @@ class BisGleichView extends WatchUi.View {
         updateTimeOfTheDayElement();
 
         var activityStatus = _activityManager.getActivityStatus();
-        if (activityStatus != ActivityStatus.playing) {
+        if (activityStatus == ActivityStatus.paused || activityStatus == ActivityStatus.stopped) {
             updateTargetTimeElement();
         }
 
@@ -156,6 +171,8 @@ class BisGleichView extends WatchUi.View {
         var time = System.getClockTime();
 
         var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
+
+        
 
         // Calculate target time by adding extra duration to current time
         var totalSeconds = time.hour * 3600 + time.min * 60 + time.sec + extraDurationTimeInSec;

@@ -58,8 +58,8 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             _activityManager.stopActivity();
             _notificationManager.removeCallback(NotificationManager.startPostActivityKey);
             _progressManager.reset();
-            _view.updateIntervalsValue(_progressManager.getCurrentIntervalsCount());
-            _view.updateCurrentTimerValue(_progressManager.getCurrentDurationInSec());
+            
+            _view.onReset();
         }
         
         return true; // Indicate that the select action was handled
