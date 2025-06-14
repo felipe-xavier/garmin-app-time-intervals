@@ -34,17 +34,16 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         System.println("BisGleichDelegate onKeyPressed called with key: " + keyEvent.getKey() + ", type: " + keyEvent.getType() + ", string: " + keyEvent.toString());
 
         if (keyEvent.getKey() == WatchUi.KEY_UP) {
-            return openMenu();
+            var activityStatus = _activityManager.getActivityStatus();
+            if (activityStatus == ActivityStatus.stopped) {
+                return openMenu();
+            }
         }
 
         return false; // Indicate that the key event was not handled
     }
 
     function onSelect() as Boolean {
-        // WatchUi.pushView((new ActivityMenu()).getView(), new ActivityMenuViewDelegate(), WatchUi.SLIDE_UP);
-        // System.println("BisGleichDelegate onMenu called");
-        // return true;
-
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.playing) {
             _activityManager.pauseActivity();
@@ -55,6 +54,12 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         } else if (activityStatus == ActivityStatus.paused) {
             _activityManager.startActivity();
             startTimer();
+        } else if (activityStatus == ActivityStatus.overtime) {
+            _activityManager.stopActivity();
+            _notificationManager.removeCallback(NotificationManager.startPostActivityKey);
+            _progressManager.reset();
+            _view.updateIntervalsValue(_progressManager.getCurrentIntervalsCount());
+            _view.updateCurrentTimerValue(_progressManager.getCurrentDurationInSec());
         }
         
         return true; // Indicate that the select action was handled

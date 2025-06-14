@@ -1,0 +1,198 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [System,1,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 4; @symbol_classdef = [ActivityMenu,4,6,18]; ]
+class ActivityMenu {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 5; @position = 23; @symbol_vardef = [_menu,5,23,28]; ]
+    private static
+    var _menu;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 6; @position = 16; @symbol_vardef = [_activityManager,6,16,32]; ]
+    private
+    var _activityManager;
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_9_26_15_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 10 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_8_14_8_if_stmt:
+        symbol [ _menu %tmp.2 10 11 16 ];
+        %tmp.2 = getv ? :_menu;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_8_14_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_8_14_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_26_14_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 11 12 ]
+        symbol [ ActivityManager %tmp.6 11 31 46 ];
+        %tmp.6 = getv ? :ActivityManager;
+        symbol [ getInstance %tmp.7 11 47 58 ];
+        %tmp.7 = getv function %tmp.6 :getInstance;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ _activityManager ? 11 12 28 ];
+        putv self :_activityManager %tmp.8;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 13 12 ]
+        %tmp.9 = self;
+        symbol [ setMenu %tmp.10 13 12 19 ];
+        %tmp.10 = getv function %tmp.9 :setMenu;
+        invoke %tmp.9 %tmp.10();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_26_14_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_8_14_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_10_8_14_8_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_9_26_15_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 17; @symbol_functiondef = [getView,17,13,20]; ]
+    function getView() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_17_23_19_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 18 8 ]
+        symbol [ _menu %tmp.2 18 15 20 ];
+        %tmp.2 = getv ? :_menu;
+        ret %tmp.2;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_17_23_19_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 21; @symbol_functiondef = [setMenu,21,21,28]; ]
+    private
+    function setMenu() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 22 8 ]
+        symbol [ WatchUi %tmp.3 22 20 27 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Menu2 %tmp.4 22 28 33 ];
+        %tmp.4 = getv function ? %tmp.3 :Menu2;
+        %tmp.5 = null;
+        %tmp.1 = newc %tmp.4 (%tmp.5);
+        symbol [ _menu ? 22 8 13 ];
+        putv self :_menu %tmp.1;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 23 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_stop" ]
+        %firstMenu.1 = local;
+        symbol [ firstMenu %firstMenu.1 23 12 21 ];
+        %tmp.6 = null;
+        lputv %firstMenu.1 %tmp.6;
+        symbol [ firstMenu %firstMenu.1 23 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 24 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_stop" ]
+        %activityStatus.2 = local;
+        symbol [ activityStatus %activityStatus.2 24 12 26 ];
+        symbol [ _activityManager %tmp.8 24 29 45 ];
+        %tmp.8 = getv ? :_activityManager;
+        symbol [ getActivityStatus %tmp.9 24 46 63 ];
+        %tmp.9 = getv function %tmp.8 :getActivityStatus;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %activityStatus.2 %tmp.10;
+        symbol [ activityStatus %activityStatus.2 24 12 26 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 25 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_stmt:
+        %tmp.11 = lgetv %activityStatus.2;
+        symbol [ activityStatus %tmp.11 25 12 26 ];
+        symbol [ ActivityStatus %tmp.13 25 30 44 ];
+        %tmp.13 = getv ? :ActivityStatus;
+        symbol [ playing %tmp.14 25 45 52 ];
+        %tmp.14 = getv %tmp.13 :playing;
+        %tmp.15 = eq %tmp.11 %tmp.14;
+        bf %tmp.15 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_false;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_54_27_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 26 12 ]
+        %tmp.16 = "Pause";
+        lputv %firstMenu.1 %tmp.16;
+        symbol [ firstMenu %firstMenu.1 26 12 21 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_54_27_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_false:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 27 15 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_stmt:
+        %tmp.17 = lgetv %activityStatus.2;
+        symbol [ activityStatus %tmp.17 27 19 33 ];
+        symbol [ ActivityStatus %tmp.19 27 37 51 ];
+        %tmp.19 = getv ? :ActivityStatus;
+        symbol [ paused %tmp.20 27 52 58 ];
+        %tmp.20 = getv %tmp.19 :paused;
+        %tmp.21 = eq %tmp.17 %tmp.20;
+        bf %tmp.21 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_false;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_60_29_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 28 12 ]
+        %tmp.22 = "Resume";
+        lputv %firstMenu.1 %tmp.22;
+        symbol [ firstMenu %firstMenu.1 28 12 21 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_60_29_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_false:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 29 15 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_15_31_8_if_stmt:
+        %tmp.23 = lgetv %activityStatus.2;
+        symbol [ activityStatus %tmp.23 29 19 33 ];
+        symbol [ ActivityStatus %tmp.25 29 37 51 ];
+        %tmp.25 = getv ? :ActivityStatus;
+        symbol [ stopped %tmp.26 29 52 59 ];
+        %tmp.26 = getv %tmp.25 :stopped;
+        %tmp.27 = eq %tmp.23 %tmp.26;
+        bf %tmp.27 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_15_31_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_15_31_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_61_31_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 30 12 ]
+        %tmp.28 = "Start";
+        lputv %firstMenu.1 %tmp.28;
+        symbol [ firstMenu %firstMenu.1 30 12 21 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_61_31_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_15_31_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_29_15_31_8_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_27_15_31_8_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_25_8_31_8_if_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 33 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_8_35_8_if_stmt:
+        %tmp.29 = lgetv %firstMenu.1;
+        symbol [ firstMenu %tmp.29 33 12 21 ];
+        %tmp.30 = null;
+        %tmp.31 = ne %tmp.29 %tmp.30;
+        bf %tmp.31 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_8_35_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_8_35_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_31_35_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 34 12 ]
+        symbol [ _menu %tmp.33 34 12 17 ];
+        %tmp.33 = getv ? :_menu;
+        symbol [ addItem %tmp.34 34 18 25 ];
+        %tmp.34 = getv function %tmp.33 :addItem;
+        symbol [ WatchUi %tmp.37 34 30 37 ];
+        %tmp.37 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.38 34 38 46 ];
+        %tmp.38 = getv function ? %tmp.37 :MenuItem;
+        %tmp.39 = lgetv %firstMenu.1;
+        symbol [ firstMenu %tmp.39 34 47 56 ];
+        %tmp.40 = as %tmp.39 { (!Null) };
+        %tmp.41 = null;
+        %tmp.42 = "play_pause_resume";
+        %tmp.43 = null;
+        %tmp.35 = newc %tmp.38 (%tmp.40, %tmp.41, %tmp.42, %tmp.43);
+        invoke %tmp.33 %tmp.34(%tmp.35);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_31_35_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_8_35_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_33_8_35_8_if_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc" 36 8 ]
+        symbol [ _menu %tmp.45 36 8 13 ];
+        %tmp.45 = getv ? :_menu;
+        symbol [ addItem %tmp.46 36 14 21 ];
+        %tmp.46 = getv function %tmp.45 :addItem;
+        symbol [ WatchUi %tmp.49 36 26 33 ];
+        %tmp.49 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.50 36 34 42 ];
+        %tmp.50 = getv function ? %tmp.49 :MenuItem;
+        %tmp.51 = "Stop";
+        %tmp.52 = null;
+        %tmp.53 = "stop";
+        %tmp.54 = null;
+        %tmp.47 = newc %tmp.50 (%tmp.51, %tmp.52, %tmp.53, %tmp.54);
+        invoke %tmp.45 %tmp.46(%tmp.47);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_ActivityMenu_mc_21_31_38_4_stop:
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenu.mc"; @line = 1; ]
+<init> {
+}

@@ -83,6 +83,12 @@ class BisGleichView extends WatchUi.View {
         var dotRadius = 3;
         // var glowRadius = 5;
         var angles = [185, 180, 175]; // degrees, adjust for your device
+        var color = Graphics.COLOR_WHITE;
+
+        var activityStatus = _activityManager.getActivityStatus();
+        if (activityStatus != ActivityStatus.stopped) {
+            color = Graphics.COLOR_DK_GRAY;
+        }
 
         for (var i = 0; i < angles.size(); i++) {
             var angle = angles[i];
@@ -95,7 +101,7 @@ class BisGleichView extends WatchUi.View {
             // dc.fillCircle(x, y, glowRadius);
 
             // Draw the dot
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(color, Graphics.COLOR_TRANSPARENT);
             dc.fillCircle(x, y, dotRadius);
         }
     }
