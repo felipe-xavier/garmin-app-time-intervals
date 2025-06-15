@@ -12,10 +12,10 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_bitmap_heart_rate_icon = new WatchUi.Bitmap({:identifier=>"heart_rate_icon", :rezId=>$.Rez.Drawables.heart_rate_icon, :locX=>(390 * (45 / 100.0)), :locY=>(390 * (10 / 100.0))});
-            rez_cmp_local_bitmap_heart_rate_icon.setLocation((390 * (45 / 100.0)), (390 * (10 / 100.0)));
+            var rez_cmp_local_bitmap_heart_rate_icon = new WatchUi.Bitmap({:identifier=>"heart_rate_icon", :rezId=>$.Rez.Drawables.heart_rate_icon, :locX=>(390 * (44 / 100.0)), :locY=>(390 * (10 / 100.0))});
+            rez_cmp_local_bitmap_heart_rate_icon.setLocation((390 * (44 / 100.0)), (390 * (10 / 100.0)));
 
-            var rez_cmp_local_text_heart_rate = new WatchUi.Text({:identifier=>"heart_rate", :locX=>(390 * (55 / 100.0)), :locY=>(390 * (7 / 100.0)), :text=>"--", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_heart_rate = new WatchUi.Text({:identifier=>"heart_rate", :locX=>(390 * (57 / 100.0)), :locY=>(390 * (8 / 100.0)), :text=>"90", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
 
             var rez_cmp_local_text_time_of_the_day = new WatchUi.Text({:identifier=>"time_of_the_day", :locX=>(390 * 0.5), :locY=>(390 * (20 / 100.0)), :text=>"00:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_XTINY});
 
@@ -31,20 +31,7 @@ module Rez {
         }
     } // Layouts
 
-    module Menus {
-        class MainMenu extends WatchUi.Menu {
-            function initialize() {
-                Menu.initialize();
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
-            }
-        }
-    } // Menus
-
     module Strings {
-        (:initialized) var menu_label_1 as ResourceId;
-        (:initialized) var menu_label_2 as ResourceId;
-        (:initialized) var prompt as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

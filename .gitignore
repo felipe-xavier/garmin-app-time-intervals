@@ -1,0 +1,22 @@
+# Garmin Connect IQ build artifacts
+/bin/
+*.iq
+*.prg
+*.prg.debug.xml
+*.tmp
+*.log
+*.bak
+*.o
+*.elf
+*.out
+*.gmn
+*.iq.zip
+
+# macOS system files
+.DS_Store
+
+# IDE/project files
+*.swp
+*.swo
+
+

@@ -1,11 +1,16 @@
 <layout id="MainLayout">
-    <bitmap id="heart_rate_icon" x="45%" y="10%" filename="../drawables/heart-rate.png"></bitmap>
+    <bitmap 
+        id="heart_rate_icon" 
+        x="44%" 
+        y="10%" 
+        filename="../drawables/heart-rate.png"
+    />
     <label
         id="heart_rate"
-        text="--"
-        x="55%"
-        y="7%"
-        font="Gfx.FONT_SMALL"
+        text="90"
+        x="57%"
+        y="8%"
+        font="Gfx.FONT_TINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
     <label
