@@ -1,0 +1,89 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 3; @position = 4; @symbol_vardef = [totalTimeKey,3,4,16]; ]
+var totalTimeKey = "totalTimeInMinKey";
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 4; @position = 4; @symbol_vardef = [intervalTimeKey,4,4,19]; ]
+var intervalTimeKey = "intervalTimeInMinKey";
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 6; @symbol_classdef = [TimeDurationsStorage,6,6,26]; ]
+class TimeDurationsStorage {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 8; @symbol_functiondef = [getTotalTimeInMinDuration,8,20,45]; ]
+    static
+    function getTotalTimeInMinDuration() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_8_48_10_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc" 9 8 ]
+        symbol [ Application %tmp.1 9 15 26 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 9 27 37 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 9 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        symbol [ totalTimeKey %tmp.5 9 47 59 ];
+        %tmp.5 = getv ? :totalTimeKey;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        ret %tmp.6;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_8_48_10_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 12; @symbol_functiondef = [setTotalTimeInMinDuration,12,20,45]; @symbol_param<0> = [value,12,46,51]; ]
+    static
+    function setTotalTimeInMinDuration(value) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_12_53_14_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc" 13 8 ]
+        symbol [ Application %tmp.1 13 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 13 20 30 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 13 31 39 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        symbol [ totalTimeKey %tmp.5 13 40 52 ];
+        %tmp.5 = getv ? :totalTimeKey;
+        %tmp.6 = lgetv %value;
+        symbol [ value %tmp.6 13 54 59 ];
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_12_53_14_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 16; @symbol_functiondef = [getIntervalTimeInMinDuration,16,20,48]; ]
+    static
+    function getIntervalTimeInMinDuration() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_16_51_18_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc" 17 8 ]
+        symbol [ Application %tmp.1 17 15 26 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 17 27 37 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 17 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        symbol [ intervalTimeKey %tmp.5 17 47 62 ];
+        %tmp.5 = getv ? :intervalTimeKey;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        ret %tmp.6;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_16_51_18_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 20; @symbol_functiondef = [setIntervalTimeInMinDuration,20,20,48]; @symbol_param<0> = [value,20,49,54]; ]
+    static
+    function setIntervalTimeInMinDuration(value) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_20_56_22_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc" 21 8 ]
+        symbol [ Application %tmp.1 21 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 21 20 30 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 21 31 39 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        symbol [ intervalTimeKey %tmp.5 21 40 55 ];
+        %tmp.5 = getv ? :intervalTimeKey;
+        %tmp.6 = lgetv %value;
+        symbol [ value %tmp.6 21 57 62 ];
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_TimeDurationsStorage_mc_20_56_22_4_stop:
+    }
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/TimeDurationsStorage.mc"; @line = 1; ]
+<init> {
+}

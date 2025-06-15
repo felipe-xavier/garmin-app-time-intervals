@@ -1,14 +1,14 @@
 {
   "folders": [
-	{
-		"path": ".."
-	},
-	{
-		"name": "BisGleich",
-		"path": "."
-	}
-],
+    {
+      "path": ".."
+    },
+    {
+      "name": "BisGleich",
+      "path": "."
+    }
+  ],
   "settings": {
-    "cSpell.words": ["Gleich"]
+    "cSpell.words": ["drawables", "Gleich"]
   }
 }

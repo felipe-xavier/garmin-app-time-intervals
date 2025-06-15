@@ -7,6 +7,7 @@ class BisGleichView extends WatchUi.View {
     private var _timeOfTheDayElement;
     private var _targetTimeElement;
     private var _targetTimeLabelElement;
+    private var _heartRateElement;
 
     private var _is24Hour;
 
@@ -32,7 +33,7 @@ class BisGleichView extends WatchUi.View {
         _timeOfTheDayElement = findDrawableById("time_of_the_day");
         _targetTimeElement = findDrawableById("target_time");
         _targetTimeLabelElement = findDrawableById("target_time_label");
-
+        _heartRateElement = findDrawableById("heart_rate");
 
         updateDynamicData();
 
@@ -66,8 +67,6 @@ class BisGleichView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
-        
-
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.overtime) {
             _currentTimerElement.setColor(Graphics.COLOR_RED);
@@ -145,6 +144,7 @@ class BisGleichView extends WatchUi.View {
     }
 
     function updateDynamicData() as Void {
+        updateSensorsData();
         updateTimeOfTheDayElement();
 
         var activityStatus = _activityManager.getActivityStatus();
@@ -153,6 +153,19 @@ class BisGleichView extends WatchUi.View {
         }
 
         WatchUi.requestUpdate();
+    }
+
+    function updateSensorsData() {
+        var heartRate = Activity.getActivityInfo().currentHeartRate;
+        if (heartRate == null) {
+            heartRate = "--";
+            _heartRateElement.setColor(Graphics.COLOR_WHITE);
+        } else {
+            heartRate = heartRate.format("%i");
+            _heartRateElement.setColor(Graphics.COLOR_RED);
+        }
+
+        _heartRateElement.setText(heartRate);
     }
 
     function updateTimeOfTheDayElement() {

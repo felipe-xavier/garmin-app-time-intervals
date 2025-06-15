@@ -1,9 +1,18 @@
 <layout id="MainLayout">
+    <bitmap id="heart_rate_icon" x="45%" y="10%" filename="../drawables/heart-rate.png"></bitmap>
+    <label
+        id="heart_rate"
+        text="--"
+        x="55%"
+        y="7%"
+        font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
     <label
         id="time_of_the_day"
         text="00:00"
         x="center"
-        y="15%"
+        y="20%"
         font="Gfx.FONT_XTINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
