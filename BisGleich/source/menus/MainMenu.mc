@@ -42,12 +42,5 @@ class MainMenu {
             SettingsStorage.getUseTouchScreen(),
             null
         ));
-        _menu.addItem(new WatchUi.ToggleMenuItem(
-            "Reset on Back", 
-            {:enabled=>"reset", :disabled=>"exit"},
-            "reset_on_back",
-            SettingsStorage.getResetOnBack(),
-            null
-        ));
     }
 }

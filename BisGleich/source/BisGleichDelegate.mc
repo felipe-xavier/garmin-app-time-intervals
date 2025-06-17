@@ -35,19 +35,16 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             var activityStatus = _activityManager.getActivityStatus();
             if (activityStatus == ActivityStatus.stopped) {
                 return openMenu();
+            } else {
+                onReset();
+                return true;
             }
+
         }
 
         if (keyEvent.getKey() == WatchUi.KEY_ENTER) {
             if (SettingsStorage.getUseTouchScreen() == false) {
                 handleSelect();
-                return true;
-            }
-        }
-
-        if (keyEvent.getKey() == WatchUi.KEY_ESC    ) {
-            if (SettingsStorage.getResetOnBack() == true) {
-                onReset();
                 return true;
             }
         }
@@ -142,11 +139,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
     function onBack() as Boolean {
         System.println("BisGleichDelegate onBack called");
-        if (SettingsStorage.getResetOnBack() == true && _isOnBackAlreadyPressed == false) {
-            _isOnBackAlreadyPressed = true;
-            onReset();
-            return true;
-        }
+
         WatchUi.popView(WatchUi.SLIDE_DOWN);
         return true; // Indicate that the back action was handled
     }

@@ -68,10 +68,6 @@ class BisGleichView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
         var activityStatus = _activityManager.getActivityStatus();
-        if (activityStatus == ActivityStatus.overtime) {
-            _currentTimerElement.setColor(Graphics.COLOR_RED);
-            _intervalsLeftElement.setText("overtime");
-        }
 
         if (activityStatus == ActivityStatus.playing) {
             _targetTimeElement.setColor(Graphics.COLOR_GREEN);
@@ -83,6 +79,8 @@ class BisGleichView extends WatchUi.View {
             _currentTimerElement.setColor(Graphics.COLOR_ORANGE);
         } else if (activityStatus == ActivityStatus.overtime) {
             _targetTimeElement.setColor(Graphics.COLOR_RED);
+            _currentTimerElement.setColor(Graphics.COLOR_RED);
+            _intervalsLeftElement.setText("overtime");
         }
         View.onUpdate(dc);
         drawDotsLeftMenu(dc);
