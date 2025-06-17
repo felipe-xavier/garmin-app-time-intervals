@@ -2,49 +2,86 @@
 import Toybox.Application;
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 3; @position = 4; @symbol_vardef = [useTouchScreenKey,3,4,21]; ]
 var useTouchScreenKey = "useTouchScreen";
-[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 5; @symbol_classdef = [SettingsStorage,5,6,21]; ]
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 4; @position = 4; @symbol_vardef = [resetOnBackKey,4,4,18]; ]
+var resetOnBackKey = "resetOnBack";
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 6; @symbol_classdef = [SettingsStorage,6,6,21]; ]
 class SettingsStorage {
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 5; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 5; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 7; @symbol_functiondef = [getUseTouchScreen,7,20,37]; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 8; @symbol_functiondef = [getUseTouchScreen,8,20,37]; ]
     static
     function getUseTouchScreen() {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_7_40_9_4_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 8 8 ]
-        symbol [ Application %tmp.1 8 15 26 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_8_40_10_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 9 8 ]
+        symbol [ Application %tmp.1 9 15 26 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.2 8 27 37 ];
+        symbol [ Properties %tmp.2 9 27 37 ];
         %tmp.2 = getv %tmp.1 :Properties;
-        symbol [ getValue %tmp.3 8 38 46 ];
+        symbol [ getValue %tmp.3 9 38 46 ];
         %tmp.3 = getv function %tmp.2 :getValue;
-        symbol [ useTouchScreenKey %tmp.5 8 47 64 ];
+        symbol [ useTouchScreenKey %tmp.5 9 47 64 ];
         %tmp.5 = getv ? :useTouchScreenKey;
         %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
         ret %tmp.6;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_7_40_9_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_8_40_10_4_stop:
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 11; @symbol_functiondef = [setUseTouchScreen,11,20,37]; @symbol_param<0> = [value,11,38,43]; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 12; @symbol_functiondef = [setUseTouchScreen,12,20,37]; @symbol_param<0> = [value,12,38,43]; ]
     static
     function setUseTouchScreen(value) {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_11_45_13_4_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 12 8 ]
-        symbol [ Application %tmp.1 12 8 19 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_12_45_14_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 13 8 ]
+        symbol [ Application %tmp.1 13 8 19 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.2 12 20 30 ];
+        symbol [ Properties %tmp.2 13 20 30 ];
         %tmp.2 = getv %tmp.1 :Properties;
-        symbol [ setValue %tmp.3 12 31 39 ];
+        symbol [ setValue %tmp.3 13 31 39 ];
         %tmp.3 = getv function %tmp.2 :setValue;
-        symbol [ useTouchScreenKey %tmp.5 12 40 57 ];
+        symbol [ useTouchScreenKey %tmp.5 13 40 57 ];
         %tmp.5 = getv ? :useTouchScreenKey;
         %tmp.6 = lgetv %value;
-        symbol [ value %tmp.6 12 59 64 ];
+        symbol [ value %tmp.6 13 59 64 ];
         invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_11_45_13_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_12_45_14_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 16; @symbol_functiondef = [getResetOnBack,16,20,34]; ]
+    static
+    function getResetOnBack() {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_16_37_18_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 17 8 ]
+        symbol [ Application %tmp.1 17 15 26 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 17 27 37 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 17 38 46 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        symbol [ resetOnBackKey %tmp.5 17 47 61 ];
+        %tmp.5 = getv ? :resetOnBackKey;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        ret %tmp.6;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_16_37_18_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 20; @symbol_functiondef = [setResetOnBack,20,20,34]; @symbol_param<0> = [value,20,35,40]; ]
+    static
+    function setResetOnBack(value) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_20_42_22_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc" 21 8 ]
+        symbol [ Application %tmp.1 21 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 21 20 30 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 21 31 39 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        symbol [ resetOnBackKey %tmp.5 21 40 54 ];
+        %tmp.5 = getv ? :resetOnBackKey;
+        %tmp.6 = lgetv %value;
+        symbol [ value %tmp.6 21 56 61 ];
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_storage_SettingsStorage_mc_20_42_22_4_stop:
     }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/storage/SettingsStorage.mc"; @line = 1; ]

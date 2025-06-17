@@ -75,8 +75,12 @@ class BisGleichView extends WatchUi.View {
 
         if (activityStatus == ActivityStatus.playing) {
             _targetTimeElement.setColor(Graphics.COLOR_GREEN);
-        } else if (activityStatus == ActivityStatus.stopped || activityStatus == ActivityStatus.paused) {
-            _targetTimeElement.setColor(Graphics.COLOR_BLUE);
+            _currentTimerElement.setColor(Graphics.COLOR_WHITE);
+        } else if (activityStatus == ActivityStatus.stopped) {
+            _targetTimeElement.setColor(Graphics.COLOR_ORANGE);
+        } else if (activityStatus == ActivityStatus.paused) {
+            _targetTimeElement.setColor(Graphics.COLOR_ORANGE);
+            _currentTimerElement.setColor(Graphics.COLOR_ORANGE);
         } else if (activityStatus == ActivityStatus.overtime) {
             _targetTimeElement.setColor(Graphics.COLOR_RED);
         }
