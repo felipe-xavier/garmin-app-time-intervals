@@ -12,7 +12,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
 
-
     function initialize(view) {
         _activityManager = ActivityManager.getInstance();
         _notificationManager = NotificationManager.getInstance();
@@ -26,8 +25,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         System.println("BisGleichDelegate onMenu called");
         return true;
     }
-
-   
     
     function onKeyPressed(keyEvent as KeyEvent) as Boolean {
         System.println("BisGleichDelegate onKeyPressed called with key: " + keyEvent.getKey() + ", type: " + keyEvent.getType() + ", string: " + keyEvent.toString());
@@ -39,10 +36,26 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             }
         }
 
+        if (keyEvent.getKey() == WatchUi.KEY_ENTER) {
+            if (SettingsStorage.getUseTouchScreen() == false) {
+                handleSelect();
+                return true;
+            }
+        }
+
         return false; // Indicate that the key event was not handled
     }
 
     function onSelect() as Boolean {
+        if (SettingsStorage.getUseTouchScreen() == true) {
+            handleSelect();
+            return true;
+        }
+        
+        return false; // Indicate that the select action was handled
+    }
+
+    function handleSelect() {
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.playing) {
             _activityManager.pauseActivity();
@@ -60,8 +73,6 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             
             _view.onReset();
         }
-        
-        return true; // Indicate that the select action was handled
     }
 
     function startActivity() {

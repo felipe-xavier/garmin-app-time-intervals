@@ -33,6 +33,10 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
             initialValue = TimeDurationsStorage.getIntervalTimeInMinDuration();
             callback = method(:updateIntervalTimeInMin);
             upperLimitNumber = TimeDurationsStorage.getTotalTimeInMinDuration() - 1;
+        } else if (id.equals("use_touch_screen")) {
+            var toggleItem = item as WatchUi.ToggleMenuItem;
+            SettingsStorage.setUseTouchScreen(toggleItem.isEnabled());
+            return;
         }
 
         var picker = new NumberPicker(label, color, lowerLimitNumber, upperLimitNumber, increment, initialValue);

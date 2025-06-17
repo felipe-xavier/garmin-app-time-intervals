@@ -2,4 +2,5 @@
     <property id="appVersion" type="string">1.0.0</property>
     <property id="totalTimeInMinKey" type="number">20</property>
     <property id="intervalTimeInMinKey" type="number">1</property>
+    <property id="useTouchScreen" type="boolean">true</property>
 </properties>
