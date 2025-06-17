@@ -12,6 +12,8 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
 
+    private var _isOnBackAlreadyPressed = false;
+
     function initialize(view) {
         _activityManager = ActivityManager.getInstance();
         _notificationManager = NotificationManager.getInstance();
@@ -43,6 +45,13 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             }
         }
 
+        if (keyEvent.getKey() == WatchUi.KEY_ESC    ) {
+            if (SettingsStorage.getResetOnBack() == true) {
+                onReset();
+                return true;
+            }
+        }
+
         return false; // Indicate that the key event was not handled
     }
 
@@ -67,12 +76,18 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             _activityManager.startActivity();
             startTimer();
         } else if (activityStatus == ActivityStatus.overtime) {
-            _activityManager.stopActivity();
-            _notificationManager.removeCallback(NotificationManager.startPostActivityKey);
-            _progressManager.reset();
-            
-            _view.onReset();
+            onReset();
         }
+    }
+
+    function onReset() {
+        _activityManager.stopActivity();
+        _notificationManager.removeCallback(NotificationManager.startPostActivityKey);
+        _notificationManager.removeCallback(NotificationManager.startActivityKey);
+
+        _progressManager.reset();
+        
+        _view.onReset();
     }
 
     function startActivity() {
@@ -127,8 +142,11 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
     function onBack() as Boolean {
         System.println("BisGleichDelegate onBack called");
-        // Handle back action if needed
-        // For example, you might want to pop the current view or perform a specific action
+        if (SettingsStorage.getResetOnBack() == true && _isOnBackAlreadyPressed == false) {
+            _isOnBackAlreadyPressed = true;
+            onReset();
+            return true;
+        }
         WatchUi.popView(WatchUi.SLIDE_DOWN);
         return true; // Indicate that the back action was handled
     }

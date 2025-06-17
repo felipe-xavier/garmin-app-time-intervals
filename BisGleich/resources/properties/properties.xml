@@ -3,4 +3,5 @@
     <property id="totalTimeInMinKey" type="number">20</property>
     <property id="intervalTimeInMinKey" type="number">1</property>
     <property id="useTouchScreen" type="boolean">true</property>
+    <property id="resetOnBack" type="boolean">true</property>
 </properties>
