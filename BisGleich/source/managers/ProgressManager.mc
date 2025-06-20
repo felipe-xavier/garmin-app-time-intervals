@@ -1,14 +1,16 @@
+// Class used to keep track and share the progress of the activity
 class ProgressManager {
     private static var _instance = null;
-    private var _totalDurationInSec;
     private var _currentDurationInSec;
-
     private var _intervalDurationInSec;
+    private var _currentIntervalDurationInSec;
+    private var _targetTimeInSec;
 
     private function initValues() {
-        _totalDurationInSec = TimeDurationsStorage.getTotalTimeInMinDuration() * 60;
-        _currentDurationInSec = _totalDurationInSec;
+        _currentDurationInSec = TimeDurationsStorage.getTotalTimeInMinDuration() * 60;
         _intervalDurationInSec = TimeDurationsStorage.getIntervalTimeInMinDuration() * 60;
+        _currentIntervalDurationInSec = _intervalDurationInSec;
+        _targetTimeInSec = 0;
     }
 
     function initialize() {
@@ -37,6 +39,26 @@ class ProgressManager {
 
     function getIntervalDurationInSec() {
         return _intervalDurationInSec;
+    }
+
+    function setIntervalDurationInSec(value) {
+        _intervalDurationInSec = value;
+    }
+
+    function getCurrentIntervalDurationInSec() {
+        return _currentIntervalDurationInSec;
+    }
+
+    function setCurrentIntervalDurationInSec(value) {
+        _currentIntervalDurationInSec = value;
+    }
+
+    function getTargetTimeInSec() {
+        return _targetTimeInSec;
+    }
+
+    function setTargetTimeInSec(value) {
+        _targetTimeInSec = value;
     }
 
     function getCurrentIntervalsCount() {

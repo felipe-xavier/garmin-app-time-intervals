@@ -1,6 +1,5 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
-import Toybox.Timer;
 
 class BisGleichDelegate extends WatchUi.BehaviorDelegate {
 
@@ -12,14 +11,42 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
 
-    private var _isOnBackAlreadyPressed = false;
-
     function initialize(view) {
         _activityManager = ActivityManager.getInstance();
         _notificationManager = NotificationManager.getInstance();
         _view = view;
         _progressManager = ProgressManager.getInstance();
         BehaviorDelegate.initialize();
+        var savedStatus = ActivityStateStorage.getActivityStatus();
+        var savedDurationInSec = ActivityStateStorage.getCurrentDurationInSec();
+        var savedTargetTimeInSec = ActivityStateStorage.getTargetTimeInSec();
+        var savedCurrentTimeInSec = ActivityStateStorage.getCurrentTimeInSec();
+        System.println("BisGleichDelegate initialize, savedStatus: " + savedStatus + ", savedDurationInSec: " + savedDurationInSec + ", savedTargetTimeInSec: " + savedTargetTimeInSec);
+        if (savedDurationInSec == -1 || savedTargetTimeInSec == -1) {
+            return;
+        }
+        //  activityState: 0, targetTime: 2949, currentDuration: 115
+        ActivityStateStorage.clearState();
+        var currentTimeInSec = getTimeInSec(System.getClockTime());
+        if (savedCurrentTimeInSec > currentTimeInSec) {
+            return;
+        }
+        System.println("BisGleichDelegate initialize, currentTimeInSec: " + currentTimeInSec);
+        var newDurationTimeInSec = savedTargetTimeInSec - currentTimeInSec;
+        var originalIntervalDurationInSec = _progressManager.getIntervalDurationInSec();
+        var newIntervalDurationInSec = newDurationTimeInSec % originalIntervalDurationInSec;
+
+        if (savedStatus == ActivityStatus.playing) {
+            if (currentTimeInSec < savedTargetTimeInSec) {
+                _activityManager.setActivityStatus(ActivityStatus.playing);
+                _progressManager.setCurrentDurationInSec(newDurationTimeInSec);
+                _progressManager.setCurrentIntervalDurationInSec(newIntervalDurationInSec);
+                _progressManager.setTargetTimeInSec(savedTargetTimeInSec);
+                _view.updateCurrentTimerValue(newDurationTimeInSec);
+                startActivity();
+                return;
+            }
+        }
     }
 
     function openMenu() as Boolean {
@@ -29,7 +56,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
     
     function onKeyPressed(keyEvent as KeyEvent) as Boolean {
-        System.println("BisGleichDelegate onKeyPressed called with key: " + keyEvent.getKey() + ", type: " + keyEvent.getType() + ", string: " + keyEvent.toString());
+        System.println("BisGleichDelegate onKeyPressed with key: " + keyEvent.getKey());
 
         if (keyEvent.getKey() == WatchUi.KEY_UP) {
             var activityStatus = _activityManager.getActivityStatus();
@@ -90,7 +117,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     function startActivity() {
        
         _currentTotalDuration = _progressManager.getCurrentDurationInSec();
-        _currentIntervalDuration = _progressManager.getIntervalDurationInSec();
+        _currentIntervalDuration = _progressManager.getCurrentIntervalDurationInSec();
         _currentNumberOfIntervals = _progressManager.getCurrentIntervalsCount();
 
         _view.updateIntervalsValue(_currentNumberOfIntervals);
@@ -110,9 +137,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             _activityManager.overtimeActivity(); // Reset the flag when countdown is finished
             _notificationManager.callAttention(AttentionLevel.High, true);
             _view.updateIntervalsValue(0);
-            
-            _notificationManager.callEverySecond(NotificationManager.startPostActivityKey, method(:startPostActivity));
-
+            startOvertime();
             return;
         }
 
@@ -137,10 +162,26 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         _view.updateCurrentTimerValue(_currentTotalDuration);
     }
 
+    function startOvertime() {
+        _notificationManager.callEverySecond(NotificationManager.startPostActivityKey, method(:startPostActivity));
+    }
+
     function onBack() as Boolean {
         System.println("BisGleichDelegate onBack called");
-
+        
+        // Save state if activity is playing or paused
+        var activityStatus = _activityManager.getActivityStatus();
+        if (activityStatus == ActivityStatus.playing) {
+            ActivityStateStorage.setActivityStatus(activityStatus);
+            ActivityStateStorage.setCurrentDurationInSec(_progressManager.getCurrentDurationInSec());
+            ActivityStateStorage.setTargetTimeInSec(_progressManager.getTargetTimeInSec());
+            ActivityStateStorage.setCurrentTimeInSec(getTimeInSec(System.getClockTime()));
+            System.println("BisGleichDelegate onBack called, activityState: " + activityStatus + ", targetTime: " + _progressManager.getTargetTimeInSec() + ", currentDuration: " + _progressManager.getCurrentDurationInSec());
+        } else {
+            ActivityStateStorage.clearState();
+        }
+        
         WatchUi.popView(WatchUi.SLIDE_DOWN);
-        return true; // Indicate that the back action was handled
+        return true;
     }
 }

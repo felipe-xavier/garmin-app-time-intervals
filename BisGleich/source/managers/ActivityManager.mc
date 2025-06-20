@@ -29,4 +29,8 @@ class ActivityManager {
     function getActivityStatus() {
         return _activityStatus;
     }
+
+    function setActivityStatus(status) {
+        _activityStatus = status;
+    }
 }

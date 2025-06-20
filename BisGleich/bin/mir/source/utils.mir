@@ -1,0 +1,36 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc"; @line = 1; @symbol_functiondef = [getTimeInSec,1,9,21]; @symbol_param<0> = [time,1,22,26]; ]
+function getTimeInSec(time) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_utils_mc_1_28_4_0_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc" 2 4 ]
+    [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_utils_mc_1_28_4_0_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_utils_mc_1_28_4_0_stop" ]
+    %totalSeconds.1 = local;
+    symbol [ totalSeconds %totalSeconds.1 2 8 20 ];
+    %tmp.1 = lgetv %time;
+    symbol [ time %tmp.1 2 23 27 ];
+    symbol [ hour %tmp.2 2 28 32 ];
+    %tmp.2 = getv %tmp.1 :hour;
+    %tmp.3 = 3600;
+    %tmp.4 = mul %tmp.2 %tmp.3;
+    %tmp.5 = lgetv %time;
+    symbol [ time %tmp.5 2 42 46 ];
+    symbol [ min %tmp.6 2 47 50 ];
+    %tmp.6 = getv %tmp.5 :min;
+    %tmp.7 = 60;
+    %tmp.8 = mul %tmp.6 %tmp.7;
+    %tmp.9 = add %tmp.4 %tmp.8;
+    %tmp.10 = lgetv %time;
+    symbol [ time %tmp.10 2 58 62 ];
+    symbol [ sec %tmp.11 2 63 66 ];
+    %tmp.11 = getv %tmp.10 :sec;
+    %tmp.12 = add %tmp.9 %tmp.11;
+    lputv %totalSeconds.1 %tmp.12;
+    symbol [ totalSeconds %totalSeconds.1 2 8 20 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc" 3 4 ]
+    %tmp.13 = lgetv %totalSeconds.1;
+    symbol [ totalSeconds %tmp.13 3 11 23 ];
+    ret %tmp.13;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_utils_mc_1_28_4_0_stop:
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc"; @line = 1; ]
+<init> {
+}

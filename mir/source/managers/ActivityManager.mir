@@ -104,6 +104,16 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_man
         ret %tmp.2;
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_29_33_31_4_stop:
     }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 33; @symbol_functiondef = [setActivityStatus,33,13,30]; @symbol_param<0> = [status,33,31,37]; ]
+    function setActivityStatus(status) {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_33_39_35_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc" 34 8 ]
+        %tmp.1 = lgetv %status;
+        symbol [ status %tmp.1 34 26 32 ];
+        symbol [ _activityStatus ? 34 8 23 ];
+        putv self :_activityStatus %tmp.1;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_ActivityManager_mc_33_39_35_4_stop:
+    }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/ActivityManager.mc"; @line = 1; ]
 <init> {

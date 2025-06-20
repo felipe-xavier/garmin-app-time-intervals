@@ -35,6 +35,8 @@ class BisGleichView extends WatchUi.View {
         _targetTimeLabelElement = findDrawableById("target_time_label");
         _heartRateElement = findDrawableById("heart_rate");
 
+            
+        updateTargetTimeElement();
         updateDynamicData();
 
         _notificationManager.callEverySecond(NotificationManager.updateDynamicDataKey, method(:updateDynamicData));
@@ -187,10 +189,12 @@ class BisGleichView extends WatchUi.View {
 
         var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
 
-        
+        var currentTimeInSec = getTimeInSec(time);
 
         // Calculate target time by adding extra duration to current time
-        var totalSeconds = time.hour * 3600 + time.min * 60 + time.sec + extraDurationTimeInSec;
+        var totalSeconds = currentTimeInSec + extraDurationTimeInSec;
+        _progressManager.setTargetTimeInSec(totalSeconds);
+
         var targetHour = (totalSeconds / 3600) % 24;
         var targetMin = (totalSeconds % 3600) / 60;
         var targetSec = totalSeconds % 60;

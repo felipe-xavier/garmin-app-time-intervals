@@ -3,4 +3,8 @@
     <property id="totalTimeInMinKey" type="number">20</property>
     <property id="intervalTimeInMinKey" type="number">1</property>
     <property id="useTouchScreen" type="boolean">false</property>
+    <property id="activityStatus" type="number">0</property>
+    <property id="targetTimeInSec" type="number">0</property>
+    <property id="currentDurationInSec" type="number">0</property>
+    <property id="currentTimeInSec" type="number">0</property>
 </properties>
