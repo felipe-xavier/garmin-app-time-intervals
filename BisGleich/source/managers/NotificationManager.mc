@@ -87,8 +87,8 @@ class NotificationManager {
   }
 
   function tryToggleBacklight(enable) {
-    try {
-      Attention.backlight(enable);
-    } catch (ex) {}
+      if (Attention has :backlight) {
+        Attention.backlight(enable);
+      }
   }
 }
