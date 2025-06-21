@@ -29,7 +29,7 @@ class BisGleichView extends WatchUi.View {
     function onLayout(dc as Dc) as Void {
         setLayout(createLayout(dc));
             
-        // updateTargetTimeElement();
+        updateTargetTime();
         updateDynamicData();
 
         _notificationManager.callEverySecond(NotificationManager.updateDynamicDataKey, method(:updateDynamicData));
@@ -144,20 +144,25 @@ class BisGleichView extends WatchUi.View {
 
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.paused || activityStatus == ActivityStatus.stopped) {
-            var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
-            var currentTimeInSec = time.hour * 3600 + time.min * 60 + time.sec;
-
-            var totalSeconds = currentTimeInSec + extraDurationTimeInSec;
-            _progressManager.setTargetTimeInSec(totalSeconds);
-
-            var targetHour = (totalSeconds / 3600) % 24;
-            var targetMin = (totalSeconds % 3600) / 60;
-            var targetSec = totalSeconds % 60;
-
-            _targetTimeElement.setText(FormatManager.formatTime(targetHour, targetMin, targetSec));
+            updateTargetTime();
         }
 
         WatchUi.requestUpdate();
+    }
+
+    function updateTargetTime() as Void {
+        var currentTimeInSec = getTimeInSec(System.getClockTime());
+
+        var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
+
+        var totalSeconds = currentTimeInSec + extraDurationTimeInSec;
+        _progressManager.setTargetTimeInSec(totalSeconds);
+
+        var targetHour = (totalSeconds / 3600) % 24;
+        var targetMin = (totalSeconds % 3600) / 60;
+        var targetSec = totalSeconds % 60;
+
+        _targetTimeElement.setText(FormatManager.formatTime(targetHour, targetMin, targetSec));
     }
 
     function updateSensorsData() {

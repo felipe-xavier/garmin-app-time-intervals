@@ -96,27 +96,32 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         symbol [ dc %tmp.5 30 31 33 ];
         %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
         invoke %tmp.1 %tmp.2(%tmp.6);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 33 8 ]
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 32 8 ]
         %tmp.7 = self;
-        symbol [ updateDynamicData %tmp.8 33 8 25 ];
-        %tmp.8 = getv function %tmp.7 :updateDynamicData;
+        symbol [ updateTargetTime %tmp.8 32 8 24 ];
+        %tmp.8 = getv function %tmp.7 :updateTargetTime;
         invoke %tmp.7 %tmp.8();
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 33 8 ]
+        %tmp.9 = self;
+        symbol [ updateDynamicData %tmp.10 33 8 25 ];
+        %tmp.10 = getv function %tmp.9 :updateDynamicData;
+        invoke %tmp.9 %tmp.10();
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 35 8 ]
-        symbol [ _notificationManager %tmp.10 35 8 28 ];
-        %tmp.10 = getv ? :_notificationManager;
-        symbol [ callEverySecond %tmp.11 35 29 44 ];
-        %tmp.11 = getv function %tmp.10 :callEverySecond;
-        symbol [ NotificationManager %tmp.13 35 45 64 ];
-        %tmp.13 = getv ? :NotificationManager;
-        symbol [ updateDynamicDataKey %tmp.14 35 65 85 ];
-        %tmp.14 = getv %tmp.13 :updateDynamicDataKey;
-        %tmp.15 = self;
-        symbol [ method %tmp.16 35 87 93 ];
-        %tmp.16 = getv function %tmp.15 :method;
-        %tmp.18 = const :updateDynamicData;
-        symbol [ updateDynamicData %tmp.18 35 95 112 const ];
-        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.18);
-        invoke %tmp.10 %tmp.11(%tmp.14, %tmp.19);
+        symbol [ _notificationManager %tmp.12 35 8 28 ];
+        %tmp.12 = getv ? :_notificationManager;
+        symbol [ callEverySecond %tmp.13 35 29 44 ];
+        %tmp.13 = getv function %tmp.12 :callEverySecond;
+        symbol [ NotificationManager %tmp.15 35 45 64 ];
+        %tmp.15 = getv ? :NotificationManager;
+        symbol [ updateDynamicDataKey %tmp.16 35 65 85 ];
+        %tmp.16 = getv %tmp.15 :updateDynamicDataKey;
+        %tmp.17 = self;
+        symbol [ method %tmp.18 35 87 93 ];
+        %tmp.18 = getv function %tmp.17 :method;
+        %tmp.20 = const :updateDynamicData;
+        symbol [ updateDynamicData %tmp.20 35 95 112 const ];
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        invoke %tmp.12 %tmp.13(%tmp.16, %tmp.21);
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_29_40_36_4_stop:
     }
     [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 41; @symbol_functiondef = [onShow,41,13,19]; ]
@@ -770,14 +775,14 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
     }
     [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 139; @symbol_functiondef = [updateDynamicData,139,13,30]; ]
     function updateDynamicData() as Void {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_start:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 140 8 ]
         %tmp.1 = self;
         symbol [ updateSensorsData %tmp.2 140 8 25 ];
         %tmp.2 = getv function %tmp.1 :updateSensorsData;
         invoke %tmp.1 %tmp.2();
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 142 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_stop" ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_stop" ]
         %time.1 = local;
         symbol [ time %time.1 142 12 16 ];
         symbol [ System %tmp.3 142 19 25 ];
@@ -811,7 +816,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         %tmp.18 = invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15, %tmp.17);
         invoke %tmp.7 %tmp.8(%tmp.18);
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 145 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_stop" ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_stop" ]
         %activityStatus.2 = local;
         symbol [ activityStatus %activityStatus.2 145 12 26 ];
         symbol [ _activityManager %tmp.20 145 29 45 ];
@@ -822,7 +827,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         lputv %activityStatus.2 %tmp.22;
         symbol [ activityStatus %activityStatus.2 145 12 26 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 146 8 ]
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_stmt:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_stmt:
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_12_146_88_begin:
         %tmp.23 = lgetv %activityStatus.2;
         symbol [ activityStatus %tmp.23 146 12 26 ];
@@ -831,7 +836,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         symbol [ paused %tmp.26 146 45 51 ];
         %tmp.26 = getv %tmp.25 :paused;
         %tmp.27 = eq %tmp.23 %tmp.26;
-        bt %tmp.27 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_true;
+        bt %tmp.27 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_true;
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_55_146_88_false:
         %tmp.28 = lgetv %activityStatus.2;
         symbol [ activityStatus %tmp.28 146 55 69 ];
@@ -843,424 +848,425 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         push %tmp.32;
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_55_146_88_end:
         %tmp.33 = phi [%tmp.27 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_12_146_88_begin] [%tmp.32 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_55_146_88_false] [%tmp.33 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_55_146_88_end];
-        bf %tmp.33 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_true:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start:
+        bf %tmp.33 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_148_8_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 147 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %extraDurationTimeInSec.3 = local;
-        symbol [ extraDurationTimeInSec %extraDurationTimeInSec.3 147 16 38 ];
-        symbol [ _progressManager %tmp.35 147 41 57 ];
-        %tmp.35 = getv ? :_progressManager;
-        symbol [ getCurrentDurationInSec %tmp.36 147 58 81 ];
-        %tmp.36 = getv function %tmp.35 :getCurrentDurationInSec;
-        %tmp.37 = invoke %tmp.35 %tmp.36();
-        lputv %extraDurationTimeInSec.3 %tmp.37;
-        symbol [ extraDurationTimeInSec %extraDurationTimeInSec.3 147 16 38 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 148 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %currentTimeInSec.4 = local;
-        symbol [ currentTimeInSec %currentTimeInSec.4 148 16 32 ];
-        %tmp.38 = lgetv %time.1;
-        symbol [ time %tmp.38 148 35 39 ];
-        symbol [ hour %tmp.39 148 40 44 ];
-        %tmp.39 = getv %tmp.38 :hour;
-        %tmp.40 = 3600;
-        %tmp.41 = mul %tmp.39 %tmp.40;
-        %tmp.42 = lgetv %time.1;
-        symbol [ time %tmp.42 148 54 58 ];
-        symbol [ min %tmp.43 148 59 62 ];
-        %tmp.43 = getv %tmp.42 :min;
-        %tmp.44 = 60;
-        %tmp.45 = mul %tmp.43 %tmp.44;
-        %tmp.46 = add %tmp.41 %tmp.45;
-        %tmp.47 = lgetv %time.1;
-        symbol [ time %tmp.47 148 70 74 ];
-        symbol [ sec %tmp.48 148 75 78 ];
-        %tmp.48 = getv %tmp.47 :sec;
-        %tmp.49 = add %tmp.46 %tmp.48;
-        lputv %currentTimeInSec.4 %tmp.49;
-        symbol [ currentTimeInSec %currentTimeInSec.4 148 16 32 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 150 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %totalSeconds.5 = local;
-        symbol [ totalSeconds %totalSeconds.5 150 16 28 ];
-        %tmp.50 = lgetv %currentTimeInSec.4;
-        symbol [ currentTimeInSec %tmp.50 150 31 47 ];
-        %tmp.51 = lgetv %extraDurationTimeInSec.3;
-        symbol [ extraDurationTimeInSec %tmp.51 150 50 72 ];
-        %tmp.52 = add %tmp.50 %tmp.51;
-        lputv %totalSeconds.5 %tmp.52;
-        symbol [ totalSeconds %totalSeconds.5 150 16 28 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 151 12 ]
-        symbol [ _progressManager %tmp.54 151 12 28 ];
-        %tmp.54 = getv ? :_progressManager;
-        symbol [ setTargetTimeInSec %tmp.55 151 29 47 ];
-        %tmp.55 = getv function %tmp.54 :setTargetTimeInSec;
-        %tmp.56 = lgetv %totalSeconds.5;
-        symbol [ totalSeconds %tmp.56 151 48 60 ];
-        invoke %tmp.54 %tmp.55(%tmp.56);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 153 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %targetHour.6 = local;
-        symbol [ targetHour %targetHour.6 153 16 26 ];
-        %tmp.57 = lgetv %totalSeconds.5;
-        symbol [ totalSeconds %tmp.57 153 30 42 ];
-        %tmp.58 = 3600;
-        %tmp.59 = div %tmp.57 %tmp.58;
-        %tmp.60 = 24;
-        %tmp.61 = mod %tmp.59 %tmp.60;
-        lputv %targetHour.6 %tmp.61;
-        symbol [ targetHour %targetHour.6 153 16 26 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 154 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %targetMin.7 = local;
-        symbol [ targetMin %targetMin.7 154 16 25 ];
-        %tmp.62 = lgetv %totalSeconds.5;
-        symbol [ totalSeconds %tmp.62 154 29 41 ];
-        %tmp.63 = 3600;
-        %tmp.64 = mod %tmp.62 %tmp.63;
-        %tmp.65 = 60;
-        %tmp.66 = div %tmp.64 %tmp.65;
-        lputv %targetMin.7 %tmp.66;
-        symbol [ targetMin %targetMin.7 154 16 25 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 155 12 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop" ]
-        %targetSec.8 = local;
-        symbol [ targetSec %targetSec.8 155 16 25 ];
-        %tmp.67 = lgetv %totalSeconds.5;
-        symbol [ totalSeconds %tmp.67 155 28 40 ];
-        %tmp.68 = 60;
-        %tmp.69 = mod %tmp.67 %tmp.68;
-        lputv %targetSec.8 %tmp.69;
-        symbol [ targetSec %targetSec.8 155 16 25 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 157 12 ]
-        symbol [ _targetTimeElement %tmp.71 157 12 30 ];
-        %tmp.71 = getv ? :_targetTimeElement;
-        symbol [ setText %tmp.72 157 31 38 ];
-        %tmp.72 = getv function %tmp.71 :setText;
-        symbol [ FormatManager %tmp.74 157 39 52 ];
-        %tmp.74 = getv ? :FormatManager;
-        symbol [ formatTime %tmp.75 157 53 63 ];
-        %tmp.75 = getv function %tmp.74 :formatTime;
-        %tmp.76 = lgetv %targetHour.6;
-        symbol [ targetHour %tmp.76 157 64 74 ];
-        %tmp.77 = lgetv %targetMin.7;
-        symbol [ targetMin %tmp.77 157 76 85 ];
-        %tmp.78 = lgetv %targetSec.8;
-        symbol [ targetSec %tmp.78 157 87 96 ];
-        %tmp.79 = invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77, %tmp.78);
-        invoke %tmp.71 %tmp.72(%tmp.79);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_158_8_stop:
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_158_8_if_end:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 160 8 ]
-        symbol [ WatchUi %tmp.80 160 8 15 ];
-        %tmp.80 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.81 160 16 29 ];
-        %tmp.81 = getv function %tmp.80 :requestUpdate;
-        invoke %tmp.80 %tmp.81();
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_161_4_stop:
+        %tmp.34 = self;
+        symbol [ updateTargetTime %tmp.35 147 12 28 ];
+        %tmp.35 = getv function %tmp.34 :updateTargetTime;
+        invoke %tmp.34 %tmp.35();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_97_148_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_146_8_148_8_if_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 150 8 ]
+        symbol [ WatchUi %tmp.36 150 8 15 ];
+        %tmp.36 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.37 150 16 29 ];
+        %tmp.37 = getv function %tmp.36 :requestUpdate;
+        invoke %tmp.36 %tmp.37();
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_139_41_151_4_stop:
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 163; @symbol_functiondef = [updateSensorsData,163,13,30]; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 153; @symbol_functiondef = [updateTargetTime,153,13,29]; ]
+    function updateTargetTime() as Void {
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 154 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %currentTimeInSec.1 = local;
+        symbol [ currentTimeInSec %currentTimeInSec.1 154 12 28 ];
+        %tmp.1 = self;
+        symbol [ getTimeInSec %tmp.2 154 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getTimeInSec;
+        symbol [ System %tmp.3 154 44 50 ];
+        %tmp.3 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.4 154 51 63 ];
+        %tmp.4 = getv function %tmp.3 :getClockTime;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.5);
+        lputv %currentTimeInSec.1 %tmp.6;
+        symbol [ currentTimeInSec %currentTimeInSec.1 154 12 28 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 156 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %extraDurationTimeInSec.2 = local;
+        symbol [ extraDurationTimeInSec %extraDurationTimeInSec.2 156 12 34 ];
+        symbol [ _progressManager %tmp.8 156 37 53 ];
+        %tmp.8 = getv ? :_progressManager;
+        symbol [ getCurrentDurationInSec %tmp.9 156 54 77 ];
+        %tmp.9 = getv function %tmp.8 :getCurrentDurationInSec;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %extraDurationTimeInSec.2 %tmp.10;
+        symbol [ extraDurationTimeInSec %extraDurationTimeInSec.2 156 12 34 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 158 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %totalSeconds.3 = local;
+        symbol [ totalSeconds %totalSeconds.3 158 12 24 ];
+        %tmp.11 = lgetv %currentTimeInSec.1;
+        symbol [ currentTimeInSec %tmp.11 158 27 43 ];
+        %tmp.12 = lgetv %extraDurationTimeInSec.2;
+        symbol [ extraDurationTimeInSec %tmp.12 158 46 68 ];
+        %tmp.13 = add %tmp.11 %tmp.12;
+        lputv %totalSeconds.3 %tmp.13;
+        symbol [ totalSeconds %totalSeconds.3 158 12 24 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 159 8 ]
+        symbol [ _progressManager %tmp.15 159 8 24 ];
+        %tmp.15 = getv ? :_progressManager;
+        symbol [ setTargetTimeInSec %tmp.16 159 25 43 ];
+        %tmp.16 = getv function %tmp.15 :setTargetTimeInSec;
+        %tmp.17 = lgetv %totalSeconds.3;
+        symbol [ totalSeconds %tmp.17 159 44 56 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 161 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %targetHour.4 = local;
+        symbol [ targetHour %targetHour.4 161 12 22 ];
+        %tmp.18 = lgetv %totalSeconds.3;
+        symbol [ totalSeconds %tmp.18 161 26 38 ];
+        %tmp.19 = 3600;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        %tmp.21 = 24;
+        %tmp.22 = mod %tmp.20 %tmp.21;
+        lputv %targetHour.4 %tmp.22;
+        symbol [ targetHour %targetHour.4 161 12 22 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 162 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %targetMin.5 = local;
+        symbol [ targetMin %targetMin.5 162 12 21 ];
+        %tmp.23 = lgetv %totalSeconds.3;
+        symbol [ totalSeconds %tmp.23 162 25 37 ];
+        %tmp.24 = 3600;
+        %tmp.25 = mod %tmp.23 %tmp.24;
+        %tmp.26 = 60;
+        %tmp.27 = div %tmp.25 %tmp.26;
+        lputv %targetMin.5 %tmp.27;
+        symbol [ targetMin %targetMin.5 162 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 163 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop" ]
+        %targetSec.6 = local;
+        symbol [ targetSec %targetSec.6 163 12 21 ];
+        %tmp.28 = lgetv %totalSeconds.3;
+        symbol [ totalSeconds %tmp.28 163 24 36 ];
+        %tmp.29 = 60;
+        %tmp.30 = mod %tmp.28 %tmp.29;
+        lputv %targetSec.6 %tmp.30;
+        symbol [ targetSec %targetSec.6 163 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 165 8 ]
+        symbol [ _targetTimeElement %tmp.32 165 8 26 ];
+        %tmp.32 = getv ? :_targetTimeElement;
+        symbol [ setText %tmp.33 165 27 34 ];
+        %tmp.33 = getv function %tmp.32 :setText;
+        symbol [ FormatManager %tmp.35 165 35 48 ];
+        %tmp.35 = getv ? :FormatManager;
+        symbol [ formatTime %tmp.36 165 49 59 ];
+        %tmp.36 = getv function %tmp.35 :formatTime;
+        %tmp.37 = lgetv %targetHour.4;
+        symbol [ targetHour %tmp.37 165 60 70 ];
+        %tmp.38 = lgetv %targetMin.5;
+        symbol [ targetMin %tmp.38 165 72 81 ];
+        %tmp.39 = lgetv %targetSec.6;
+        symbol [ targetSec %tmp.39 165 83 92 ];
+        %tmp.40 = invoke %tmp.35 %tmp.36(%tmp.37, %tmp.38, %tmp.39);
+        invoke %tmp.32 %tmp.33(%tmp.40);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_153_40_166_4_stop:
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 168; @symbol_functiondef = [updateSensorsData,168,13,30]; ]
     function updateSensorsData() {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_163_33_172_4_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 164 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_163_33_172_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_163_33_172_4_stop" ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_168_33_177_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 169 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_168_33_177_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_168_33_177_4_stop" ]
         %heartRate.1 = local;
-        symbol [ heartRate %heartRate.1 164 12 21 ];
-        symbol [ Activity %tmp.1 164 24 32 ];
+        symbol [ heartRate %heartRate.1 169 12 21 ];
+        symbol [ Activity %tmp.1 169 24 32 ];
         %tmp.1 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.2 164 33 48 ];
+        symbol [ getActivityInfo %tmp.2 169 33 48 ];
         %tmp.2 = getv function %tmp.1 :getActivityInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ currentHeartRate %tmp.4 164 51 67 ];
+        symbol [ currentHeartRate %tmp.4 169 51 67 ];
         %tmp.4 = getv %tmp.3 :currentHeartRate;
         lputv %heartRate.1 %tmp.4;
-        symbol [ heartRate %heartRate.1 164 12 21 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 165 8 ]
-        symbol [ _heartRateElement %tmp.6 165 8 25 ];
+        symbol [ heartRate %heartRate.1 169 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 170 8 ]
+        symbol [ _heartRateElement %tmp.6 170 8 25 ];
         %tmp.6 = getv ? :_heartRateElement;
-        symbol [ setText %tmp.7 165 26 33 ];
+        symbol [ setText %tmp.7 170 26 33 ];
         %tmp.7 = getv function %tmp.6 :setText;
-        symbol [ FormatManager %tmp.9 165 34 47 ];
+        symbol [ FormatManager %tmp.9 170 34 47 ];
         %tmp.9 = getv ? :FormatManager;
-        symbol [ formatHeartRate %tmp.10 165 48 63 ];
+        symbol [ formatHeartRate %tmp.10 170 48 63 ];
         %tmp.10 = getv function %tmp.9 :formatHeartRate;
         %tmp.11 = lgetv %heartRate.1;
-        symbol [ heartRate %tmp.11 165 64 73 ];
+        symbol [ heartRate %tmp.11 170 64 73 ];
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
         invoke %tmp.6 %tmp.7(%tmp.12);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 167 8 ]
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_stmt:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 172 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_stmt:
         %tmp.13 = lgetv %heartRate.1;
-        symbol [ heartRate %tmp.13 167 12 21 ];
+        symbol [ heartRate %tmp.13 172 12 21 ];
         %tmp.14 = null;
         %tmp.15 = eq %tmp.13 %tmp.14;
-        bf %tmp.15 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_else_false;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_true:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_31_169_8_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 168 12 ]
-        symbol [ _heartRateElement %tmp.17 168 12 29 ];
+        bf %tmp.15 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_else_false;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_31_174_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 173 12 ]
+        symbol [ _heartRateElement %tmp.17 173 12 29 ];
         %tmp.17 = getv ? :_heartRateElement;
-        symbol [ setColor %tmp.18 168 30 38 ];
+        symbol [ setColor %tmp.18 173 30 38 ];
         %tmp.18 = getv function %tmp.17 :setColor;
-        symbol [ Graphics %tmp.19 168 39 47 ];
+        symbol [ Graphics %tmp.19 173 39 47 ];
         %tmp.19 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.20 168 48 59 ];
+        symbol [ COLOR_WHITE %tmp.20 173 48 59 ];
         %tmp.20 = getv %tmp.19 :COLOR_WHITE;
         invoke %tmp.17 %tmp.18(%tmp.20);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_31_169_8_stop:
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_else_false:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_169_15_171_8_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 170 12 ]
-        symbol [ _heartRateElement %tmp.22 170 12 29 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_31_174_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_else_false:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_15_176_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 175 12 ]
+        symbol [ _heartRateElement %tmp.22 175 12 29 ];
         %tmp.22 = getv ? :_heartRateElement;
-        symbol [ setColor %tmp.23 170 30 38 ];
+        symbol [ setColor %tmp.23 175 30 38 ];
         %tmp.23 = getv function %tmp.22 :setColor;
-        symbol [ Graphics %tmp.24 170 39 47 ];
+        symbol [ Graphics %tmp.24 175 39 47 ];
         %tmp.24 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.25 170 48 57 ];
+        symbol [ COLOR_RED %tmp.25 175 48 57 ];
         %tmp.25 = getv %tmp.24 :COLOR_RED;
         invoke %tmp.22 %tmp.23(%tmp.25);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_169_15_171_8_stop:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_167_8_171_8_if_end:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_163_33_172_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_15_176_8_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_172_8_176_8_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_168_33_177_4_stop:
     }
-    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 174; @symbol_functiondef = [createLayout,174,21,33]; @symbol_param<0> = [dc,174,34,36]; @symbol_param<0>_type<0> = [Dc,174,40,42]; @symbol_return<0> = [Lang,174,47,51]; @symbol_return<1> = [Array,174,52,57]; @symbol_return<2> = [Drawable,174,58,66]; ]
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 179; @symbol_functiondef = [createLayout,179,21,33]; @symbol_param<0> = [dc,179,34,36]; @symbol_param<0>_type<0> = [Dc,179,40,42]; @symbol_return<0> = [Lang,179,47,51]; @symbol_return<1> = [Array,179,52,57]; @symbol_return<2> = [Drawable,179,58,66]; ]
     private
     function createLayout(dc as Dc) as Lang.Array<Drawable> {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 175 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 180 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %height.1 = local;
-        symbol [ height %height.1 175 12 18 ];
+        symbol [ height %height.1 180 12 18 ];
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 175 21 23 ];
-        symbol [ getHeight %tmp.2 175 24 33 ];
+        symbol [ dc %tmp.1 180 21 23 ];
+        symbol [ getHeight %tmp.2 180 24 33 ];
         %tmp.2 = getv function %tmp.1 :getHeight;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %height.1 %tmp.3;
-        symbol [ height %height.1 175 12 18 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 176 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ height %height.1 180 12 18 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 181 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %width.2 = local;
-        symbol [ width %width.2 176 12 17 ];
+        symbol [ width %width.2 181 12 17 ];
         %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 176 20 22 ];
-        symbol [ getWidth %tmp.5 176 23 31 ];
+        symbol [ dc %tmp.4 181 20 22 ];
+        symbol [ getWidth %tmp.5 181 23 31 ];
         %tmp.5 = getv function %tmp.4 :getWidth;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %width.2 %tmp.6;
-        symbol [ width %width.2 176 12 17 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 179 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ width %width.2 181 12 17 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 184 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %heartRateIconDrawable.3 = local;
-        symbol [ heartRateIconDrawable %heartRateIconDrawable.3 179 12 33 ];
-        symbol [ WatchUi %tmp.7 179 36 43 ];
+        symbol [ heartRateIconDrawable %heartRateIconDrawable.3 184 12 33 ];
+        symbol [ WatchUi %tmp.7 184 36 43 ];
         %tmp.7 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.8 179 44 56 ];
+        symbol [ loadResource %tmp.8 184 44 56 ];
         %tmp.8 = getv function %tmp.7 :loadResource;
-        symbol [ Rez %tmp.10 179 57 60 ];
+        symbol [ Rez %tmp.10 184 57 60 ];
         %tmp.10 = getv ? :Rez;
-        symbol [ Drawables %tmp.11 179 61 70 ];
+        symbol [ Drawables %tmp.11 184 61 70 ];
         %tmp.11 = getv %tmp.10 :Drawables;
-        symbol [ heart_rate_icon %tmp.12 179 71 86 ];
+        symbol [ heart_rate_icon %tmp.12 184 71 86 ];
         %tmp.12 = getv %tmp.11 :heart_rate_icon;
         %tmp.13 = invoke %tmp.7 %tmp.8(%tmp.12);
         lputv %heartRateIconDrawable.3 %tmp.13;
-        symbol [ heartRateIconDrawable %heartRateIconDrawable.3 179 12 33 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 180 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ heartRateIconDrawable %heartRateIconDrawable.3 184 12 33 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 185 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %iconWidth.4 = local;
-        symbol [ iconWidth %iconWidth.4 180 12 21 ];
+        symbol [ iconWidth %iconWidth.4 185 12 21 ];
         %tmp.14 = lgetv %heartRateIconDrawable.3;
-        symbol [ heartRateIconDrawable %tmp.14 180 24 45 ];
-        symbol [ getWidth %tmp.15 180 46 54 ];
+        symbol [ heartRateIconDrawable %tmp.14 185 24 45 ];
+        symbol [ getWidth %tmp.15 185 46 54 ];
         %tmp.15 = getv function %tmp.14 :getWidth;
         %tmp.16 = invoke %tmp.14 %tmp.15();
         lputv %iconWidth.4 %tmp.16;
-        symbol [ iconWidth %iconWidth.4 180 12 21 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 181 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ iconWidth %iconWidth.4 185 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 186 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %iconHeight.5 = local;
-        symbol [ iconHeight %iconHeight.5 181 12 22 ];
+        symbol [ iconHeight %iconHeight.5 186 12 22 ];
         %tmp.17 = lgetv %heartRateIconDrawable.3;
-        symbol [ heartRateIconDrawable %tmp.17 181 25 46 ];
-        symbol [ getHeight %tmp.18 181 47 56 ];
+        symbol [ heartRateIconDrawable %tmp.17 186 25 46 ];
+        symbol [ getHeight %tmp.18 186 47 56 ];
         %tmp.18 = getv function %tmp.17 :getHeight;
         %tmp.19 = invoke %tmp.17 %tmp.18();
         lputv %iconHeight.5 %tmp.19;
-        symbol [ iconHeight %iconHeight.5 181 12 22 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 183 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ iconHeight %iconHeight.5 186 12 22 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 188 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %heartRateText.6 = local;
-        symbol [ heartRateText %heartRateText.6 183 12 25 ];
+        symbol [ heartRateText %heartRateText.6 188 12 25 ];
         %tmp.20 = "--";
         lputv %heartRateText.6 %tmp.20;
-        symbol [ heartRateText %heartRateText.6 183 12 25 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 184 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ heartRateText %heartRateText.6 188 12 25 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 189 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %heartRateFont.7 = local;
-        symbol [ heartRateFont %heartRateFont.7 184 12 25 ];
-        symbol [ Graphics %tmp.21 184 28 36 ];
+        symbol [ heartRateFont %heartRateFont.7 189 12 25 ];
+        symbol [ Graphics %tmp.21 189 28 36 ];
         %tmp.21 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.22 184 37 46 ];
+        symbol [ FONT_TINY %tmp.22 189 37 46 ];
         %tmp.22 = getv %tmp.21 :FONT_TINY;
         lputv %heartRateFont.7 %tmp.22;
-        symbol [ heartRateFont %heartRateFont.7 184 12 25 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 185 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ heartRateFont %heartRateFont.7 189 12 25 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 190 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %textWidth.8 = local;
-        symbol [ textWidth %textWidth.8 185 12 21 ];
+        symbol [ textWidth %textWidth.8 190 12 21 ];
         %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 185 24 26 ];
-        symbol [ getTextWidthInPixels %tmp.24 185 27 47 ];
+        symbol [ dc %tmp.23 190 24 26 ];
+        symbol [ getTextWidthInPixels %tmp.24 190 27 47 ];
         %tmp.24 = getv function %tmp.23 :getTextWidthInPixels;
         %tmp.25 = lgetv %heartRateText.6;
-        symbol [ heartRateText %tmp.25 185 48 61 ];
+        symbol [ heartRateText %tmp.25 190 48 61 ];
         %tmp.26 = lgetv %heartRateFont.7;
-        symbol [ heartRateFont %tmp.26 185 63 76 ];
+        symbol [ heartRateFont %tmp.26 190 63 76 ];
         %tmp.27 = invoke %tmp.23 %tmp.24(%tmp.25, %tmp.26);
         lputv %textWidth.8 %tmp.27;
-        symbol [ textWidth %textWidth.8 185 12 21 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 187 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ textWidth %textWidth.8 190 12 21 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 192 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %groupGap.9 = local;
-        symbol [ groupGap %groupGap.9 187 12 20 ];
+        symbol [ groupGap %groupGap.9 192 12 20 ];
         %tmp.28 = 5;
         lputv %groupGap.9 %tmp.28;
-        symbol [ groupGap %groupGap.9 187 12 20 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 188 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ groupGap %groupGap.9 192 12 20 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 193 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %totalGroupWidth.10 = local;
-        symbol [ totalGroupWidth %totalGroupWidth.10 188 12 27 ];
+        symbol [ totalGroupWidth %totalGroupWidth.10 193 12 27 ];
         %tmp.29 = lgetv %iconWidth.4;
-        symbol [ iconWidth %tmp.29 188 30 39 ];
+        symbol [ iconWidth %tmp.29 193 30 39 ];
         %tmp.30 = lgetv %groupGap.9;
-        symbol [ groupGap %tmp.30 188 42 50 ];
+        symbol [ groupGap %tmp.30 193 42 50 ];
         %tmp.31 = add %tmp.29 %tmp.30;
         %tmp.32 = lgetv %textWidth.8;
-        symbol [ textWidth %tmp.32 188 53 62 ];
+        symbol [ textWidth %tmp.32 193 53 62 ];
         %tmp.33 = add %tmp.31 %tmp.32;
         lputv %totalGroupWidth.10 %tmp.33;
-        symbol [ totalGroupWidth %totalGroupWidth.10 188 12 27 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 189 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ totalGroupWidth %totalGroupWidth.10 193 12 27 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 194 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %groupStartX.11 = local;
-        symbol [ groupStartX %groupStartX.11 189 12 23 ];
+        symbol [ groupStartX %groupStartX.11 194 12 23 ];
         %tmp.34 = lgetv %width.2;
-        symbol [ width %tmp.34 189 27 32 ];
+        symbol [ width %tmp.34 194 27 32 ];
         %tmp.35 = lgetv %totalGroupWidth.10;
-        symbol [ totalGroupWidth %tmp.35 189 35 50 ];
+        symbol [ totalGroupWidth %tmp.35 194 35 50 ];
         %tmp.36 = sub %tmp.34 %tmp.35;
         %tmp.37 = 2;
         %tmp.38 = div %tmp.36 %tmp.37;
         lputv %groupStartX.11 %tmp.38;
-        symbol [ groupStartX %groupStartX.11 189 12 23 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 190 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop" ]
+        symbol [ groupStartX %groupStartX.11 194 12 23 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 195 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop" ]
         %groupY.12 = local;
-        symbol [ groupY %groupY.12 190 12 18 ];
+        symbol [ groupY %groupY.12 195 12 18 ];
         %tmp.39 = lgetv %height.1;
-        symbol [ height %tmp.39 190 21 27 ];
+        symbol [ height %tmp.39 195 21 27 ];
         %tmp.40 = 0.10;
         %tmp.41 = mul %tmp.39 %tmp.40;
         lputv %groupY.12 %tmp.41;
-        symbol [ groupY %groupY.12 190 12 18 ];
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 192 8 ]
-        symbol [ WatchUi %tmp.44 192 29 36 ];
+        symbol [ groupY %groupY.12 195 12 18 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 197 8 ]
+        symbol [ WatchUi %tmp.44 197 29 36 ];
         %tmp.44 = getm $.Toybox.WatchUi;
-        symbol [ Bitmap %tmp.45 192 37 43 ];
+        symbol [ Bitmap %tmp.45 197 37 43 ];
         %tmp.45 = getv function ? %tmp.44 :Bitmap;
         %tmp.46 = newd 4;
         %tmp.48 = const :rezId;
-        symbol [ rezId %tmp.48 193 13 18 const ];
-        symbol [ Rez %tmp.50 193 22 25 ];
+        symbol [ rezId %tmp.48 198 13 18 const ];
+        symbol [ Rez %tmp.50 198 22 25 ];
         %tmp.50 = getv ? :Rez;
-        symbol [ Drawables %tmp.51 193 26 35 ];
+        symbol [ Drawables %tmp.51 198 26 35 ];
         %tmp.51 = getv %tmp.50 :Drawables;
-        symbol [ heart_rate_icon %tmp.52 193 36 51 ];
+        symbol [ heart_rate_icon %tmp.52 198 36 51 ];
         %tmp.52 = getv %tmp.51 :heart_rate_icon;
         %tmp.53 = dup %tmp.46;
         %tmp.54 = aputv %tmp.53 %tmp.48 %tmp.52;
         %tmp.56 = const :locX;
-        symbol [ locX %tmp.56 194 13 17 const ];
+        symbol [ locX %tmp.56 199 13 17 const ];
         %tmp.57 = lgetv %groupStartX.11;
-        symbol [ groupStartX %tmp.57 194 21 32 ];
+        symbol [ groupStartX %tmp.57 199 21 32 ];
         %tmp.58 = dup %tmp.54;
         %tmp.59 = aputv %tmp.58 %tmp.56 %tmp.57;
         %tmp.61 = const :locY;
-        symbol [ locY %tmp.61 195 13 17 const ];
+        symbol [ locY %tmp.61 200 13 17 const ];
         %tmp.62 = lgetv %groupY.12;
-        symbol [ groupY %tmp.62 195 21 27 ];
+        symbol [ groupY %tmp.62 200 21 27 ];
         %tmp.63 = dup %tmp.59;
         %tmp.64 = aputv %tmp.63 %tmp.61 %tmp.62;
         %tmp.66 = const :color;
-        symbol [ color %tmp.66 196 13 18 const ];
-        symbol [ Graphics %tmp.67 196 22 30 ];
+        symbol [ color %tmp.66 201 13 18 const ];
+        symbol [ Graphics %tmp.67 201 22 30 ];
         %tmp.67 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.68 196 31 40 ];
+        symbol [ COLOR_RED %tmp.68 201 31 40 ];
         %tmp.68 = getv %tmp.67 :COLOR_RED;
         %tmp.69 = dup %tmp.64;
         %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
         %tmp.42 = newc %tmp.45 (%tmp.70);
-        symbol [ _heartRateIcon ? 192 8 22 ];
+        symbol [ _heartRateIcon ? 197 8 22 ];
         putv self :_heartRateIcon %tmp.42;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 199 8 ]
-        symbol [ WatchUi %tmp.73 199 32 39 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 204 8 ]
+        symbol [ WatchUi %tmp.73 204 32 39 ];
         %tmp.73 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.74 199 40 44 ];
+        symbol [ Text %tmp.74 204 40 44 ];
         %tmp.74 = getv function ? %tmp.73 :Text;
         %tmp.75 = newd 5;
         %tmp.77 = const :text;
-        symbol [ text %tmp.77 200 13 17 const ];
+        symbol [ text %tmp.77 205 13 17 const ];
         %tmp.78 = lgetv %heartRateText.6;
-        symbol [ heartRateText %tmp.78 200 21 34 ];
+        symbol [ heartRateText %tmp.78 205 21 34 ];
         %tmp.79 = dup %tmp.75;
         %tmp.80 = aputv %tmp.79 %tmp.77 %tmp.78;
         %tmp.82 = const :color;
-        symbol [ color %tmp.82 201 13 18 const ];
-        symbol [ Graphics %tmp.83 201 22 30 ];
+        symbol [ color %tmp.82 206 13 18 const ];
+        symbol [ Graphics %tmp.83 206 22 30 ];
         %tmp.83 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.84 201 31 42 ];
+        symbol [ COLOR_WHITE %tmp.84 206 31 42 ];
         %tmp.84 = getv %tmp.83 :COLOR_WHITE;
         %tmp.85 = dup %tmp.80;
         %tmp.86 = aputv %tmp.85 %tmp.82 %tmp.84;
         %tmp.88 = const :font;
-        symbol [ font %tmp.88 202 13 17 const ];
+        symbol [ font %tmp.88 207 13 17 const ];
         %tmp.89 = lgetv %heartRateFont.7;
-        symbol [ heartRateFont %tmp.89 202 21 34 ];
+        symbol [ heartRateFont %tmp.89 207 21 34 ];
         %tmp.90 = dup %tmp.86;
         %tmp.91 = aputv %tmp.90 %tmp.88 %tmp.89;
         %tmp.93 = const :locX;
-        symbol [ locX %tmp.93 203 13 17 const ];
+        symbol [ locX %tmp.93 208 13 17 const ];
         %tmp.94 = lgetv %groupStartX.11;
-        symbol [ groupStartX %tmp.94 203 21 32 ];
+        symbol [ groupStartX %tmp.94 208 21 32 ];
         %tmp.95 = lgetv %iconWidth.4;
-        symbol [ iconWidth %tmp.95 203 35 44 ];
+        symbol [ iconWidth %tmp.95 208 35 44 ];
         %tmp.96 = add %tmp.94 %tmp.95;
         %tmp.97 = lgetv %groupGap.9;
-        symbol [ groupGap %tmp.97 203 47 55 ];
+        symbol [ groupGap %tmp.97 208 47 55 ];
         %tmp.98 = add %tmp.96 %tmp.97;
         %tmp.99 = dup %tmp.91;
         %tmp.100 = aputv %tmp.99 %tmp.93 %tmp.98;
         %tmp.102 = const :locY;
-        symbol [ locY %tmp.102 204 13 17 const ];
+        symbol [ locY %tmp.102 209 13 17 const ];
         %tmp.103 = lgetv %groupY.12;
-        symbol [ groupY %tmp.103 204 21 27 ];
+        symbol [ groupY %tmp.103 209 21 27 ];
         %tmp.104 = lgetv %iconHeight.5;
-        symbol [ iconHeight %tmp.104 204 31 41 ];
+        symbol [ iconHeight %tmp.104 209 31 41 ];
         %tmp.105 = 2;
         %tmp.106 = div %tmp.104 %tmp.105;
         %tmp.107 = add %tmp.103 %tmp.106;
         %tmp.108 = lgetv %dc;
-        symbol [ dc %tmp.108 204 50 52 ];
-        symbol [ getFontHeight %tmp.109 204 53 66 ];
+        symbol [ dc %tmp.108 209 50 52 ];
+        symbol [ getFontHeight %tmp.109 209 53 66 ];
         %tmp.109 = getv function %tmp.108 :getFontHeight;
         %tmp.110 = lgetv %heartRateFont.7;
-        symbol [ heartRateFont %tmp.110 204 67 80 ];
+        symbol [ heartRateFont %tmp.110 209 67 80 ];
         %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
         %tmp.112 = 2;
         %tmp.113 = div %tmp.111 %tmp.112;
@@ -1270,313 +1276,313 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
         %tmp.117 = dup %tmp.100;
         %tmp.118 = aputv %tmp.117 %tmp.102 %tmp.116;
         %tmp.71 = newc %tmp.74 (%tmp.118);
-        symbol [ _heartRateElement ? 199 8 25 ];
+        symbol [ _heartRateElement ? 204 8 25 ];
         putv self :_heartRateElement %tmp.71;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 207 8 ]
-        symbol [ WatchUi %tmp.121 207 35 42 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 212 8 ]
+        symbol [ WatchUi %tmp.121 212 35 42 ];
         %tmp.121 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.122 207 43 47 ];
+        symbol [ Text %tmp.122 212 43 47 ];
         %tmp.122 = getv function ? %tmp.121 :Text;
         %tmp.123 = newd 6;
         %tmp.125 = const :text;
-        symbol [ text %tmp.125 208 13 17 const ];
+        symbol [ text %tmp.125 213 13 17 const ];
         %tmp.126 = "00:00";
         %tmp.127 = dup %tmp.123;
         %tmp.128 = aputv %tmp.127 %tmp.125 %tmp.126;
         %tmp.130 = const :color;
-        symbol [ color %tmp.130 209 13 18 const ];
-        symbol [ Graphics %tmp.131 209 22 30 ];
+        symbol [ color %tmp.130 214 13 18 const ];
+        symbol [ Graphics %tmp.131 214 22 30 ];
         %tmp.131 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.132 209 31 42 ];
+        symbol [ COLOR_WHITE %tmp.132 214 31 42 ];
         %tmp.132 = getv %tmp.131 :COLOR_WHITE;
         %tmp.133 = dup %tmp.128;
         %tmp.134 = aputv %tmp.133 %tmp.130 %tmp.132;
         %tmp.136 = const :font;
-        symbol [ font %tmp.136 210 13 17 const ];
-        symbol [ Graphics %tmp.137 210 21 29 ];
+        symbol [ font %tmp.136 215 13 17 const ];
+        symbol [ Graphics %tmp.137 215 21 29 ];
         %tmp.137 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.138 210 30 40 ];
+        symbol [ FONT_XTINY %tmp.138 215 30 40 ];
         %tmp.138 = getv %tmp.137 :FONT_XTINY;
         %tmp.139 = dup %tmp.134;
         %tmp.140 = aputv %tmp.139 %tmp.136 %tmp.138;
         %tmp.142 = const :locX;
-        symbol [ locX %tmp.142 211 13 17 const ];
-        symbol [ WatchUi %tmp.143 211 21 28 ];
+        symbol [ locX %tmp.142 216 13 17 const ];
+        symbol [ WatchUi %tmp.143 216 21 28 ];
         %tmp.143 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.144 211 29 49 ];
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.144 216 29 49 ];
         %tmp.144 = getv %tmp.143 :LAYOUT_HALIGN_CENTER;
         %tmp.145 = dup %tmp.140;
         %tmp.146 = aputv %tmp.145 %tmp.142 %tmp.144;
         %tmp.148 = const :locY;
-        symbol [ locY %tmp.148 212 13 17 const ];
+        symbol [ locY %tmp.148 217 13 17 const ];
         %tmp.149 = lgetv %height.1;
-        symbol [ height %tmp.149 212 21 27 ];
+        symbol [ height %tmp.149 217 21 27 ];
         %tmp.150 = 0.22;
         %tmp.151 = mul %tmp.149 %tmp.150;
         %tmp.152 = dup %tmp.146;
         %tmp.153 = aputv %tmp.152 %tmp.148 %tmp.151;
         %tmp.155 = const :justification;
-        symbol [ justification %tmp.155 213 13 26 const ];
-        symbol [ Graphics %tmp.156 213 30 38 ];
+        symbol [ justification %tmp.155 218 13 26 const ];
+        symbol [ Graphics %tmp.156 218 30 38 ];
         %tmp.156 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.157 213 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.157 218 39 58 ];
         %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_CENTER;
         %tmp.158 = dup %tmp.153;
         %tmp.159 = aputv %tmp.158 %tmp.155 %tmp.157;
         %tmp.119 = newc %tmp.122 (%tmp.159);
-        symbol [ _timeOfTheDayElement ? 207 8 28 ];
+        symbol [ _timeOfTheDayElement ? 212 8 28 ];
         putv self :_timeOfTheDayElement %tmp.119;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 216 8 ]
-        symbol [ WatchUi %tmp.162 216 35 42 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 221 8 ]
+        symbol [ WatchUi %tmp.162 221 35 42 ];
         %tmp.162 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.163 216 43 47 ];
+        symbol [ Text %tmp.163 221 43 47 ];
         %tmp.163 = getv function ? %tmp.162 :Text;
         %tmp.164 = newd 6;
         %tmp.166 = const :text;
-        symbol [ text %tmp.166 217 13 17 const ];
+        symbol [ text %tmp.166 222 13 17 const ];
         %tmp.167 = "0:00";
         %tmp.168 = dup %tmp.164;
         %tmp.169 = aputv %tmp.168 %tmp.166 %tmp.167;
         %tmp.171 = const :color;
-        symbol [ color %tmp.171 218 13 18 const ];
-        symbol [ Graphics %tmp.172 218 22 30 ];
+        symbol [ color %tmp.171 223 13 18 const ];
+        symbol [ Graphics %tmp.172 223 22 30 ];
         %tmp.172 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.173 218 31 42 ];
+        symbol [ COLOR_WHITE %tmp.173 223 31 42 ];
         %tmp.173 = getv %tmp.172 :COLOR_WHITE;
         %tmp.174 = dup %tmp.169;
         %tmp.175 = aputv %tmp.174 %tmp.171 %tmp.173;
         %tmp.177 = const :font;
-        symbol [ font %tmp.177 219 13 17 const ];
-        symbol [ Graphics %tmp.178 219 21 29 ];
+        symbol [ font %tmp.177 224 13 17 const ];
+        symbol [ Graphics %tmp.178 224 21 29 ];
         %tmp.178 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_THAI_HOT %tmp.179 219 30 50 ];
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.179 224 30 50 ];
         %tmp.179 = getv %tmp.178 :FONT_NUMBER_THAI_HOT;
         %tmp.180 = dup %tmp.175;
         %tmp.181 = aputv %tmp.180 %tmp.177 %tmp.179;
         %tmp.183 = const :locX;
-        symbol [ locX %tmp.183 220 13 17 const ];
-        symbol [ WatchUi %tmp.184 220 21 28 ];
+        symbol [ locX %tmp.183 225 13 17 const ];
+        symbol [ WatchUi %tmp.184 225 21 28 ];
         %tmp.184 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.185 220 29 49 ];
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.185 225 29 49 ];
         %tmp.185 = getv %tmp.184 :LAYOUT_HALIGN_CENTER;
         %tmp.186 = dup %tmp.181;
         %tmp.187 = aputv %tmp.186 %tmp.183 %tmp.185;
         %tmp.189 = const :locY;
-        symbol [ locY %tmp.189 221 13 17 const ];
-        symbol [ WatchUi %tmp.190 221 21 28 ];
+        symbol [ locY %tmp.189 226 13 17 const ];
+        symbol [ WatchUi %tmp.190 226 21 28 ];
         %tmp.190 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.191 221 29 49 ];
+        symbol [ LAYOUT_VALIGN_CENTER %tmp.191 226 29 49 ];
         %tmp.191 = getv %tmp.190 :LAYOUT_VALIGN_CENTER;
         %tmp.192 = dup %tmp.187;
         %tmp.193 = aputv %tmp.192 %tmp.189 %tmp.191;
         %tmp.195 = const :justification;
-        symbol [ justification %tmp.195 222 13 26 const ];
-        symbol [ Graphics %tmp.196 222 30 38 ];
+        symbol [ justification %tmp.195 227 13 26 const ];
+        symbol [ Graphics %tmp.196 227 30 38 ];
         %tmp.196 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.197 222 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.197 227 39 58 ];
         %tmp.197 = getv %tmp.196 :TEXT_JUSTIFY_CENTER;
         %tmp.198 = dup %tmp.193;
         %tmp.199 = aputv %tmp.198 %tmp.195 %tmp.197;
         %tmp.160 = newc %tmp.163 (%tmp.199);
-        symbol [ _currentTimerElement ? 216 8 28 ];
+        symbol [ _currentTimerElement ? 221 8 28 ];
         putv self :_currentTimerElement %tmp.160;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 225 8 ]
-        symbol [ WatchUi %tmp.202 225 36 43 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 230 8 ]
+        symbol [ WatchUi %tmp.202 230 36 43 ];
         %tmp.202 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.203 225 44 48 ];
+        symbol [ Text %tmp.203 230 44 48 ];
         %tmp.203 = getv function ? %tmp.202 :Text;
         %tmp.204 = newd 6;
         %tmp.206 = const :text;
-        symbol [ text %tmp.206 226 13 17 const ];
+        symbol [ text %tmp.206 231 13 17 const ];
         %tmp.207 = " ";
         %tmp.208 = dup %tmp.204;
         %tmp.209 = aputv %tmp.208 %tmp.206 %tmp.207;
         %tmp.211 = const :color;
-        symbol [ color %tmp.211 227 13 18 const ];
-        symbol [ Graphics %tmp.212 227 22 30 ];
+        symbol [ color %tmp.211 232 13 18 const ];
+        symbol [ Graphics %tmp.212 232 22 30 ];
         %tmp.212 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.213 227 31 42 ];
+        symbol [ COLOR_WHITE %tmp.213 232 31 42 ];
         %tmp.213 = getv %tmp.212 :COLOR_WHITE;
         %tmp.214 = dup %tmp.209;
         %tmp.215 = aputv %tmp.214 %tmp.211 %tmp.213;
         %tmp.217 = const :font;
-        symbol [ font %tmp.217 228 13 17 const ];
-        symbol [ Graphics %tmp.218 228 21 29 ];
+        symbol [ font %tmp.217 233 13 17 const ];
+        symbol [ Graphics %tmp.218 233 21 29 ];
         %tmp.218 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.219 228 30 40 ];
+        symbol [ FONT_SMALL %tmp.219 233 30 40 ];
         %tmp.219 = getv %tmp.218 :FONT_SMALL;
         %tmp.220 = dup %tmp.215;
         %tmp.221 = aputv %tmp.220 %tmp.217 %tmp.219;
         %tmp.223 = const :locX;
-        symbol [ locX %tmp.223 229 13 17 const ];
-        symbol [ WatchUi %tmp.224 229 21 28 ];
+        symbol [ locX %tmp.223 234 13 17 const ];
+        symbol [ WatchUi %tmp.224 234 21 28 ];
         %tmp.224 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.225 229 29 49 ];
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.225 234 29 49 ];
         %tmp.225 = getv %tmp.224 :LAYOUT_HALIGN_CENTER;
         %tmp.226 = dup %tmp.221;
         %tmp.227 = aputv %tmp.226 %tmp.223 %tmp.225;
         %tmp.229 = const :locY;
-        symbol [ locY %tmp.229 230 13 17 const ];
+        symbol [ locY %tmp.229 235 13 17 const ];
         %tmp.230 = lgetv %height.1;
-        symbol [ height %tmp.230 230 21 27 ];
+        symbol [ height %tmp.230 235 21 27 ];
         %tmp.231 = 0.65;
         %tmp.232 = mul %tmp.230 %tmp.231;
         %tmp.233 = dup %tmp.227;
         %tmp.234 = aputv %tmp.233 %tmp.229 %tmp.232;
         %tmp.236 = const :justification;
-        symbol [ justification %tmp.236 231 13 26 const ];
-        symbol [ Graphics %tmp.237 231 30 38 ];
+        symbol [ justification %tmp.236 236 13 26 const ];
+        symbol [ Graphics %tmp.237 236 30 38 ];
         %tmp.237 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.238 231 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.238 236 39 58 ];
         %tmp.238 = getv %tmp.237 :TEXT_JUSTIFY_CENTER;
         %tmp.239 = dup %tmp.234;
         %tmp.240 = aputv %tmp.239 %tmp.236 %tmp.238;
         %tmp.200 = newc %tmp.203 (%tmp.240);
-        symbol [ _intervalsLeftElement ? 225 8 29 ];
+        symbol [ _intervalsLeftElement ? 230 8 29 ];
         putv self :_intervalsLeftElement %tmp.200;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 234 8 ]
-        symbol [ WatchUi %tmp.243 234 33 40 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 239 8 ]
+        symbol [ WatchUi %tmp.243 239 33 40 ];
         %tmp.243 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.244 234 41 45 ];
+        symbol [ Text %tmp.244 239 41 45 ];
         %tmp.244 = getv function ? %tmp.243 :Text;
         %tmp.245 = newd 6;
         %tmp.247 = const :text;
-        symbol [ text %tmp.247 235 13 17 const ];
+        symbol [ text %tmp.247 240 13 17 const ];
         %tmp.248 = "00:00:00";
         %tmp.249 = dup %tmp.245;
         %tmp.250 = aputv %tmp.249 %tmp.247 %tmp.248;
         %tmp.252 = const :color;
-        symbol [ color %tmp.252 236 13 18 const ];
-        symbol [ Graphics %tmp.253 236 22 30 ];
+        symbol [ color %tmp.252 241 13 18 const ];
+        symbol [ Graphics %tmp.253 241 22 30 ];
         %tmp.253 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.254 236 31 40 ];
+        symbol [ COLOR_RED %tmp.254 241 31 40 ];
         %tmp.254 = getv %tmp.253 :COLOR_RED;
         %tmp.255 = dup %tmp.250;
         %tmp.256 = aputv %tmp.255 %tmp.252 %tmp.254;
         %tmp.258 = const :font;
-        symbol [ font %tmp.258 237 13 17 const ];
-        symbol [ Graphics %tmp.259 237 21 29 ];
+        symbol [ font %tmp.258 242 13 17 const ];
+        symbol [ Graphics %tmp.259 242 21 29 ];
         %tmp.259 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.260 237 30 40 ];
+        symbol [ FONT_XTINY %tmp.260 242 30 40 ];
         %tmp.260 = getv %tmp.259 :FONT_XTINY;
         %tmp.261 = dup %tmp.256;
         %tmp.262 = aputv %tmp.261 %tmp.258 %tmp.260;
         %tmp.264 = const :locX;
-        symbol [ locX %tmp.264 238 13 17 const ];
-        symbol [ WatchUi %tmp.265 238 21 28 ];
+        symbol [ locX %tmp.264 243 13 17 const ];
+        symbol [ WatchUi %tmp.265 243 21 28 ];
         %tmp.265 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.266 238 29 49 ];
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.266 243 29 49 ];
         %tmp.266 = getv %tmp.265 :LAYOUT_HALIGN_CENTER;
         %tmp.267 = dup %tmp.262;
         %tmp.268 = aputv %tmp.267 %tmp.264 %tmp.266;
         %tmp.270 = const :locY;
-        symbol [ locY %tmp.270 239 13 17 const ];
+        symbol [ locY %tmp.270 244 13 17 const ];
         %tmp.271 = lgetv %height.1;
-        symbol [ height %tmp.271 239 21 27 ];
+        symbol [ height %tmp.271 244 21 27 ];
         %tmp.272 = 0.82;
         %tmp.273 = mul %tmp.271 %tmp.272;
         %tmp.274 = dup %tmp.268;
         %tmp.275 = aputv %tmp.274 %tmp.270 %tmp.273;
         %tmp.277 = const :justification;
-        symbol [ justification %tmp.277 240 13 26 const ];
-        symbol [ Graphics %tmp.278 240 30 38 ];
+        symbol [ justification %tmp.277 245 13 26 const ];
+        symbol [ Graphics %tmp.278 245 30 38 ];
         %tmp.278 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.279 240 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.279 245 39 58 ];
         %tmp.279 = getv %tmp.278 :TEXT_JUSTIFY_CENTER;
         %tmp.280 = dup %tmp.275;
         %tmp.281 = aputv %tmp.280 %tmp.277 %tmp.279;
         %tmp.241 = newc %tmp.244 (%tmp.281);
-        symbol [ _targetTimeElement ? 234 8 26 ];
+        symbol [ _targetTimeElement ? 239 8 26 ];
         putv self :_targetTimeElement %tmp.241;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 243 8 ]
-        symbol [ WatchUi %tmp.284 243 38 45 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 248 8 ]
+        symbol [ WatchUi %tmp.284 248 38 45 ];
         %tmp.284 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.285 243 46 50 ];
+        symbol [ Text %tmp.285 248 46 50 ];
         %tmp.285 = getv function ? %tmp.284 :Text;
         %tmp.286 = newd 6;
         %tmp.288 = const :text;
-        symbol [ text %tmp.288 244 13 17 const ];
+        symbol [ text %tmp.288 249 13 17 const ];
         %tmp.289 = "target";
         %tmp.290 = dup %tmp.286;
         %tmp.291 = aputv %tmp.290 %tmp.288 %tmp.289;
         %tmp.293 = const :color;
-        symbol [ color %tmp.293 245 13 18 const ];
-        symbol [ Graphics %tmp.294 245 22 30 ];
+        symbol [ color %tmp.293 250 13 18 const ];
+        symbol [ Graphics %tmp.294 250 22 30 ];
         %tmp.294 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.295 245 31 40 ];
+        symbol [ COLOR_RED %tmp.295 250 31 40 ];
         %tmp.295 = getv %tmp.294 :COLOR_RED;
         %tmp.296 = dup %tmp.291;
         %tmp.297 = aputv %tmp.296 %tmp.293 %tmp.295;
         %tmp.299 = const :font;
-        symbol [ font %tmp.299 246 13 17 const ];
-        symbol [ Graphics %tmp.300 246 21 29 ];
+        symbol [ font %tmp.299 251 13 17 const ];
+        symbol [ Graphics %tmp.300 251 21 29 ];
         %tmp.300 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.301 246 30 40 ];
+        symbol [ FONT_XTINY %tmp.301 251 30 40 ];
         %tmp.301 = getv %tmp.300 :FONT_XTINY;
         %tmp.302 = dup %tmp.297;
         %tmp.303 = aputv %tmp.302 %tmp.299 %tmp.301;
         %tmp.305 = const :locX;
-        symbol [ locX %tmp.305 247 13 17 const ];
-        symbol [ WatchUi %tmp.306 247 21 28 ];
+        symbol [ locX %tmp.305 252 13 17 const ];
+        symbol [ WatchUi %tmp.306 252 21 28 ];
         %tmp.306 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.307 247 29 49 ];
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.307 252 29 49 ];
         %tmp.307 = getv %tmp.306 :LAYOUT_HALIGN_CENTER;
         %tmp.308 = dup %tmp.303;
         %tmp.309 = aputv %tmp.308 %tmp.305 %tmp.307;
         %tmp.311 = const :locY;
-        symbol [ locY %tmp.311 248 13 17 const ];
+        symbol [ locY %tmp.311 253 13 17 const ];
         %tmp.312 = lgetv %height.1;
-        symbol [ height %tmp.312 248 21 27 ];
+        symbol [ height %tmp.312 253 21 27 ];
         %tmp.313 = 0.90;
         %tmp.314 = mul %tmp.312 %tmp.313;
         %tmp.315 = dup %tmp.309;
         %tmp.316 = aputv %tmp.315 %tmp.311 %tmp.314;
         %tmp.318 = const :justification;
-        symbol [ justification %tmp.318 249 13 26 const ];
-        symbol [ Graphics %tmp.319 249 30 38 ];
+        symbol [ justification %tmp.318 254 13 26 const ];
+        symbol [ Graphics %tmp.319 254 30 38 ];
         %tmp.319 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.320 249 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.320 254 39 58 ];
         %tmp.320 = getv %tmp.319 :TEXT_JUSTIFY_CENTER;
         %tmp.321 = dup %tmp.316;
         %tmp.322 = aputv %tmp.321 %tmp.318 %tmp.320;
         %tmp.282 = newc %tmp.285 (%tmp.322);
-        symbol [ _targetTimeLabelElement ? 243 8 31 ];
+        symbol [ _targetTimeLabelElement ? 248 8 31 ];
         putv self :_targetTimeLabelElement %tmp.282;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 252 8 ]
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" 257 8 ]
         %tmp.323 = newa 7 Lang.Array<Drawable>;
-        symbol [ Lang %tmp.323 260 13 17 ];
-        symbol [ Array %tmp.323 260 18 23 ];
-        symbol [ Drawable %tmp.323 260 24 32 ];
-        symbol [ _heartRateIcon %tmp.325 253 12 26 ];
+        symbol [ Lang %tmp.323 265 13 17 ];
+        symbol [ Array %tmp.323 265 18 23 ];
+        symbol [ Drawable %tmp.323 265 24 32 ];
+        symbol [ _heartRateIcon %tmp.325 258 12 26 ];
         %tmp.325 = getv ? :_heartRateIcon;
         %tmp.326 = dup %tmp.323;
         %tmp.327 = aputv %tmp.326 0 %tmp.325;
-        symbol [ _heartRateElement %tmp.329 254 12 29 ];
+        symbol [ _heartRateElement %tmp.329 259 12 29 ];
         %tmp.329 = getv ? :_heartRateElement;
         %tmp.330 = dup %tmp.327;
         %tmp.331 = aputv %tmp.330 1 %tmp.329;
-        symbol [ _timeOfTheDayElement %tmp.333 255 12 32 ];
+        symbol [ _timeOfTheDayElement %tmp.333 260 12 32 ];
         %tmp.333 = getv ? :_timeOfTheDayElement;
         %tmp.334 = dup %tmp.331;
         %tmp.335 = aputv %tmp.334 2 %tmp.333;
-        symbol [ _currentTimerElement %tmp.337 256 12 32 ];
+        symbol [ _currentTimerElement %tmp.337 261 12 32 ];
         %tmp.337 = getv ? :_currentTimerElement;
         %tmp.338 = dup %tmp.335;
         %tmp.339 = aputv %tmp.338 3 %tmp.337;
-        symbol [ _intervalsLeftElement %tmp.341 257 12 33 ];
+        symbol [ _intervalsLeftElement %tmp.341 262 12 33 ];
         %tmp.341 = getv ? :_intervalsLeftElement;
         %tmp.342 = dup %tmp.339;
         %tmp.343 = aputv %tmp.342 4 %tmp.341;
-        symbol [ _targetTimeElement %tmp.345 258 12 30 ];
+        symbol [ _targetTimeElement %tmp.345 263 12 30 ];
         %tmp.345 = getv ? :_targetTimeElement;
         %tmp.346 = dup %tmp.343;
         %tmp.347 = aputv %tmp.346 5 %tmp.345;
-        symbol [ _targetTimeLabelElement %tmp.349 259 12 35 ];
+        symbol [ _targetTimeLabelElement %tmp.349 264 12 35 ];
         %tmp.349 = getv ? :_targetTimeLabelElement;
         %tmp.350 = dup %tmp.347;
         %tmp.351 = aputv %tmp.350 6 %tmp.349;
         ret %tmp.351;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_174_68_261_4_stop:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichView_mc_179_68_266_4_stop:
     }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc"; @line = 1; ]

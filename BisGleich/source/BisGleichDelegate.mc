@@ -11,7 +11,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     private var _currentIntervalDuration;
     private var _currentNumberOfIntervals;
 
-    function initialize(view) {
+    function initialize(view as BisGleichView) {
         _activityManager = ActivityManager.getInstance();
         _notificationManager = NotificationManager.getInstance();
         _view = view;
