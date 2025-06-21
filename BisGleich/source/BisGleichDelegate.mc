@@ -169,7 +169,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     function onBack() as Boolean {
         System.println("BisGleichDelegate onBack called");
         
-        // Save state if activity is playing or paused
+        // Save state if activity is playing
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.playing) {
             ActivityStateStorage.setActivityStatus(activityStatus);

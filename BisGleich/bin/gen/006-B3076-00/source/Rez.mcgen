@@ -1,0 +1,25 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var heart_rate_icon as ResourceId;
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_bitmap_heart_rate_icon = new WatchUi.Bitmap({:identifier=>"heart_rate_icon", :rezId=>$.Rez.Drawables.heart_rate_icon, :locX=>(240 * (44 / 100.0)), :locY=>(240 * (10 / 100.0))});
+            rez_cmp_local_bitmap_heart_rate_icon.setLocation((240 * (44 / 100.0)), (240 * (10 / 100.0)));
+
+            return [rez_cmp_local_bitmap_heart_rate_icon] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Strings {
+        (:initialized) var AppName as ResourceId;
+    } // Strings
+} // Rez

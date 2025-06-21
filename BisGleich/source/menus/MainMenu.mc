@@ -35,12 +35,14 @@ class MainMenu {
 
         _menu.addItem(new WatchUi.MenuItem("Total time", totalTimeLabel, "total_time", null));
         _menu.addItem(new WatchUi.MenuItem("Interval time", intervalTimeLabel, "interval_time", null));
+        if (GlobalVariables.deviceSettings has :hasTouchscreen && GlobalVariables.deviceSettings.hasTouchscreen) {
         _menu.addItem(new WatchUi.ToggleMenuItem(
             "Touch screen", 
             {:enabled=>"enabled", :disabled=>"disabled"},
             "use_touch_screen",
-            SettingsStorage.getUseTouchScreen(),
-            null
-        ));
+                SettingsStorage.getUseTouchScreen(),
+                null
+            ));
+        }
     }
 }

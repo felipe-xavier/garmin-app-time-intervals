@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.System;
 import Toybox.Lang;
+import Toybox.Activity;
 
 class BisGleichView extends WatchUi.View {
     private var _currentTimerElement;
@@ -12,8 +13,6 @@ class BisGleichView extends WatchUi.View {
     private var _heartRateElement;
     private var _heartRateIcon;
 
-    private var _deviceSettings as DeviceSettings;
-
     private var _activityManager as ActivityManager;
     private var _progressManager as ProgressManager;
     private var _notificationManager as NotificationManager;
@@ -22,7 +21,6 @@ class BisGleichView extends WatchUi.View {
         _activityManager = ActivityManager.getInstance();
         _notificationManager = NotificationManager.getInstance();
         _progressManager = ProgressManager.getInstance();
-        _deviceSettings = System.getDeviceSettings();
 
         View.initialize();
     }
@@ -31,7 +29,7 @@ class BisGleichView extends WatchUi.View {
     function onLayout(dc as Dc) as Void {
         setLayout(createLayout(dc));
             
-        updateTargetTimeElement();
+        // updateTargetTimeElement();
         updateDynamicData();
 
         _notificationManager.callEverySecond(NotificationManager.updateDynamicDataKey, method(:updateDynamicData));
@@ -80,7 +78,7 @@ class BisGleichView extends WatchUi.View {
             _intervalsLeftElement.setText("overtime");
         }
         View.onUpdate(dc);
-        drawDotsLeftMenu(dc);
+        drawScreenDots(dc);
     }
 
     // Called when this View is removed from the screen. Save the
@@ -89,19 +87,17 @@ class BisGleichView extends WatchUi.View {
     function onHide() as Void {
     }
 
-    function drawDotsLeftMenu(dc as Dc) as Void {
+    function drawDots(dc as Dc, baseAngle as Number, color as ColorValue) as Void {
         var centerX = dc.getWidth() / 2;
         var centerY = dc.getHeight() / 2;
         var radius = dc.getWidth() / 2 - 8; // 8px margin from edge
         var dotRadius = 3;
         var glowRadius = 5;
-        var angles = [185, 180, 175]; // degrees, adjust for your device
-        var color = Graphics.COLOR_WHITE;
 
-        var activityStatus = _activityManager.getActivityStatus();
-        if (activityStatus != ActivityStatus.stopped) {
-            color = Graphics.COLOR_DK_GRAY;
-        }
+
+
+        // Create angles relative to the base angle
+        var angles = [baseAngle + 5, baseAngle, baseAngle - 5];
 
         for (var i = 0; i < angles.size(); i++) {
             var angle = angles[i];
@@ -120,15 +116,20 @@ class BisGleichView extends WatchUi.View {
         }
     }
 
+    function drawScreenDots(dc as Dc) as Void {
+        var activityStatus = _activityManager.getActivityStatus();
+        drawDots(dc, 180, activityStatus == ActivityStatus.stopped ? Graphics.COLOR_WHITE : Graphics.COLOR_DK_GRAY); // UP
+        drawDots(dc, 330, Graphics.COLOR_WHITE); // START
+        // drawDots(dc, 30, Graphics.COLOR_WHITE); // BACK
+        // drawDots(dc, 150, Graphics.COLOR_WHITE); // DOWN
+        // drawDots(dc, 210, Graphics.COLOR_WHITE); // LIGHT
+    }
+
     function updateIntervalsValue(cycles) as Void {
-        if (_intervalsLeftElement == null || cycles < 0) {
+        if (_intervalsLeftElement == null) {
             return;
         }
-
-        var multipleSign = cycles == 1 ? "" : "s";
-        var formattedValue = cycles.toString() + " alert" + multipleSign + " left";
-        _intervalsLeftElement.setText(formattedValue);
-
+        _intervalsLeftElement.setText(FormatManager.formatIntervals(cycles));
         WatchUi.requestUpdate();
     }
 
@@ -136,20 +137,29 @@ class BisGleichView extends WatchUi.View {
         if (_currentTimerElement == null) {
             return;
         }
-
-        var formattedTime = formatTimeMMSS(value);
-        _currentTimerElement.setText(formattedTime);
-
+        _currentTimerElement.setText(FormatManager.formatTimeMMSS(value));
         WatchUi.requestUpdate();
     }
 
     function updateDynamicData() as Void {
         updateSensorsData();
-        updateTimeOfTheDayElement();
+
+        var time = System.getClockTime();
+        _timeOfTheDayElement.setText(FormatManager.formatTime(time.hour, time.min, time.sec));
 
         var activityStatus = _activityManager.getActivityStatus();
         if (activityStatus == ActivityStatus.paused || activityStatus == ActivityStatus.stopped) {
-            updateTargetTimeElement();
+            var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
+            var currentTimeInSec = time.hour * 3600 + time.min * 60 + time.sec;
+
+            var totalSeconds = currentTimeInSec + extraDurationTimeInSec;
+            _progressManager.setTargetTimeInSec(totalSeconds);
+
+            var targetHour = (totalSeconds / 3600) % 24;
+            var targetMin = (totalSeconds % 3600) / 60;
+            var targetSec = totalSeconds % 60;
+
+            _targetTimeElement.setText(FormatManager.formatTime(targetHour, targetMin, targetSec));
         }
 
         WatchUi.requestUpdate();
@@ -157,59 +167,13 @@ class BisGleichView extends WatchUi.View {
 
     function updateSensorsData() {
         var heartRate = Activity.getActivityInfo().currentHeartRate;
+        _heartRateElement.setText(FormatManager.formatHeartRate(heartRate));
+
         if (heartRate == null) {
-            heartRate = "000";
             _heartRateElement.setColor(Graphics.COLOR_WHITE);
         } else {
-            heartRate = heartRate.format("%i");
             _heartRateElement.setColor(Graphics.COLOR_RED);
         }
-
-        _heartRateElement.setText(heartRate);
-    }
-
-    function updateTimeOfTheDayElement() {
-        var time = System.getClockTime();
-
-        if (_deviceSettings.is24Hour) {
-            _timeOfTheDayElement.setText(time.hour + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d"));
-        } else {
-            var period = time.hour >= 12 ? "PM" : "AM";
-            var hour12 = time.hour % 12 == 0 ? 12 : time.hour % 12;
-            _timeOfTheDayElement.setText(hour12 + ":" + time.min.format("%02d") + ":" + time.sec.format("%02d") + " " + period);
-        }
-    }
-
-    function updateTargetTimeElement() {
-        var time = System.getClockTime();
-
-        var extraDurationTimeInSec = _progressManager.getCurrentDurationInSec();
-
-        var currentTimeInSec = getTimeInSec(time);
-
-        // Calculate target time by adding extra duration to current time
-        var totalSeconds = currentTimeInSec + extraDurationTimeInSec;
-        _progressManager.setTargetTimeInSec(totalSeconds);
-
-        var targetHour = (totalSeconds / 3600) % 24;
-        var targetMin = (totalSeconds % 3600) / 60;
-        var targetSec = totalSeconds % 60;
-
-        if (_deviceSettings.is24Hour) {
-            _targetTimeElement.setText(targetHour.format("%02d") + ":" + targetMin.format("%02d") + ":" + targetSec.format("%02d"));
-        } else {
-            var period = targetHour >= 12 ? "PM" : "AM";
-            var hour12 = targetHour % 12 == 0 ? 12 : targetHour % 12;
-
-            _targetTimeElement.setText(hour12 + ":" + targetMin.format("%02d") + ":" + targetSec.format("%02d") + " " + period);
-        }
-    }
-
-    // Helper function to format time in MM:SS
-    private function formatTimeMMSS(totalSeconds) {
-        var minutes = totalSeconds / 60;
-        var seconds = totalSeconds % 60;
-        return minutes.toString() + ":" + (seconds < 10 ? "0" : "") + seconds.toString();
     }
 
     private function createLayout(dc as Dc) as Lang.Array<Drawable> {
@@ -221,7 +185,7 @@ class BisGleichView extends WatchUi.View {
         var iconWidth = heartRateIconDrawable.getWidth();
         var iconHeight = heartRateIconDrawable.getHeight();
         
-        var heartRateText = "---"; // Use placeholder for width calculation
+        var heartRateText = "--"; // Use placeholder for width calculation
         var heartRateFont = Graphics.FONT_TINY;
         var textWidth = dc.getTextWidthInPixels(heartRateText, heartRateFont);
         
