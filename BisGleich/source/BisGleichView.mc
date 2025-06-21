@@ -113,8 +113,9 @@ class BisGleichView extends WatchUi.View {
 
     function drawScreenDots(dc as Dc) as Void {
         var activityStatus = _activityManager.getActivityStatus();
-        drawDots(dc, 180, activityStatus == ActivityStatus.stopped ? Graphics.COLOR_WHITE : Graphics.COLOR_DK_GRAY); // UP
-        drawDots(dc, 330, Graphics.COLOR_WHITE); // START
+        var color = activityStatus == ActivityStatus.stopped ? Graphics.COLOR_WHITE : Graphics.COLOR_DK_GRAY;
+        drawDots(dc, 180, color); // UP
+        // drawDots(dc, 330, Graphics.COLOR_WHITE); // START
         // drawDots(dc, 30, Graphics.COLOR_WHITE); // BACK
         // drawDots(dc, 150, Graphics.COLOR_WHITE); // DOWN
         // drawDots(dc, 210, Graphics.COLOR_WHITE); // LIGHT

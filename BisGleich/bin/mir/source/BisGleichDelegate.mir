@@ -744,132 +744,132 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_Bis
     function updateCountdownValue() as Void {
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_133_44_158_4_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 134 8 ]
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_8_142_8_if_stmt:
-        symbol [ _currentTotalDuration %tmp.2 134 12 33 ];
-        %tmp.2 = getv ? :_currentTotalDuration;
-        %tmp.3 = 0;
-        %tmp.4 = lte %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_8_142_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_8_142_8_if_true:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_40_142_8_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 135 12 ]
-        symbol [ System %tmp.6 135 12 18 ];
-        %tmp.6 = getv ? :System;
-        symbol [ println %tmp.7 135 19 26 ];
-        %tmp.7 = getv function %tmp.6 :println;
-        %tmp.8 = "Countdown finished";
-        invoke %tmp.6 %tmp.7(%tmp.8);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 136 12 ]
-        symbol [ _notificationManager %tmp.10 136 12 32 ];
-        %tmp.10 = getv ? :_notificationManager;
-        symbol [ removeCallback %tmp.11 136 33 47 ];
-        %tmp.11 = getv function %tmp.10 :removeCallback;
-        symbol [ NotificationManager %tmp.13 136 48 67 ];
-        %tmp.13 = getv ? :NotificationManager;
-        symbol [ startActivityKey %tmp.14 136 68 84 ];
-        %tmp.14 = getv %tmp.13 :startActivityKey;
-        invoke %tmp.10 %tmp.11(%tmp.14);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 137 12 ]
-        symbol [ _activityManager %tmp.16 137 12 28 ];
-        %tmp.16 = getv ? :_activityManager;
-        symbol [ overtimeActivity %tmp.17 137 29 45 ];
-        %tmp.17 = getv function %tmp.16 :overtimeActivity;
-        invoke %tmp.16 %tmp.17();
+        symbol [ _currentTotalDuration %tmp.3 134 8 29 ];
+        %tmp.3 = getv ? :_currentTotalDuration;
+        %tmp.4 = sub %tmp.3 1;
+        symbol [ _currentTotalDuration ? 134 8 29 ];
+        putv self :_currentTotalDuration dup %tmp.4;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 135 8 ]
+        symbol [ _currentIntervalDuration %tmp.7 135 8 32 ];
+        %tmp.7 = getv ? :_currentIntervalDuration;
+        %tmp.8 = sub %tmp.7 1;
+        symbol [ _currentIntervalDuration ? 135 8 32 ];
+        putv self :_currentIntervalDuration dup %tmp.8;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 137 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_8_145_8_if_stmt:
+        symbol [ _currentTotalDuration %tmp.10 137 12 33 ];
+        %tmp.10 = getv ? :_currentTotalDuration;
+        %tmp.11 = 0;
+        %tmp.12 = lte %tmp.10 %tmp.11;
+        bf %tmp.12 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_8_145_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_8_145_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_40_145_8_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 138 12 ]
-        symbol [ _notificationManager %tmp.19 138 12 32 ];
-        %tmp.19 = getv ? :_notificationManager;
-        symbol [ callAttention %tmp.20 138 33 46 ];
-        %tmp.20 = getv function %tmp.19 :callAttention;
-        symbol [ AttentionLevel %tmp.22 138 47 61 ];
-        %tmp.22 = getv ? :AttentionLevel;
-        symbol [ High %tmp.23 138 62 66 ];
-        %tmp.23 = getv %tmp.22 :High;
-        %tmp.24 = true;
-        invoke %tmp.19 %tmp.20(%tmp.23, %tmp.24);
+        symbol [ System %tmp.14 138 12 18 ];
+        %tmp.14 = getv ? :System;
+        symbol [ println %tmp.15 138 19 26 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "Countdown finished";
+        invoke %tmp.14 %tmp.15(%tmp.16);
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 139 12 ]
-        symbol [ _view %tmp.26 139 12 17 ];
-        %tmp.26 = getv ? :_view;
-        symbol [ updateIntervalsValue %tmp.27 139 18 38 ];
-        %tmp.27 = getv function %tmp.26 :updateIntervalsValue;
-        %tmp.28 = 0;
-        invoke %tmp.26 %tmp.27(%tmp.28);
+        symbol [ _notificationManager %tmp.18 139 12 32 ];
+        %tmp.18 = getv ? :_notificationManager;
+        symbol [ removeCallback %tmp.19 139 33 47 ];
+        %tmp.19 = getv function %tmp.18 :removeCallback;
+        symbol [ NotificationManager %tmp.21 139 48 67 ];
+        %tmp.21 = getv ? :NotificationManager;
+        symbol [ startActivityKey %tmp.22 139 68 84 ];
+        %tmp.22 = getv %tmp.21 :startActivityKey;
+        invoke %tmp.18 %tmp.19(%tmp.22);
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 140 12 ]
-        %tmp.29 = self;
-        symbol [ startOvertime %tmp.30 140 12 25 ];
-        %tmp.30 = getv function %tmp.29 :startOvertime;
-        invoke %tmp.29 %tmp.30();
+        symbol [ _activityManager %tmp.24 140 12 28 ];
+        %tmp.24 = getv ? :_activityManager;
+        symbol [ overtimeActivity %tmp.25 140 29 45 ];
+        %tmp.25 = getv function %tmp.24 :overtimeActivity;
+        invoke %tmp.24 %tmp.25();
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 141 12 ]
+        symbol [ _notificationManager %tmp.27 141 12 32 ];
+        %tmp.27 = getv ? :_notificationManager;
+        symbol [ callAttention %tmp.28 141 33 46 ];
+        %tmp.28 = getv function %tmp.27 :callAttention;
+        symbol [ AttentionLevel %tmp.30 141 47 61 ];
+        %tmp.30 = getv ? :AttentionLevel;
+        symbol [ High %tmp.31 141 62 66 ];
+        %tmp.31 = getv %tmp.30 :High;
+        %tmp.32 = true;
+        invoke %tmp.27 %tmp.28(%tmp.31, %tmp.32);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 142 12 ]
+        symbol [ _view %tmp.34 142 12 17 ];
+        %tmp.34 = getv ? :_view;
+        symbol [ updateIntervalsValue %tmp.35 142 18 38 ];
+        %tmp.35 = getv function %tmp.34 :updateIntervalsValue;
+        %tmp.36 = 0;
+        invoke %tmp.34 %tmp.35(%tmp.36);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 143 12 ]
+        %tmp.37 = self;
+        symbol [ startOvertime %tmp.38 143 12 25 ];
+        %tmp.38 = getv function %tmp.37 :startOvertime;
+        invoke %tmp.37 %tmp.38();
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 144 12 ]
         ret ?;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_40_142_8_stop:
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_8_142_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_134_8_142_8_if_end:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 144 8 ]
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_8_150_8_if_stmt:
-        symbol [ _currentIntervalDuration %tmp.32 144 12 36 ];
-        %tmp.32 = getv ? :_currentIntervalDuration;
-        %tmp.33 = 0;
-        %tmp.34 = lte %tmp.32 %tmp.33;
-        bf %tmp.34 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_8_150_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_8_150_8_if_true:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_43_150_8_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 145 12 ]
-        symbol [ _currentNumberOfIntervals %tmp.37 145 12 37 ];
-        %tmp.37 = getv ? :_currentNumberOfIntervals;
-        %tmp.38 = sub %tmp.37 1;
-        symbol [ _currentNumberOfIntervals ? 145 12 37 ];
-        putv self :_currentNumberOfIntervals dup %tmp.38;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 146 12 ]
-        symbol [ System %tmp.40 146 12 18 ];
-        %tmp.40 = getv ? :System;
-        symbol [ println %tmp.41 146 19 26 ];
-        %tmp.41 = getv function %tmp.40 :println;
-        %tmp.42 = "Interval finished, intervals left: ";
-        symbol [ _currentNumberOfIntervals %tmp.44 146 67 92 ];
-        %tmp.44 = getv ? :_currentNumberOfIntervals;
-        %tmp.45 = add %tmp.42 %tmp.44;
-        invoke %tmp.40 %tmp.41(%tmp.45);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 147 12 ]
-        symbol [ _progressManager %tmp.47 147 39 55 ];
-        %tmp.47 = getv ? :_progressManager;
-        symbol [ getIntervalDurationInSec %tmp.48 147 56 80 ];
-        %tmp.48 = getv function %tmp.47 :getIntervalDurationInSec;
-        %tmp.49 = invoke %tmp.47 %tmp.48();
-        symbol [ _currentIntervalDuration ? 147 12 36 ];
-        putv self :_currentIntervalDuration %tmp.49;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_40_145_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_8_145_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_137_8_145_8_if_end:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 147 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_8_153_8_if_stmt:
+        symbol [ _currentIntervalDuration %tmp.40 147 12 36 ];
+        %tmp.40 = getv ? :_currentIntervalDuration;
+        %tmp.41 = 0;
+        %tmp.42 = lte %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_8_153_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_8_153_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_43_153_8_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 148 12 ]
-        symbol [ _notificationManager %tmp.51 148 12 32 ];
-        %tmp.51 = getv ? :_notificationManager;
-        symbol [ callAttention %tmp.52 148 33 46 ];
-        %tmp.52 = getv function %tmp.51 :callAttention;
-        symbol [ AttentionLevel %tmp.54 148 47 61 ];
-        %tmp.54 = getv ? :AttentionLevel;
-        symbol [ Low %tmp.55 148 62 65 ];
-        %tmp.55 = getv %tmp.54 :Low;
-        %tmp.56 = true;
-        invoke %tmp.51 %tmp.52(%tmp.55, %tmp.56);
+        symbol [ _currentNumberOfIntervals %tmp.45 148 12 37 ];
+        %tmp.45 = getv ? :_currentNumberOfIntervals;
+        %tmp.46 = sub %tmp.45 1;
+        symbol [ _currentNumberOfIntervals ? 148 12 37 ];
+        putv self :_currentNumberOfIntervals dup %tmp.46;
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 149 12 ]
-        symbol [ _view %tmp.58 149 12 17 ];
-        %tmp.58 = getv ? :_view;
-        symbol [ updateIntervalsValue %tmp.59 149 18 38 ];
-        %tmp.59 = getv function %tmp.58 :updateIntervalsValue;
-        symbol [ _currentNumberOfIntervals %tmp.61 149 39 64 ];
-        %tmp.61 = getv ? :_currentNumberOfIntervals;
-        invoke %tmp.58 %tmp.59(%tmp.61);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_43_150_8_stop:
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_8_150_8_if_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_144_8_150_8_if_end:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 153 8 ]
-        symbol [ _currentTotalDuration %tmp.64 153 8 29 ];
-        %tmp.64 = getv ? :_currentTotalDuration;
-        %tmp.65 = sub %tmp.64 1;
-        symbol [ _currentTotalDuration ? 153 8 29 ];
-        putv self :_currentTotalDuration dup %tmp.65;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 154 8 ]
-        symbol [ _currentIntervalDuration %tmp.68 154 8 32 ];
-        %tmp.68 = getv ? :_currentIntervalDuration;
-        %tmp.69 = sub %tmp.68 1;
-        symbol [ _currentIntervalDuration ? 154 8 32 ];
-        putv self :_currentIntervalDuration dup %tmp.69;
+        symbol [ System %tmp.48 149 12 18 ];
+        %tmp.48 = getv ? :System;
+        symbol [ println %tmp.49 149 19 26 ];
+        %tmp.49 = getv function %tmp.48 :println;
+        %tmp.50 = "Interval finished, intervals left: ";
+        symbol [ _currentNumberOfIntervals %tmp.52 149 67 92 ];
+        %tmp.52 = getv ? :_currentNumberOfIntervals;
+        %tmp.53 = add %tmp.50 %tmp.52;
+        invoke %tmp.48 %tmp.49(%tmp.53);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 150 12 ]
+        symbol [ _progressManager %tmp.55 150 39 55 ];
+        %tmp.55 = getv ? :_progressManager;
+        symbol [ getIntervalDurationInSec %tmp.56 150 56 80 ];
+        %tmp.56 = getv function %tmp.55 :getIntervalDurationInSec;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        symbol [ _currentIntervalDuration ? 150 12 36 ];
+        putv self :_currentIntervalDuration %tmp.57;
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 151 12 ]
+        symbol [ _notificationManager %tmp.59 151 12 32 ];
+        %tmp.59 = getv ? :_notificationManager;
+        symbol [ callAttention %tmp.60 151 33 46 ];
+        %tmp.60 = getv function %tmp.59 :callAttention;
+        symbol [ AttentionLevel %tmp.62 151 47 61 ];
+        %tmp.62 = getv ? :AttentionLevel;
+        symbol [ Low %tmp.63 151 62 65 ];
+        %tmp.63 = getv %tmp.62 :Low;
+        %tmp.64 = true;
+        invoke %tmp.59 %tmp.60(%tmp.63, %tmp.64);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 152 12 ]
+        symbol [ _view %tmp.66 152 12 17 ];
+        %tmp.66 = getv ? :_view;
+        symbol [ updateIntervalsValue %tmp.67 152 18 38 ];
+        %tmp.67 = getv function %tmp.66 :updateIntervalsValue;
+        symbol [ _currentNumberOfIntervals %tmp.69 152 39 64 ];
+        %tmp.69 = getv ? :_currentNumberOfIntervals;
+        invoke %tmp.66 %tmp.67(%tmp.69);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_43_153_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_8_153_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_BisGleichDelegate_mc_147_8_153_8_if_end:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichDelegate.mc" 155 8 ]
         symbol [ _view %tmp.71 155 8 13 ];
         %tmp.71 = getv ? :_view;

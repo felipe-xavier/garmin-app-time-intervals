@@ -6,39 +6,20 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var heart_rate_icon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_time_of_the_day = new WatchUi.Text({:identifier=>"time_of_the_day", :locX=>(454 * 0.5), :locY=>(454 * (15 / 100.0)), :text=>"00:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_XTINY});
+            var rez_cmp_local_bitmap_heart_rate_icon = new WatchUi.Bitmap({:identifier=>"heart_rate_icon", :rezId=>$.Rez.Drawables.heart_rate_icon, :locX=>(454 * (44 / 100.0)), :locY=>(454 * (10 / 100.0))});
+            rez_cmp_local_bitmap_heart_rate_icon.setLocation((454 * (44 / 100.0)), (454 * (10 / 100.0)));
 
-            var rez_cmp_local_text_current_timer = new WatchUi.Text({:identifier=>"current_timer", :locX=>(454 * 0.5), :locY=>((454 - dc.getFontHeight(Gfx.FONT_NUMBER_THAI_HOT)) * 0.5), :text=>"0:30", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
-
-            var rez_cmp_local_text_intervals_left = new WatchUi.Text({:identifier=>"intervals_left", :locX=>(454 * 0.5), :locY=>(454 * (67 / 100.0)), :text=>"5 intervals left", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
-
-            var rez_cmp_local_text_target_time = new WatchUi.Text({:identifier=>"target_time", :locX=>(454 * 0.5), :locY=>(454 * (85 / 100.0)), :text=>"00:00:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_XTINY});
-
-            var rez_cmp_local_text_target_time_label = new WatchUi.Text({:identifier=>"target_time_label", :locX=>(454 * 0.5), :locY=>(454 * (92 / 100.0)), :text=>"target", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_XTINY});
-
-            return [rez_cmp_local_text_time_of_the_day, rez_cmp_local_text_current_timer, rez_cmp_local_text_intervals_left, rez_cmp_local_text_target_time, rez_cmp_local_text_target_time_label] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_bitmap_heart_rate_icon] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
-    module Menus {
-        class MainMenu extends WatchUi.Menu {
-            function initialize() {
-                Menu.initialize();
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
-            }
-        }
-    } // Menus
-
     module Strings {
-        (:initialized) var menu_label_1 as ResourceId;
-        (:initialized) var menu_label_2 as ResourceId;
-        (:initialized) var prompt as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

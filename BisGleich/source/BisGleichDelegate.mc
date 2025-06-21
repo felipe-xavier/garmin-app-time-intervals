@@ -131,6 +131,9 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function updateCountdownValue() as Void {
+        _currentTotalDuration--;
+        _currentIntervalDuration--;
+
         if (_currentTotalDuration <= 0) {
             System.println("Countdown finished");
             _notificationManager.removeCallback(NotificationManager.startActivityKey);
@@ -148,10 +151,7 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
             _notificationManager.callAttention(AttentionLevel.Low, true);
             _view.updateIntervalsValue(_currentNumberOfIntervals);
         }
-
-
-        _currentTotalDuration--;
-        _currentIntervalDuration--;
+       
         _view.updateCurrentTimerValue(_currentTotalDuration);
         _progressManager.setCurrentDurationInSec(_currentTotalDuration);
 
