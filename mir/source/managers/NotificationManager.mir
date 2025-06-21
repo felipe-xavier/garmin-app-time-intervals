@@ -376,42 +376,27 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_man
     [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc"; @line = 89; @symbol_functiondef = [tryToggleBacklight,89,11,29]; @symbol_param<0> = [enable,89,30,36]; ]
     function tryToggleBacklight(enable) {
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_89_38_93_2_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 90 4 ]
-        try @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_beginTry @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_endTry @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_catch @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_beginTry:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_8_92_4_start:
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 91 6 ]
-        symbol [ Attention %tmp.1 91 6 15 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 90 6 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_6_92_6_if_stmt:
+        symbol [ Attention %tmp.1 90 10 19 ];
         %tmp.1 = getm $.Toybox.Attention;
-        symbol [ backlight %tmp.2 91 16 25 ];
-        %tmp.2 = getv function %tmp.1 :backlight;
-        %tmp.3 = lgetv %enable;
-        symbol [ enable %tmp.3 91 26 32 ];
-        invoke %tmp.1 %tmp.2(%tmp.3);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_8_92_4_stop:
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_endTry:
-        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally;
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_catch:
-        %tmp.4 = exception;
-        push %tmp.4;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 92 6 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_catch" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_92_6_92_18_end" ]
-        %ex.1 = local;
-        symbol [ ex %ex.1 92 13 15 ];
-        %tmp.5 = dup %tmp.4;
-        lputv %ex.1 %tmp.5;
-        symbol [ ex %ex.1 92 13 15 ];
-        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally;
-        pop;
-        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_end;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_92_6_92_18_end:
-        try @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_catch @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_92_6_92_18_end @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_92_6_92_18_end @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally;
-        jsr @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally;
-        throw %tmp.4;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_finally:
-        jsrret;
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_4_92_18_end:
+        %tmp.3 = const :backlight;
+        symbol [ backlight %tmp.3 90 25 34 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_6_92_6_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_6_92_6_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_36_92_6_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/NotificationManager.mc" 91 8 ]
+        symbol [ Attention %tmp.5 91 8 17 ];
+        %tmp.5 = getm $.Toybox.Attention;
+        symbol [ backlight %tmp.6 91 18 27 ];
+        %tmp.6 = getv function %tmp.5 :backlight;
+        %tmp.7 = lgetv %enable;
+        symbol [ enable %tmp.7 91 28 34 ];
+        invoke %tmp.5 %tmp.6(%tmp.7);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_36_92_6_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_6_92_6_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_90_6_92_6_if_end:
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_managers_NotificationManager_mc_89_38_93_2_stop:
     }
 }

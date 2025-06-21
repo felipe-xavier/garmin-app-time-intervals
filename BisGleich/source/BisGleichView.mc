@@ -51,12 +51,8 @@ class BisGleichView extends WatchUi.View {
         updateCurrentTimerValue(currentTimeInSec);
 
         updateDynamicData();
-
-        var isScreenAlwaysOn = SettingsStorage.getIsScreenAlwaysOn();
-        if (isScreenAlwaysOn == "always") {
-            _notificationManager.tryToggleBacklight(true);
-        }
     }
+
 
     function onReset() as Void {
         _currentTimerElement.setColor(Graphics.COLOR_WHITE);
@@ -84,12 +80,6 @@ class BisGleichView extends WatchUi.View {
         }
         View.onUpdate(dc);
         drawScreenDots(dc);
-    }
-
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
-    function onHide() as Void {
     }
 
     function drawDots(dc as Dc, baseAngle as Number, color as ColorValue) as Void {

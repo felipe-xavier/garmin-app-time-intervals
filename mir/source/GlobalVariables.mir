@@ -1,0 +1,25 @@
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [System,1,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 3; @symbol_classdef = [GlobalVariables,3,6,21]; ]
+class GlobalVariables {
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 3; ]
+    static
+    <init> {
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc" 4 15 ]
+        symbol [ System %tmp.1 4 32 38 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.2 4 39 56 ];
+        %tmp.2 = getv function %tmp.1 :getDeviceSettings;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :deviceSettings %tmp.3;
+    }
+    [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 4; @position = 15; @symbol_vardef = [deviceSettings,4,15,29]; ]
+    static
+    var deviceSettings;
+}
+[ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/GlobalVariables.mc"; @line = 1; ]
+<init> {
+}

@@ -132,7 +132,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_men
     [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc"; @line = 30; @symbol_functiondef = [setMenu,30,21,28]; ]
     private
     function setMenu() {
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_start:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 31 8 ]
         symbol [ WatchUi %tmp.3 31 20 27 ];
         %tmp.3 = getm $.Toybox.WatchUi;
@@ -142,101 +142,145 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_men
         %tmp.1 = newc %tmp.4 (%tmp.5);
         symbol [ _menu ? 31 8 13 ];
         putv self :_menu %tmp.1;
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 33 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_stop" ]
-        %totalTimeLabel.1 = local;
-        symbol [ totalTimeLabel %totalTimeLabel.1 33 12 26 ];
-        symbol [ TimeDurationsStorage %tmp.7 33 29 49 ];
-        %tmp.7 = getv ? :TimeDurationsStorage;
-        symbol [ getTotalTimeInMinDuration %tmp.8 33 50 75 ];
-        %tmp.8 = getv function %tmp.7 :getTotalTimeInMinDuration;
-        %tmp.9 = invoke %tmp.7 %tmp.8();
-        symbol [ toString %tmp.10 33 78 86 ];
-        %tmp.10 = getv function %tmp.9 :toString;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        %tmp.12 = " min";
-        %tmp.13 = add %tmp.11 %tmp.12;
-        lputv %totalTimeLabel.1 %tmp.13;
-        symbol [ totalTimeLabel %totalTimeLabel.1 33 12 26 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 32 8 ]
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_stop" ]
+        %deviceSettings.1 = local;
+        symbol [ deviceSettings %deviceSettings.1 32 12 26 ];
+        symbol [ GlobalVariables %tmp.7 32 29 44 ];
+        %tmp.7 = getv ? :GlobalVariables;
+        symbol [ deviceSettings %tmp.8 32 45 59 ];
+        %tmp.8 = getv %tmp.7 :deviceSettings;
+        lputv %deviceSettings.1 %tmp.8;
+        symbol [ deviceSettings %deviceSettings.1 32 12 26 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 34 8 ]
-        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_stop" ]
-        %intervalTimeLabel.2 = local;
-        symbol [ intervalTimeLabel %intervalTimeLabel.2 34 12 29 ];
-        symbol [ TimeDurationsStorage %tmp.15 34 32 52 ];
-        %tmp.15 = getv ? :TimeDurationsStorage;
-        symbol [ getIntervalTimeInMinDuration %tmp.16 34 53 81 ];
-        %tmp.16 = getv function %tmp.15 :getIntervalTimeInMinDuration;
-        %tmp.17 = invoke %tmp.15 %tmp.16();
-        symbol [ toString %tmp.18 34 84 92 ];
-        %tmp.18 = getv function %tmp.17 :toString;
-        %tmp.19 = invoke %tmp.17 %tmp.18();
-        %tmp.20 = " min";
-        %tmp.21 = add %tmp.19 %tmp.20;
-        lputv %intervalTimeLabel.2 %tmp.21;
-        symbol [ intervalTimeLabel %intervalTimeLabel.2 34 12 29 ];
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_stop" ]
+        %isTouchScreenMenuAvailable.2 = local;
+        symbol [ isTouchScreenMenuAvailable %isTouchScreenMenuAvailable.2 34 12 38 ];
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_41_34_93_begin:
+        %tmp.9 = lgetv %deviceSettings.1;
+        symbol [ deviceSettings %tmp.9 34 41 55 ];
+        %tmp.11 = const :isTouchScreen;
+        symbol [ isTouchScreen %tmp.11 34 61 74 const ];
+        %tmp.12 = canhazplz %tmp.9 %tmp.11;
+        %tmp.13 = dup %tmp.12;
+        bf %tmp.13 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_78_34_93_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_78_34_93_true:
+        %tmp.14 = lgetv %deviceSettings.1;
+        symbol [ deviceSettings %tmp.14 34 78 92 ];
+        %tmp.15 = as %tmp.14 { (interface { var isTouchScreen; }) };
+        symbol [ isTouchScreen %tmp.16 34 93 106 ];
+        %tmp.16 = getv %tmp.15 :isTouchScreen;
+        %tmp.17 = and %tmp.12 %tmp.16;
+        push %tmp.17;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_78_34_93_end:
+        %tmp.18 = phi [%tmp.13 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_41_34_93_begin] [%tmp.17 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_78_34_93_true] [%tmp.18 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_34_78_34_93_end];
+        lputv %isTouchScreenMenuAvailable.2 %tmp.18;
+        symbol [ isTouchScreenMenuAvailable %isTouchScreenMenuAvailable.2 34 12 38 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 36 8 ]
-        symbol [ _menu %tmp.23 36 8 13 ];
-        %tmp.23 = getv ? :_menu;
-        symbol [ addItem %tmp.24 36 14 21 ];
-        %tmp.24 = getv function %tmp.23 :addItem;
-        symbol [ WatchUi %tmp.27 36 26 33 ];
-        %tmp.27 = getm $.Toybox.WatchUi;
-        symbol [ MenuItem %tmp.28 36 34 42 ];
-        %tmp.28 = getv function ? %tmp.27 :MenuItem;
-        %tmp.29 = "Total time";
-        %tmp.30 = lgetv %totalTimeLabel.1;
-        symbol [ totalTimeLabel %tmp.30 36 57 71 ];
-        %tmp.31 = "total_time";
-        %tmp.32 = null;
-        %tmp.25 = newc %tmp.28 (%tmp.29, %tmp.30, %tmp.31, %tmp.32);
-        invoke %tmp.23 %tmp.24(%tmp.25);
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_stop" ]
+        %totalTimeLabel.3 = local;
+        symbol [ totalTimeLabel %totalTimeLabel.3 36 12 26 ];
+        symbol [ TimeDurationsStorage %tmp.20 36 29 49 ];
+        %tmp.20 = getv ? :TimeDurationsStorage;
+        symbol [ getTotalTimeInMinDuration %tmp.21 36 50 75 ];
+        %tmp.21 = getv function %tmp.20 :getTotalTimeInMinDuration;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        symbol [ toString %tmp.23 36 78 86 ];
+        %tmp.23 = getv function %tmp.22 :toString;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = " min";
+        %tmp.26 = add %tmp.24 %tmp.25;
+        lputv %totalTimeLabel.3 %tmp.26;
+        symbol [ totalTimeLabel %totalTimeLabel.3 36 12 26 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 37 8 ]
-        symbol [ _menu %tmp.34 37 8 13 ];
-        %tmp.34 = getv ? :_menu;
-        symbol [ addItem %tmp.35 37 14 21 ];
-        %tmp.35 = getv function %tmp.34 :addItem;
-        symbol [ WatchUi %tmp.38 37 26 33 ];
-        %tmp.38 = getm $.Toybox.WatchUi;
-        symbol [ MenuItem %tmp.39 37 34 42 ];
-        %tmp.39 = getv function ? %tmp.38 :MenuItem;
-        %tmp.40 = "Interval time";
-        %tmp.41 = lgetv %intervalTimeLabel.2;
-        symbol [ intervalTimeLabel %tmp.41 37 60 77 ];
-        %tmp.42 = "interval_time";
-        %tmp.43 = null;
-        %tmp.36 = newc %tmp.39 (%tmp.40, %tmp.41, %tmp.42, %tmp.43);
-        invoke %tmp.34 %tmp.35(%tmp.36);
-[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 38 8 ]
-        symbol [ _menu %tmp.45 38 8 13 ];
-        %tmp.45 = getv ? :_menu;
-        symbol [ addItem %tmp.46 38 14 21 ];
-        %tmp.46 = getv function %tmp.45 :addItem;
-        symbol [ WatchUi %tmp.49 38 26 33 ];
-        %tmp.49 = getm $.Toybox.WatchUi;
-        symbol [ ToggleMenuItem %tmp.50 38 34 48 ];
-        %tmp.50 = getv function ? %tmp.49 :ToggleMenuItem;
-        %tmp.51 = "Touch screen";
-        %tmp.52 = newd 2;
-        %tmp.54 = const :enabled;
-        symbol [ enabled %tmp.54 40 14 21 const ];
-        %tmp.55 = "enabled";
-        %tmp.56 = dup %tmp.52;
-        %tmp.57 = aputv %tmp.56 %tmp.54 %tmp.55;
-        %tmp.59 = const :disabled;
-        symbol [ disabled %tmp.59 40 35 43 const ];
-        %tmp.60 = "disabled";
-        %tmp.61 = dup %tmp.57;
-        %tmp.62 = aputv %tmp.61 %tmp.59 %tmp.60;
-        %tmp.63 = "use_touch_screen";
-        symbol [ SettingsStorage %tmp.65 42 12 27 ];
-        %tmp.65 = getv ? :SettingsStorage;
-        symbol [ getUseTouchScreen %tmp.66 42 28 45 ];
-        %tmp.66 = getv function %tmp.65 :getUseTouchScreen;
-        %tmp.67 = invoke %tmp.65 %tmp.66();
-        %tmp.68 = null;
-        %tmp.47 = newc %tmp.50 (%tmp.51, %tmp.62, %tmp.63, %tmp.67, %tmp.68);
-        invoke %tmp.45 %tmp.46(%tmp.47);
-_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_45_4_stop:
+        [ "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_start" "_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_stop" ]
+        %intervalTimeLabel.4 = local;
+        symbol [ intervalTimeLabel %intervalTimeLabel.4 37 12 29 ];
+        symbol [ TimeDurationsStorage %tmp.28 37 32 52 ];
+        %tmp.28 = getv ? :TimeDurationsStorage;
+        symbol [ getIntervalTimeInMinDuration %tmp.29 37 53 81 ];
+        %tmp.29 = getv function %tmp.28 :getIntervalTimeInMinDuration;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        symbol [ toString %tmp.31 37 84 92 ];
+        %tmp.31 = getv function %tmp.30 :toString;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        %tmp.33 = " min";
+        %tmp.34 = add %tmp.32 %tmp.33;
+        lputv %intervalTimeLabel.4 %tmp.34;
+        symbol [ intervalTimeLabel %intervalTimeLabel.4 37 12 29 ];
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 39 8 ]
+        symbol [ _menu %tmp.36 39 8 13 ];
+        %tmp.36 = getv ? :_menu;
+        symbol [ addItem %tmp.37 39 14 21 ];
+        %tmp.37 = getv function %tmp.36 :addItem;
+        symbol [ WatchUi %tmp.40 39 26 33 ];
+        %tmp.40 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.41 39 34 42 ];
+        %tmp.41 = getv function ? %tmp.40 :MenuItem;
+        %tmp.42 = "Total time";
+        %tmp.43 = lgetv %totalTimeLabel.3;
+        symbol [ totalTimeLabel %tmp.43 39 57 71 ];
+        %tmp.44 = "total_time";
+        %tmp.45 = null;
+        %tmp.38 = newc %tmp.41 (%tmp.42, %tmp.43, %tmp.44, %tmp.45);
+        invoke %tmp.36 %tmp.37(%tmp.38);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 40 8 ]
+        symbol [ _menu %tmp.47 40 8 13 ];
+        %tmp.47 = getv ? :_menu;
+        symbol [ addItem %tmp.48 40 14 21 ];
+        %tmp.48 = getv function %tmp.47 :addItem;
+        symbol [ WatchUi %tmp.51 40 26 33 ];
+        %tmp.51 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.52 40 34 42 ];
+        %tmp.52 = getv function ? %tmp.51 :MenuItem;
+        %tmp.53 = "Interval time";
+        %tmp.54 = lgetv %intervalTimeLabel.4;
+        symbol [ intervalTimeLabel %tmp.54 40 60 77 ];
+        %tmp.55 = "interval_time";
+        %tmp.56 = null;
+        %tmp.49 = newc %tmp.52 (%tmp.53, %tmp.54, %tmp.55, %tmp.56);
+        invoke %tmp.47 %tmp.48(%tmp.49);
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 41 8 ]
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_8_49_8_if_stmt:
+        %tmp.57 = lgetv %isTouchScreenMenuAvailable.2;
+        symbol [ isTouchScreenMenuAvailable %tmp.57 41 12 38 ];
+        bf %tmp.57 @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_8_49_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_8_49_8_if_true:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_40_49_8_start:
+[ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc" 42 12 ]
+        symbol [ _menu %tmp.59 42 12 17 ];
+        %tmp.59 = getv ? :_menu;
+        symbol [ addItem %tmp.60 42 18 25 ];
+        %tmp.60 = getv function %tmp.59 :addItem;
+        symbol [ WatchUi %tmp.63 42 30 37 ];
+        %tmp.63 = getm $.Toybox.WatchUi;
+        symbol [ ToggleMenuItem %tmp.64 42 38 52 ];
+        %tmp.64 = getv function ? %tmp.63 :ToggleMenuItem;
+        %tmp.65 = "Touch screen";
+        %tmp.66 = newd 2;
+        %tmp.68 = const :enabled;
+        symbol [ enabled %tmp.68 44 18 25 const ];
+        %tmp.69 = "enabled";
+        %tmp.70 = dup %tmp.66;
+        %tmp.71 = aputv %tmp.70 %tmp.68 %tmp.69;
+        %tmp.73 = const :disabled;
+        symbol [ disabled %tmp.73 44 39 47 const ];
+        %tmp.74 = "disabled";
+        %tmp.75 = dup %tmp.71;
+        %tmp.76 = aputv %tmp.75 %tmp.73 %tmp.74;
+        %tmp.77 = "use_touch_screen";
+        symbol [ SettingsStorage %tmp.79 46 16 31 ];
+        %tmp.79 = getv ? :SettingsStorage;
+        symbol [ getUseTouchScreen %tmp.80 46 32 49 ];
+        %tmp.80 = getv function %tmp.79 :getUseTouchScreen;
+        %tmp.81 = invoke %tmp.79 %tmp.80();
+        %tmp.82 = null;
+        %tmp.61 = newc %tmp.64 (%tmp.65, %tmp.76, %tmp.77, %tmp.81, %tmp.82);
+        invoke %tmp.59 %tmp.60(%tmp.61);
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_40_49_8_stop:
+        goto @_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_8_49_8_if_end;
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_41_8_49_8_if_end:
+_Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenu_mc_30_31_50_4_stop:
     }
 }
 [ @file = "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenu.mc"; @line = 1; ]

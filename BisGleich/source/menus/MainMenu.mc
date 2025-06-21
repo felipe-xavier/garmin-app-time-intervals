@@ -29,27 +29,23 @@ class MainMenu {
 
     private function setMenu() {
         _menu = new WatchUi.Menu2(null);
+        var deviceSettings = GlobalVariables.deviceSettings;
+
+        var isTouchScreenMenuAvailable = deviceSettings has :isTouchScreen && deviceSettings.isTouchScreen;
 
         var totalTimeLabel = TimeDurationsStorage.getTotalTimeInMinDuration().toString() + " min";
         var intervalTimeLabel = TimeDurationsStorage.getIntervalTimeInMinDuration().toString() + " min";
 
         _menu.addItem(new WatchUi.MenuItem("Total time", totalTimeLabel, "total_time", null));
         _menu.addItem(new WatchUi.MenuItem("Interval time", intervalTimeLabel, "interval_time", null));
-        if (GlobalVariables.deviceSettings has :hasTouchscreen && GlobalVariables.deviceSettings.hasTouchscreen) {
+        if (isTouchScreenMenuAvailable) {
             _menu.addItem(new WatchUi.ToggleMenuItem(
                 "Touch screen", 
                 {:enabled=>"enabled", :disabled=>"disabled"},
                 "use_touch_screen",
-                    SettingsStorage.getUseTouchScreen(),
-                    null
+                SettingsStorage.getUseTouchScreen(),
+                null
             ));
         }
-        _menu.addItem(new WatchUi.ToggleMenuItem(
-            "Screen backlight", 
-            {:enabled=>"always", :disabled=>"alerts only"},
-            "is_screen_always_on",
-            SettingsStorage.getIsScreenAlwaysOn(),
-            null
-        ));
     }
 }
