@@ -51,6 +51,11 @@ class BisGleichView extends WatchUi.View {
         updateCurrentTimerValue(currentTimeInSec);
 
         updateDynamicData();
+
+        var isScreenAlwaysOn = SettingsStorage.getIsScreenAlwaysOn();
+        if (isScreenAlwaysOn == "always") {
+            _notificationManager.tryToggleBacklight(true);
+        }
     }
 
     function onReset() as Void {

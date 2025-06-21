@@ -37,6 +37,10 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
             var toggleItem = item as WatchUi.ToggleMenuItem;
             SettingsStorage.setUseTouchScreen(toggleItem.isEnabled());
             return;
+        } else if (id.equals("is_screen_always_on")) {
+            var toggleItem = item as WatchUi.ToggleMenuItem;
+            SettingsStorage.setIsScreenAlwaysOn(toggleItem.isEnabled());
+            return;
         } 
         
         var picker = new NumberPicker(label, color, lowerLimitNumber, upperLimitNumber, increment, initialValue);
