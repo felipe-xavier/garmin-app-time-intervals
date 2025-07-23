@@ -123,7 +123,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_men
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenuDelegate_mc_27_8_40_8_if_true:
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenuDelegate_mc_27_37_31_8_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" 28 12 ]
-        %tmp.19 = "GOAL TIME";
+        %tmp.19 = "TOTAL TIME";
         lputv %label.2 %tmp.19;
         symbol [ label %label.2 28 12 17 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" 29 12 ]
@@ -158,7 +158,7 @@ _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_men
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenuDelegate_mc_31_15_40_8_if_true:
 _Users_felipe_projects_GarminApps_garmin_app_time_intervals_BisGleich_source_menus_MainMenuDelegate_mc_31_47_36_8_start:
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" 32 12 ]
-        %tmp.33 = "INTERVAL TIME";
+        %tmp.33 = "INTERVAL";
         lputv %label.2 %tmp.33;
         symbol [ label %label.2 32 12 17 ];
 [ "/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/MainMenuDelegate.mc" 33 12 ]

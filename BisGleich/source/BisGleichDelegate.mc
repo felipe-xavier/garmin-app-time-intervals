@@ -54,6 +54,21 @@ class BisGleichDelegate extends WatchUi.BehaviorDelegate {
         System.println("BisGleichDelegate onMenu called");
         return true;
     }
+
+    function onSwipe(swipeEvent as WatchUi.SwipeEvent) {
+        var direction = swipeEvent.getDirection();
+
+        if (direction == WatchUi.SWIPE_LEFT) {
+            var activityStatus = _activityManager.getActivityStatus();
+            if (activityStatus == ActivityStatus.stopped) {
+                return openMenu();
+            } else {
+                onReset();
+                return true;
+            }
+        }
+        return false;
+    }
     
     function onKeyPressed(keyEvent as KeyEvent) as Boolean {
         System.println("BisGleichDelegate onKeyPressed with key: " + keyEvent.getKey());

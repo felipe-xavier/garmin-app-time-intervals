@@ -25,11 +25,11 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
         var increment = 1;
 
         if (id.equals("total_time")) {
-            label = "GOAL TIME";
+            label = "TOTAL TIME";
             initialValue = TimeDurationsStorage.getTotalTimeInMinDuration();
             callback = method(:updateTotalTimeInMin);
         } else if (id.equals("interval_time")) {
-            label = "INTERVAL TIME";
+            label = "INTERVAL";
             initialValue = TimeDurationsStorage.getIntervalTimeInMinDuration();
             callback = method(:updateIntervalTimeInMin);
             upperLimitNumber = TimeDurationsStorage.getTotalTimeInMinDuration() - 1;
