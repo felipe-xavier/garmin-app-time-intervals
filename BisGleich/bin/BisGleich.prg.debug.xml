@@ -21,7 +21,7 @@
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc" id="1" lineNum="32" parent="globals" pc="268435690" symbol="drawDots"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/pickers/NumberPickerFactory.mc" id="2" lineNum="6" parent="globals/NumberPickerFactory" pc="268435718" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/menus/ActivityMenuDelegate.mc" id="3" lineNum="4" parent="globals/ActivityMenuViewDelegate" pc="268435730" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435742" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4261-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435742" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/BisGleichView.mc" id="5" lineNum="7" parent="globals/BisGleichView" pc="268435762" symbol="&lt;init&gt;"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc" id="6" lineNum="5" parent="globals" pc="268435774" symbol="getTimeInSec"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/utils.mc" id="6" lineNum="6" parent="globals" pc="268435785" symbol="getTimeInSec"/>
@@ -592,10 +592,10 @@
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/FormatManager.mc" id="125" lineNum="39" parent="globals/FormatManager" pc="268443973" symbol="formatHeartRate"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/FormatManager.mc" id="125" lineNum="40" parent="globals/FormatManager" pc="268443979" symbol="formatHeartRate"/>
         <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/source/managers/FormatManager.mc" id="125" lineNum="42" parent="globals/FormatManager" pc="268443988" symbol="formatHeartRate"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="127" lineNum="14" parent="globals/Rez/Layouts" pc="268444003" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="127" lineNum="15" parent="globals/Rez/Layouts" pc="268444014" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="127" lineNum="16" parent="globals/Rez/Layouts" pc="268444101" symbol="MainLayout"/>
-        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4315-00/source/Rez.mcgen" id="127" lineNum="18" parent="globals/Rez/Layouts" pc="268444121" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4261-00/source/Rez.mcgen" id="127" lineNum="14" parent="globals/Rez/Layouts" pc="268444003" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4261-00/source/Rez.mcgen" id="127" lineNum="15" parent="globals/Rez/Layouts" pc="268444014" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4261-00/source/Rez.mcgen" id="127" lineNum="16" parent="globals/Rez/Layouts" pc="268444101" symbol="MainLayout"/>
+        <entry filename="/Users/felipe/projects/GarminApps/garmin-app-time-intervals/BisGleich/bin/gen/006-B4261-00/source/Rez.mcgen" id="127" lineNum="18" parent="globals/Rez/Layouts" pc="268444121" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry field="true" id="57" symbol="currentValue"/>
@@ -978,7 +978,7 @@
         <entry arg="true" endPc="268444130" name="dc" stackId="1" startPc="268444003"/>
         <entry endPc="268444130" name="rez_cmp_local_bitmap_heart_rate_icon" stackId="2" startPc="268444014"/>
     </localVars>
-    <deviceInfo deviceVersion="b15bacdc90d00f017569cdd3d5d8d18f07cb2ccf" partNumber="006-B4315-00"/>
+    <deviceInfo deviceVersion="7b60046ebc6cbbbfd1a31636a2da0520945bb7b1" partNumber="006-B4261-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heart_rate_icon"/>
