@@ -3,31 +3,40 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Timer;
 
 // Picker that allows the user to choose a number
 class NumberPicker extends WatchUi.Picker {
+    private var _factory;
+    private var _hasTitle;
+    private var _titleColor;
+
     // Constructor
     public function initialize(
-        titleText as String,
+        titleText as String?,
         titleColor as Number,
         lowerLimitNumber as Number,
         upperLimitNumber as Number,
         increment as Number,
         initialValue as Number
     ) {
+        _hasTitle = titleText != null;
+        _titleColor = titleColor;
+        _factory = new NumberPickerFactory(lowerLimitNumber, upperLimitNumber, increment);
+
+        var targetTimeText = getTargetTimeText(initialValue);
+
         var title = new WatchUi.Text({
-            :text=>titleText,
+            :text=>_hasTitle ? titleText : targetTimeText,
             :color=>titleColor,
-            :font=>Graphics.FONT_SMALL,
+            :font=>Graphics.FONT_TINY,
             :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
             :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM
         });
         
-        var factories = [new NumberPickerFactory(lowerLimitNumber, upperLimitNumber, increment)];
-    
         Picker.initialize({
             :title=>title,
-            :pattern=>factories,
+            :pattern=>[_factory],
             :defaults=>[NumberPickerFactory.getIndex(initialValue, increment, lowerLimitNumber)],
         });
     }
@@ -37,7 +46,36 @@ class NumberPicker extends WatchUi.Picker {
     public function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
+        if (!_hasTitle) {
+            var targetTimeText = getTargetTimeText(_factory.currentValue);
+            var title = new WatchUi.Text({
+                :text=>targetTimeText,
+                :color=>_titleColor,
+                :font=>Graphics.FONT_TINY,
+                :locX=>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM
+            });
+            Picker.setOptions({
+                :title=>title,
+                :pattern=>[_factory],
+            });
+        }
         Picker.onUpdate(dc);
+    }
+
+    private function getTargetTimeText(currentValue as Number) as String {
+        // Calculate target time based on current picker value
+        var time = System.getClockTime();
+        var currentTimeInSec = time.hour * 3600 + time.min * 60 + time.sec;
+        var totalSeconds = currentTimeInSec + (currentValue * 60); // Convert minutes to seconds
+
+        var targetHour = (totalSeconds / 3600) % 24;
+        var targetMin = (totalSeconds % 3600) / 60;
+        var targetSec = totalSeconds % 60;
+
+        var targetTimeText = FormatManager.formatTime(targetHour, targetMin, targetSec);
+
+        return targetTimeText;
     }
 }
 

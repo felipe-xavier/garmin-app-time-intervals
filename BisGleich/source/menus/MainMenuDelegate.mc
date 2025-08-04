@@ -25,7 +25,8 @@ class MainMenuViewDelegate extends WatchUi.Menu2InputDelegate {
         var increment = 1;
 
         if (id.equals("total_time")) {
-            label = "TOTAL TIME";
+            label = null;
+            color = Graphics.COLOR_ORANGE;
             initialValue = TimeDurationsStorage.getTotalTimeInMinDuration();
             callback = method(:updateTotalTimeInMin);
         } else if (id.equals("interval_time")) {

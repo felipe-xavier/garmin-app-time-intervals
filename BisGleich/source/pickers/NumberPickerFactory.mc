@@ -7,6 +7,7 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     private var _start as Number;
     private var _stop as Number;
     private var _increment as Number;
+    public var currentValue as Number;
     
     // Constructor
     // @param start Number to start with
@@ -18,6 +19,7 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
         _start = start;
         _stop = stop;
         _increment = increment;
+        currentValue = start;
     }
 
     // Get the index of a number item
@@ -49,6 +51,7 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     // @return Value of the item
     public function getValue(index as Number) as Object? {
         var value = _start + (index * _increment);
+        currentValue = value;
         return value;
     }
 
